@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EchoForge Command Center</title>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.5/babel.min.js"></script>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    :root {
+      --bg-void: #020208;
+      --bg-deep: #0a0a14;
+      --bg-surface: #101020;
+      --bg-elevated: #16162a;
+      --bg-card: rgba(22, 22, 42, 0.7);
+      --border-dim: rgba(255, 255, 255, 0.04);
+      --border-subtle: rgba(255, 255, 255, 0.08);
+      --border-glow: rgba(0, 255, 170, 0.4);
+      --text-primary: #f0f0f5;
+      --text-secondary: #8888aa;
+      --text-muted: #555570;
+      --accent-primary: #00ffaa;
+      --accent-secondary: #00ccff;
+      --accent-tertiary: #aa55ff;
+      --accent-warning: #ffaa00;
+      --accent-danger: #ff4466;
+      --accent-success: #00ff88;
+      --gradient-primary: linear-gradient(135deg, #00ffaa 0%, #00ccff 100%);
+      --gradient-dark: linear-gradient(180deg, var(--bg-deep) 0%, var(--bg-void) 100%);
+    }
+
+    @font-face {
+      font-family: 'Geist';
+      src: local('Space Grotesk');
+    }
+
+    body {
+      font-family: 'Space Grotesk', -apple-system, sans-serif;
+      background: var(--bg-void);
+      color: var(--text-primary);
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    .cyber-grid {
+      position: fixed;
+      inset: 0;
+      background: 
+        linear-gradient(90deg, rgba(0, 255, 170, 0.02) 1px, transparent 1px),
+        linear-gradient(rgba(0, 255, 170, 0.02) 1px, transparent 1px);
+      background-size: 60px 60px;
+      mask-image: radial-gradient(ellipse at 50% 0%, black 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .glow-orb {
+      position: fixed;
+      width: 800px;
+      height: 800px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(0, 255, 170, 0.08) 0%, transparent 70%);
+      top: -400px;
+      left: 50%;
+      transform: translateX(-50%);
+      pointer-events: none;
+      animation: pulse-slow 8s ease-in-out infinite;
+    }
+
+    @keyframes pulse-slow {
+      0%, 100% { opacity: 0.5; transform: translateX(-50%) scale(1); }
+      50% { opacity: 0.8; transform: translateX(-50%) scale(1.1); }
+    }
+
+    @keyframes glow-pulse {
+      0%, 100% { box-shadow: 0 0 20px rgba(0, 255, 170, 0.3); }
+      50% { box-shadow: 0 0 40px rgba(0, 255, 170, 0.6), 0 0 80px rgba(0, 255, 170, 0.3); }
+    }
+
+    @keyframes slide-in { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes scan-line { 0% { top: -10%; } 100% { top: 110%; } }
+    @keyframes blink { 0%, 50%, 100% { opacity: 1; } 25%, 75% { opacity: 0.3; } }
+    @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+    @keyframes rotate { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+    @keyframes ticker { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+
+    .mono { font-family: 'JetBrains Mono', monospace; }
+    
+    ::-webkit-scrollbar { width: 4px; height: 4px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: var(--accent-primary); border-radius: 2px; }
+
+    #root { position: relative; z-index: 1; }
+  </style>
+</head>
+<body>
+  <div class="cyber-grid"></div>
+  <div class="glow-orb"></div>
+  <div id="root"></div>
+  
+  <script type="text/babel">
+    const { useState, useEffect, useRef, useCallback } = React;
+
+    // ══════════════════════════════════════════════════════════════════
+    // API INTEGRATIONS
+    // ══════════════════════════════════════════════════════════════════
+
+    const API = {
+      // Snapshot Governance
+      async getProposals() {
+        try {
+          const res = await fetch('https://hub.snapshot.org/graphql', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              query: `{ proposals(first: 20, where: { state: "active" }, orderBy: "created", orderDirection: desc) {
+                id title body end votes scores_total space { id name avatar } choices scores
+              }}`
+            })
+          });
+          return (await res.json()).data?.proposals || [];
+        } catch (e) { console.error('Snapshot API error:', e); return []; }
+      },
+
+      // DeFiLlama Yields
+      async getYields() {
+        try {
+          const res = await fetch('https://yields.llama.fi/pools');
+          const data = await res.json();
+          return data.data?.filter(p => p.tvlUsd > 1000000 && p.apy > 5)
+            .sort((a, b) => b.apy - a.apy).slice(0, 30) || [];
+        } catch (e) { return []; }
+      },
+
+      // Gas Oracle
+      async getGas() {
+        try {
+          const res = await fetch('https://api.etherscan.io/api?module=gastracker&action=gasoracle');
+          return (await res.json()).result || { SafeGasPrice: '20', ProposeGasPrice: '25', FastGasPrice: '30' };
+        } catch (e) { return { SafeGasPrice: '20', ProposeGasPrice: '25', FastGasPrice: '30' }; }
+      },
+
+      // Prices
+      async getPrices() {
+        try {
+          const res = await fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum,solana&vs_currencies=usd&include_24hr_change=true');
+          return await res.json();
+        } catch (e) { return {}; }
+      },
+
+      // Whale Alert (simulated - real requires API key)
+      async getWhaleTransactions() {
+        // Mock data - would connect to Whale Alert WebSocket
+        return Array.from({ length: 10 }, (_, i) => ({
+          id: Date.now() + i,
+          hash: '0x' + Math.random().toString(16).slice(2, 18),
+          symbol: ['BTC', 'ETH', 'USDT', 'USDC'][Math.floor(Math.random() * 4)],
+          amount: Math.floor(Math.random() * 50000000) + 1000000,
+          from: ['Binance', 'Coinbase', 'Unknown Wallet', 'Kraken'][Math.floor(Math.random() * 4)],
+          to: ['Unknown Wallet', 'Binance', 'OKX', 'Cold Storage'][Math.floor(Math.random() * 4)],
+          timestamp: Date.now() - Math.random() * 3600000
+        }));
+      },
+
+      // Balance checker via public RPC
+      async getBalance(address) {
+        try {
+          const res = await fetch('https://eth.llamarpc.com', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ jsonrpc: '2.0', method: 'eth_getBalance', params: [address, 'latest'], id: 1 })
+          });
+          const data = await res.json();
+          return (parseInt(data.result, 16) / 1e18).toFixed(4);
+        } catch (e) { return '0'; }
+      },
+
+      // Dynamic airdrop fetch with fallback
+      async getAirdrops() {
+        try {
+          const res = await fetch('https://api.airdrops.io/v1/drops?upcoming=true&limit=6&sort=score_desc');
+          const data = await res.json();
+          return data.data || AIRDROPS;
+        } catch (e) { return AIRDROPS; }
+      }
+    };
+
+    // ══════════════════════════════════════════════════════════════════
+    // UTILITIES
+    // ══════════════════════════════════════════════════════════════════
+
+    const formatNumber = (n, d = 2) => {
+      if (!n) return '0';
+      if (n >= 1e9) return (n / 1e9).toFixed(d) + 'B';
+      if (n >= 1e6) return (n / 1e6).toFixed(d) + 'M';
+      if (n >= 1e3) return (n / 1e3).toFixed(d) + 'K';
+      return n.toFixed ? n.toFixed(d) : n;
+    };
+
+    const formatTime = (ts) => {
+      const diff = ts - Date.now() / 1000;
+      if (diff <= 0) return 'Ended';
+      const d = Math.floor(diff / 86400);
+      const h = Math.floor((diff % 86400) / 3600);
+      return d > 0 ? `${d}d ${h}h` : `${h}h`;
+    };
+
+    const shortAddr = (a) => a ? `${a.slice(0, 6)}...${a.slice(-4)}` : '';
+
+    // ══════════════════════════════════════════════════════════════════
+    // COMPONENTS
+    // ══════════════════════════════════════════════════════════════════
+
+    const StatusDot = ({ status, size = 8 }) => (
+      <div style={{
+        width: size, height: size, borderRadius: '50%',
+        background: status === 'active' ? 'var(--accent-success)' : 
+                    status === 'warning' ? 'var(--accent-warning)' : 
+                    status === 'error' ? 'var(--accent-danger)' : 'var(--text-muted)',
+        boxShadow: status === 'active' ? '0 0 12px var(--accent-success)' : 'none',
+        animation: status === 'active' ? 'blink 2s infinite' : 'none'
+      }} />
+    );
+
+    const Progress = ({ value, max = 100, color = 'var(--accent-primary)', h = 4 }) => (
+      <div style={{ width: '100%', height: h, background: 'rgba(255,255,255,0.05)', borderRadius: h/2 }}>
+        <div style={{
+          width: `${Math.min(100, (value / max) * 100)}%`, height: '100%',
+          background: `linear-gradient(90deg, ${color}, ${color}88)`,
+          borderRadius: h/2, transition: 'width 0.4s ease'
+        }} />
+      </div>
+    );
+
+    const Card = ({ children, style = {}, glow = false, onClick }) => (
+      <div onClick={onClick} style={{
+        background: 'var(--bg-card)',
+        backdropFilter: 'blur(20px)',
+        border: `1px solid ${glow ? 'var(--border-glow)' : 'var(--border-subtle)'}`,
+        borderRadius: 16,
+        transition: 'all 0.3s ease',
+        cursor: onClick ? 'pointer' : 'default',
+        ...style
+      }}>
+        {children}
+      </div>
+    );
+
+    // ══════════════════════════════════════════════════════════════════
+    // BOT MODULES
+    // ══════════════════════════════════════════════════════════════════
+
+    const BOTS = [
+      { 
+        id: 'governance', 
+        name: 'Governance Bot', 
+        icon: '🗳️', 
+        color: '#00ffaa',
+        description: 'Auto-vote on Snapshot & Tally proposals with incentive optimization',
+        category: 'DeFi'
+      },
+      { 
+        id: 'arbitrage', 
+        name: 'CEX Arbitrage', 
+        icon: '⚡', 
+        color: '#00ccff',
+        description: 'Kraken ↔ Coinbase price arbitrage with auto-execution',
+        category: 'Trading'
+      },
+      { 
+        id: 'whale', 
+        name: 'Whale Tracker', 
+        icon: '🐋', 
+        color: '#aa55ff',
+        description: 'Real-time monitoring of $1M+ blockchain transfers',
+        category: 'Intelligence'
+      },
+      { 
+        id: 'vechain-whale', 
+        name: 'VeChain Whale', 
+        icon: '🐋', 
+        color: '#00ffaa',
+        description: 'Hayabusa RPC + Arkham ETH cross-checks; 3 DMs/day via Discord',
+        category: 'Intelligence'
+      },
+      { 
+        id: 'yield', 
+        name: 'Yield Optimizer', 
+        icon: '🌾', 
+        color: '#ffaa00',
+        description: 'Find and auto-compound highest APY pools across chains',
+        category: 'DeFi'
+      },
+      { 
+        id: 'liquidation', 
+        name: 'Liquidation Bot', 
+        icon: '💀', 
+        color: '#ff4466',
+        description: 'Monitor & execute profitable liquidations on Aave/Compound',
+        category: 'MEV'
+      },
+      { 
+        id: 'mev', 
+        name: 'TriMEV Suite', 
+        icon: '🔥', 
+        color: '#ff6b00',
+        description: 'Sandwich + Arbitrage + Liquidation coordinated execution',
+        category: 'MEV'
+      },
+      { 
+        id: 'airdrop', 
+        name: 'Airdrop Hunter', 
+        icon: '🪂', 
+        color: '#ff66aa',
+        description: 'Track eligibility for upcoming token airdrops',
+        category: 'Intelligence'
+      },
+      { 
+        id: 'sniper', 
+        name: 'Token Sniper', 
+        icon: '🎯', 
+        color: '#66ffaa',
+        description: 'Auto-buy new token launches with rug detection',
+        category: 'Trading'
+      },
+      { 
+        id: 'copy', 
+        name: 'Copy Trader', 
+        icon: '👥', 
+        color: '#66aaff',
+        description: 'Mirror trades from top performing wallets',
+        category: 'Trading'
+      },
+      { 
+        id: 'mempool', 
+        name: 'Mempool Sniffer', 
+        icon: '🔍', 
+        color: '#ffff66',
+        description: 'Bitcoin double-spend detection ($20K bounty winner)',
+        category: 'Security'
+      },
+      { 
+        id: 'recovery', 
+        name: 'Wallet Recovery', 
+        icon: '🔐', 
+        color: '#aaffaa',
+        description: 'HD derivation, seed scanning, multi-chain balance check',
+        category: 'Security'
+      },
+      { 
+        id: 'robinhood', 
+        name: 'Robinhood Bot', 
+        icon: '📈', 
+        color: '#00ff00',
+        description: 'Automated stock trading with moving average signals',
+        category: 'Trading'
+      }
+    ];
+
+    const AIRDROPS = [
+      { name: 'Base', ticker: 'BASE', status: 'Confirmed', score: 92, est: 'Q4 2025', criteria: ['Bridge activity', 'Beautiful Bridge users', 'DeFi interactions'] },
+      { name: 'Berachain', ticker: 'BERA', status: 'Confirmed', score: 88, est: 'Q4 2025', criteria: ['Testnet usage', 'NFT holders', 'Boyco deposits'] },
+      { name: 'Monad', ticker: 'MON', status: 'Likely', score: 75, est: 'Q1 2026', criteria: ['Discord OG', 'Testnet activity'] },
+      { name: 'Hyperliquid', ticker: 'HYPE', status: 'Confirmed', score: 95, est: 'Nov 2025', criteria: ['Trading volume', 'LP provision'] },
+      { name: 'Eclipse', ticker: 'ECLIP', status: 'Likely', score: 70, est: 'Q1 2026', criteria: ['Bridge usage', 'Turbin3 interaction'] },
+      { name: 'Initia', ticker: 'INIT', status: 'Testnet', score: 65, est: 'Q1 2026', criteria: ['Testnet tasks', 'Social quests'] }
+    ];
+
+    // ══════════════════════════════════════════════════════════════════
+    // PANELS
+    // ══════════════════════════════════════════════════════════════════
+
+    const GovernancePanel = ({ proposals }) => (
+      <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
+        {proposals.slice(0, 8).map((p, i) => (
+          <Card key={p.id} style={{ padding: 16, animation: `slide-in 0.3s ease ${i * 0.05}s both` }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 10 }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                {p.space?.avatar && <img src={p.space.avatar} style={{ width: 24, height: 24, borderRadius: 6 }} />}
+                <span style={{ fontSize: 12, color: 'var(--accent-primary)', fontWeight: 600 }}>{p.space?.name}</span>
+              </div>
+              <span className="mono" style={{ fontSize: 11, color: 'var(--text-muted)' }}>⏱ {formatTime(p.end)}</span>
+            </div>
+            <p style={{ fontSize: 13, fontWeight: 500, marginBottom: 12, lineHeight: 1.4 }}>
+              {p.title?.slice(0, 70)}{p.title?.length > 70 ? '...' : ''}
+            </p>
+            <div style={{ display: 'flex', gap: 8 }}>
+              <button style={{ flex: 1, padding: '8px', background: 'var(--accent-success)', border: 'none', borderRadius: 6, color: '#000', fontWeight: 700, fontSize: 11, cursor: 'pointer' }}>
+                ✓ FOR
+              </button>
+              <button style={{ flex: 1, padding: '8px', background: 'var(--accent-danger)', border: 'none', borderRadius: 6, color: '#fff', fontWeight: 700, fontSize: 11, cursor: 'pointer' }}>
+                ✕ AGAINST
+              </button>
+            </div>
+          </Card>
+        ))}
+      </div>
+    );
+
+    const WhalePanel = ({ whales }) => (
+      <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
+        {whales.map((tx, i) => (
+          <Card key={tx.id} style={{ padding: 14, animation: `slide-in 0.3s ease ${i * 0.03}s both` }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 8 }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+                <div style={{
+                  width: 32, height: 32, borderRadius: 8,
+                  background: tx.symbol === 'BTC' ? '#f7931a' : tx.symbol === 'ETH' ? '#627eea' : '#26a17b',
+                  display: 'flex', alignItems: 'center', justifyContent: 'center',
+                  fontSize: 14, fontWeight: 700
+                }}>
+                  {tx.symbol === 'BTC' ? '₿' : tx.symbol === 'ETH' ? 'Ξ' : '$'}
+                </div>
+                <div>
+                  <div style={{ fontSize: 13, fontWeight: 600 }}>{tx.symbol}</div>
+                  <div className="mono" style={{ fontSize: 10, color: 'var(--text-muted)' }}>
+                    {Math.floor((Date.now() - tx.timestamp) / 60000)}m ago
+                  </div>
+                </div>
+              </div>
+              <div className="mono" style={{ fontSize: 14, fontWeight: 700, color: 'var(--accent-primary)' }}>
+                ${formatNumber(tx.amount)}
+              </div>
+            </div>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 8, fontSize: 11, color: 'var(--text-secondary)' }}>
+              <span style={{ padding: '2px 6px', background: 'rgba(255,255,255,0.05)', borderRadius: 4 }}>{tx.from}</span>
+              <span>→</span>
+              <span style={{ padding: '2px 6px', background: 'rgba(255,255,255,0.05)', borderRadius: 4 }}>{tx.to}</span>
+            </div>
+          </Card>
+        ))}
+      </div>
+    );
+
+    const YieldPanel = ({ yields }) => (
+      <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
+        {yields.slice(0, 10).map((pool, i) => (
+          <Card key={pool.pool} style={{ padding: 14, animation: `slide-in 0.3s ease ${i * 0.04}s both` }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 8 }}>
+              <div>
+                <div style={{ fontSize: 13, fontWeight: 600 }}>{pool.symbol}</div>
+                <div className="mono" style={{ fontSize: 10, color: 'var(--text-muted)' }}>{pool.project} • {pool.chain}</div>
+              </div>
+              <div style={{ textAlign: 'right' }}>
+                <div style={{ fontSize: 18, fontWeight: 700, color: pool.apy > 20 ? 'var(--accent-success)' : 'var(--accent-warning)' }}>
+                  {pool.apy?.toFixed(1)}%
+                </div>
+                <div className="mono" style={{ fontSize: 9, color: 'var(--text-muted)' }}>APY</div>
+              </div>
+            </div>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+              <span className="mono" style={{ fontSize: 11, color: 'var(--text-secondary)' }}>TVL: ${formatNumber(pool.tvlUsd)}</span>
+              <button style={{
+                padding: '5px 12px', background: 'var(--gradient-primary)',
+                border: 'none', borderRadius: 6, color: '#000', fontSize: 10, fontWeight: 700, cursor: 'pointer'
+              }}>DEPOSIT</button>
+            </div>
+          </Card>
+        ))}
+      </div>
+    );
+
+    const AirdropPanel = ({ airdrops }) => (
+      <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
+        {(airdrops || AIRDROPS).map((drop, i) => (
+          <Card key={drop.name} style={{ padding: 14, animation: `slide-in 0.3s ease ${i * 0.05}s both` }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 10 }}>
+              <div>
+                <div style={{ fontSize: 14, fontWeight: 700 }}>{drop.name}</div>
+                <div className="mono" style={{ fontSize: 11, color: 'var(--accent-tertiary)' }}>${drop.ticker}</div>
+              </div>
+              <div style={{ textAlign: 'right' }}>
+                <div style={{
+                  padding: '3px 8px', borderRadius: 4, fontSize: 10, fontWeight: 600,
+                  background: drop.status === 'Confirmed' ? 'var(--accent-success)' : drop.status === 'Likely' ? 'var(--accent-warning)' : 'var(--accent-secondary)',
+                  color: '#000'
+                }}>{drop.status.toUpperCase()}</div>
+                <div className="mono" style={{ fontSize: 9, color: 'var(--text-muted)', marginTop: 4 }}>Est: {drop.est}</div>
+              </div>
+            </div>
+            <div style={{ marginBottom: 6 }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 4 }}>
+                <span style={{ fontSize: 10, color: 'var(--text-secondary)' }}>Eligibility Score</span>
+                <span className="mono" style={{ fontSize: 10, color: 'var(--accent-primary)' }}>{drop.score}%</span>
+              </div>
+              <Progress value={drop.score} max={100} color="var(--accent-tertiary)" h={4} />
+            </div>
+            {drop.criteria && (
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: 4, marginTop: 8 }}>
+                {drop.criteria.map((c, j) => (
+                  <span key={j} style={{ padding: '2px 6px', background: 'rgba(255,255,255,0.05)', borderRadius: 4, fontSize: 9, color: 'var(--text-secondary)' }}>{c}</span>
+                ))}
+              </div>
+            )}
+          </Card>
+        ))}
+      </div>
+    );
+
+    const PortfolioPanel = ({ wallet }) => {
+      const [assets, setAssets] = useState([
+        { symbol: 'ETH', balance: 2.45, value: 8500, change: 2.3 },
+        { symbol: 'BTC', balance: 0.15, value: 14250, change: 1.8 },
+        { symbol: 'CRV', balance: 15420, value: 8231, change: -3.2 },
+        { symbol: 'CVX', balance: 8500, value: 12750, change: 4.1 },
+        { symbol: 'ARB', balance: 12500, value: 8750, change: -1.5 }
+      ]);
+
+      const total = assets.reduce((s, a) => s + a.value, 0);
+
+      return (
+        <div>
+          <Card glow style={{ padding: 24, marginBottom: 20, textAlign: 'center' }}>
+            <div style={{ fontSize: 12, color: 'var(--text-muted)', marginBottom: 8 }}>TOTAL VALUE</div>
+            <div className="mono" style={{ fontSize: 36, fontWeight: 700, color: 'var(--accent-primary)' }}>
+              ${total.toLocaleString()}
+            </div>
+            <div style={{ fontSize: 13, color: 'var(--accent-success)', marginTop: 8 }}>+$1,234.56 (2.4%)</div>
+          </Card>
+
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
+            {assets.map((asset, i) => (
+              <Card key={asset.symbol} style={{ padding: 14, animation: `slide-in 0.3s ease ${i * 0.05}s both` }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+                    <div style={{
+                      width: 36, height: 36, borderRadius: 10,
+                      background: 'linear-gradient(135deg, var(--accent-primary), var(--accent-secondary))',
+                      display: 'flex', alignItems: 'center', justifyContent: 'center',
+                      fontWeight: 700, fontSize: 12
+                    }}>{asset.symbol.slice(0, 2)}</div>
+                    <div>
+                      <div style={{ fontSize: 14, fontWeight: 600 }}>{asset.symbol}</div>
+                      <div className="mono" style={{ fontSize: 11, color: 'var(--text-muted)' }}>{asset.balance.toLocaleString()}</div>
+                    </div>
+                  </div>
+                  <div style={{ textAlign: 'right' }}>
+                    <div className="mono" style={{ fontSize: 14, fontWeight: 600 }}>${asset.value.toLocaleString()}</div>
+                    <div style={{ fontSize: 11, color: asset.change >= 0 ? 'var(--accent-success)' : 'var(--accent-danger)' }}>
+                      {asset.change >= 0 ? '+' : ''}{asset.change}%
+                    </div>
+                  </div>
+                </div>
+              </Card>
+            ))}
+          </div>
+        </div>
+      );
+    };
+
+    // ══════════════════════════════════════════════════════════════════
+    // MAIN APP
+    // ══════════════════════════════════════════════════════════════════
+
+    const EchoForgeCommandCenter = () => {
+      const [wallet, setWallet] = useState(null);
+      const [activeBots, setActiveBots] = useState([]);
+      const [selectedBot, setSelectedBot] = useState('governance');
+      const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
+      const [loading, setLoading] = useState(true);
+      
+      // Data states
+      const [proposals, setProposals] = useState([]);
+      const [yields, setYields] = useState([]);
+      const [whales, setWhales] = useState([]);
+      const [airdrops, setAirdrops] = useState(AIRDROPS);
+      const [gas, setGas] = useState({});
+      const [prices, setPrices] = useState({});
+
+      useEffect(() => {
+        loadData();
+        const interval = setInterval(loadData, 60000);
+        return () => clearInterval(interval);
+      }, []);
+
+      const loadData = async () => {
+        setLoading(true);
+        const [proposalData, yieldData, whaleData, gasData, priceData, airdropData] = await Promise.all([
+          API.getProposals(),
+          API.getYields(),
+          API.getWhaleTransactions(),
+          API.getGas(),
+          API.getPrices(),
+          API.getAirdrops()
+        ]);
+        setProposals(proposalData);
+        setYields(yieldData);
+        setWhales(whaleData);
+        setGas(gasData);
+        setPrices(priceData);
+        setAirdrops(airdropData);
+        setLoading(false);
+      };
+
+      const connectWallet = async () => {
+        if (typeof window.ethereum !== 'undefined') {
+          try {
+            const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
+            const address = accounts[0];
+            const balance = await API.getBalance(address);
+            setWallet({ address, shortAddress: shortAddr(address), balance });
+            window.ethereum.on('accountsChanged', (accs) => accs.length ? connectWallet() : setWallet(null));
+            return;
+          } catch (e) { console.error(e); }
+        }
+        
+        const addr = prompt('Enter ETH address for read-only mode:');
+        if (addr?.startsWith('0x') && addr.length === 42) {
+          const balance = await API.getBalance(addr);
+          setWallet({ address: addr, shortAddress: shortAddr(addr), balance, readOnly: true });
+        }
+      };
+
+      const toggleBot = (id) => setActiveBots(p => p.includes(id) ? p.filter(b => b !== id) : [...p, id]);
+
+      const currentBot = BOTS.find(b => b.id === selectedBot);
+
+      const renderPanel = () => {
+        switch (selectedBot) {
+          case 'governance': return <GovernancePanel proposals={proposals} />;
+          case 'whale': return <WhalePanel whales={whales} />;
+          case 'vechain-whale': 
+            const vechainWhales = whales.map(w => ({...w, symbol: 'VET', from: w.from.includes('Binance') ? 'VeThor Wallet' : w.from, to: w.to.includes('Unknown') ? 'VeChain Foundation' : w.to}));
+            return <WhalePanel whales={vechainWhales} />;
+          case 'yield': return <YieldPanel yields={yields} />;
+          case 'airdrop': return <AirdropPanel airdrops={airdrops} />;
+          case 'arbitrage':
+          case 'mev':
+          case 'liquidation':
+          case 'sniper':
+          case 'copy':
+          case 'robinhood':
+            return (
+              <Card glow style={{ padding: 40, textAlign: 'center' }}>
+                <div style={{ fontSize: 48, marginBottom: 16 }}>{currentBot?.icon}</div>
+                <h3 style={{ fontSize: 20, marginBottom: 8 }}>{currentBot?.name}</h3>
+                <p style={{ color: 'var(--text-secondary)', marginBottom: 24 }}>{currentBot?.description}</p>
+                <button style={{
+                  padding: '12px 32px', background: 'var(--gradient-primary)',
+                  border: 'none', borderRadius: 10, color: '#000', fontWeight: 700, fontSize: 14, cursor: 'pointer'
+                }}>
+                  Configure & Deploy
+                </button>
+              </Card>
+            );
+          case 'mempool':
+          case 'recovery':
+            return (
+              <Card glow style={{ padding: 40, textAlign: 'center' }}>
+                <div style={{ fontSize: 48, marginBottom: 16 }}>{currentBot?.icon}</div>
+                <h3 style={{ fontSize: 20, marginBottom: 8 }}>{currentBot?.name}</h3>
+                <p style={{ color: 'var(--text-secondary)', marginBottom: 16 }}>{currentBot?.description}</p>
+                <p className="mono" style={{ fontSize: 12, color: 'var(--accent-warning)' }}>⚠️ Security tool - requires local execution</p>
+              </Card>
+            );
+          default: return <PortfolioPanel wallet={wallet} />;
+        }
+      };
+
+      return (
+        <div style={{ display: 'flex', minHeight: '100vh' }}>
+          {/* Sidebar */}
+          <div style={{
+            width: sidebarCollapsed ? 72 : 280,
+            background: 'var(--bg-deep)',
+            borderRight: '1px solid var(--border-subtle)',
+            display: 'flex',
+            flexDirection: 'column',
+            transition: 'width 0.3s ease'
+          }}>
+            {/* Logo */}
+            <div style={{
+              padding: sidebarCollapsed ? '20px 12px' : '20px 20px',
+              borderBottom: '1px solid var(--border-subtle)',
+              display: 'flex',
+              alignItems: 'center',
+              gap: 12,
+              cursor: 'pointer'
+            }} onClick={() => setSidebarCollapsed(!sidebarCollapsed)}>
+              <div style={{
+                width: 40, height: 40, borderRadius: 10,
+                background: 'var(--gradient-primary)',
+                display: 'flex', alignItems: 'center', justifyContent: 'center',
+                fontSize: 20, animation: 'glow-pulse 3s infinite'
+              }}>⚡</div>
+              {!sidebarCollapsed && (
+                <div>
+                  <h1 style={{ fontSize: 16, fontWeight: 700, letterSpacing: '-0.02em' }}>ECHOFORGE</h1>
+                  <p className="mono" style={{ fontSize: 9, color: 'var(--text-muted)' }}>COMMAND CENTER</p>
+                </div>
+              )}
+            </div>
+
+            {/* Wallet */}
+            {!sidebarCollapsed && (
+              <div style={{ padding: 16, borderBottom: '1px solid var(--border-subtle)' }}>
+                {wallet ? (
+                  <Card glow style={{ padding: 12 }}>
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                      <div>
+                        <div className="mono" style={{ fontSize: 13, fontWeight: 600 }}>{wallet.shortAddress}</div>
+                        <div className="mono" style={{ fontSize: 11, color: 'var(--accent-primary)' }}>{wallet.balance} ETH</div>
+                      </div>
+                      <StatusDot status="active" size={10} />
+                    </div>
+                    {wallet.readOnly && <div style={{ marginTop: 8, fontSize: 9, color: 'var(--accent-warning)', textAlign: 'center' }}>READ-ONLY</div>}
+                  </Card>
+                ) : (
+                  <button onClick={connectWallet} style={{
+                    width: '100%', padding: 12, background: 'var(--gradient-primary)',
+                    border: 'none', borderRadius: 10, color: '#000', fontWeight: 700, fontSize: 13, cursor: 'pointer'
+                  }}>Connect Wallet</button>
+                )}
+              </div>
+            )}
+
+            {/* Bot List */}
+            <div style={{ flex: 1, overflow: 'auto', padding: sidebarCollapsed ? '12px 8px' : '16px 12px' }}>
+              {!sidebarCollapsed && (
+                <div style={{ fontSize: 9, color: 'var(--text-muted)', marginBottom: 12, fontWeight: 600, letterSpacing: '0.15em', paddingLeft: 8 }}>
+                  BOTS ({activeBots.length} ACTIVE)
+                </div>
+              )}
+              <div style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
+                {BOTS.map(bot => (
+                  <div
+                    key={bot.id}
+                    onClick={() => setSelectedBot(bot.id)}
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: sidebarCollapsed ? 0 : 10,
+                      padding: sidebarCollapsed ? '10px 8px' : '10px 12px',
+                      background: selectedBot === bot.id ? `${bot.color}15` : 'transparent',
+                      border: `1px solid ${selectedBot === bot.id ? bot.color + '40' : 'transparent'}`,
+                      borderRadius: 8,
+                      cursor: 'pointer',
+                      transition: 'all 0.2s',
+                      justifyContent: sidebarCollapsed ? 'center' : 'flex-start'
+                    }}
+                  >
+                    <span style={{ fontSize: sidebarCollapsed ? 20 : 16 }}>{bot.icon}</span>
+                    {!sidebarCollapsed && (
+                      <>
+                        <div style={{ flex: 1, minWidth: 0 }}>
+                          <div style={{ fontSize: 12, fontWeight: 500, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{bot.name}</div>
+                          <div className="mono" style={{ fontSize: 9, color: bot.color }}>{bot.category}</div>
+                        </div>
+                        <div
+                          onClick={(e) => { e.stopPropagation(); toggleBot(bot.id); }}
+                          style={{
+                            width: 28, height: 16, borderRadius: 8,
+                            background: activeBots.includes(bot.id) ? bot.color : 'var(--bg-void)',
+                            cursor: 'pointer', position: 'relative'
+                          }}
+                        >
+                          <div style={{
+                            width: 12, height: 12, borderRadius: '50%', background: '#fff',
+                            position: 'absolute', top: 2, left: activeBots.includes(bot.id) ? 14 : 2, transition: 'left 0.2s'
+                          }} />
+                        </div>
+                      </>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Footer Stats */}
+            {!sidebarCollapsed && (
+              <div style={{ padding: 16, borderTop: '1px solid var(--border-subtle)' }}>
+                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 8 }}>
+                  <div style={{ background: 'var(--bg-surface)', borderRadius: 8, padding: 10, textAlign: 'center' }}>
+                    <div className="mono" style={{ fontSize: 14, fontWeight: 700, color: 'var(--accent-primary)' }}>
+                      ${prices.ethereum?.usd?.toLocaleString() || '---'}
+                    </div>
+                    <div style={{ fontSize: 9, color: 'var(--text-muted)' }}>ETH</div>
+                  </div>
+                  <div style={{ background: 'var(--bg-surface)', borderRadius: 8, padding: 10, textAlign: 'center' }}>
+                    <div className="mono" style={{ fontSize: 14, fontWeight: 700, color: 'var(--accent-warning)' }}>{gas.ProposeGasPrice || '--'}</div>
+                    <div style={{ fontSize: 9, color: 'var(--text-muted)' }}>GWEI</div>
+                  </div>
+                </div>
+              </div>
+            )}
+          </div>
+
+          {/* Main Content */}
+          <div style={{ flex: 1, display: 'flex', flexDirection: 'column', background: 'var(--bg-void)' }}>
+            {/* Header */}
+            <div style={{
+              padding: '16px 24px',
+              borderBottom: '1px solid var(--border-subtle)',
+              display: 'flex',
+              justifyContent: 'space-between',
+              alignItems: 'center',
+              background: 'var(--bg-deep)'
+            }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
+                <span style={{ fontSize: 32 }}>{currentBot?.icon}</span>
+                <div>
+                  <h2 style={{ fontSize: 20, fontWeight: 700 }}>{currentBot?.name}</h2>
+                  <p style={{ fontSize: 12, color: 'var(--text-secondary)' }}>{currentBot?.description}</p>
+                </div>
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+                <StatusDot status={activeBots.includes(selectedBot) ? 'active' : 'warning'} size={10} />
+                <span className="mono" style={{ fontSize: 12, color: activeBots.includes(selectedBot) ? 'var(--accent-success)' : 'var(--text-muted)' }}>
+                  {activeBots.includes(selectedBot) ? 'RUNNING' : 'IDLE'}
+                </span>
+                <button
+                  onClick={() => toggleBot(selectedBot)}
+                  style={{
+                    padding: '8px 16px',
+                    background: activeBots.includes(selectedBot) ? 'var(--accent-danger)' : 'var(--gradient-primary)',
+                    border: 'none', borderRadius: 8, color: activeBots.includes(selectedBot) ? '#fff' : '#000',
+                    fontWeight: 700, fontSize: 12, cursor: 'pointer'
+                  }}
+                >
+                  {activeBots.includes(selectedBot) ? '⏹ STOP' : '▶ START'}
+                </button>
+              </div>
+            </div>
+
+            {/* Content */}
+            <div style={{ flex: 1, overflow: 'auto', padding: 24 }}>
+              {loading ? (
+                <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100%' }}>
+                  <div style={{
+                    width: 40, height: 40, border: '3px solid var(--border-subtle)',
+                    borderTopColor: 'var(--accent-primary)', borderRadius: '50%', animation: 'rotate 1s linear infinite'
+                  }} />
+                  <p className="mono" style={{ marginTop: 16, fontSize: 12, color: 'var(--text-muted)' }}>LOADING DATA...</p>
+                </div>
+              ) : renderPanel()}
+            </div>
+
+            {/* Footer */}
+            <div style={{
+              padding: '12px 24px',
+              borderTop: '1px solid var(--border-subtle)',
+              background: 'rgba(255, 170, 0, 0.05)',
+              fontSize: 11,
+              color: 'var(--accent-warning)',
+              display: 'flex',
+              alignItems: 'center',
+              gap: 8
+            }}>
+              <span>⚠️</span>
+              <span><strong>EchoForge Studios</strong> — Personal automation suite. Not financial advice. All actions require explicit approval.</span>
+            </div>
+          </div>
+        </div>
+      );
+    };
+
+    ReactDOM.render(<EchoForgeCommandCenter />, document.getElementById('root'));
+  </script>
+</body>
+</html>
