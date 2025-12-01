@@ -358,6 +358,14 @@
         color: '#00ff00',
         description: 'Automated stock trading with moving average signals',
         category: 'Trading'
+      },
+      { 
+        id: 'issue-whisperer', 
+        name: 'Issue Whisperer', 
+        icon: '👻', 
+        color: '#ff66aa',
+        description: 'GitHub issue/PR scanner with vuln alerts & bounty whispers; Discord pings on exploits',
+        category: 'Security'
       }
     ];
 
@@ -656,6 +664,37 @@
                 <p style={{ color: 'var(--text-secondary)', marginBottom: 16 }}>{currentBot?.description}</p>
                 <p className="mono" style={{ fontSize: 12, color: 'var(--accent-warning)' }}>⚠️ Security tool - requires local execution</p>
               </Card>
+            );
+          case 'issue-whisperer':
+            const issues = [
+              { id: 123, title: 'Hayabusa RPC leak—$200 bounty', assignee: null, labels: ['bug', 'high'], created: '2d ago' },
+              { id: 124, title: 'Arkham ETH proxy timeout on VET cross', assignee: 'you', labels: ['enhancement'], created: '5h ago' },
+              { id: 125, title: 'MEV sandwich vuln in Jito bridge', assignee: null, labels: ['security'], created: '1h ago' },
+              { id: 126, title: 'Double-spend vector in mempool sniffer', assignee: null, labels: ['critical', 'bounty'], created: '30m ago' },
+              { id: 127, title: 'Gas optimization for TriMEV sandwich', assignee: 'ivan09069', labels: ['optimization'], created: '1d ago' }
+            ];
+            return (
+              <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
+                {issues.map((issue, i) => (
+                  <Card key={issue.id} style={{ padding: 14, animation: `slide-in 0.3s ease ${i * 0.05}s both` }}>
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 8 }}>
+                      <div style={{ flex: 1 }}>
+                        <div style={{ fontSize: 13, fontWeight: 600, marginBottom: 4 }}>{issue.title}</div>
+                        <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', fontSize: 10, color: 'var(--text-secondary)' }}>
+                          {issue.labels.map(label => (
+                            <span key={label} style={{ padding: '2px 6px', background: label === 'critical' ? 'var(--accent-danger)' : label === 'bounty' ? 'var(--accent-success)' : 'rgba(255,255,255,0.05)', borderRadius: 4, color: label === 'critical' || label === 'bounty' ? '#000' : 'inherit' }}>{label}</span>
+                          ))}
+                          <span>#{issue.id} • {issue.created}</span>
+                        </div>
+                      </div>
+                      <StatusDot status={issue.assignee ? 'active' : 'warning'} size={8} />
+                    </div>
+                    <button style={{
+                      width: '100%', padding: '6px', background: 'var(--accent-danger)', border: 'none', borderRadius: 6, color: '#fff', fontSize: 11, fontWeight: 600, cursor: 'pointer'
+                    }}>👻 WHISPER ALERT</button>
+                  </Card>
+                ))}
+              </div>
             );
           default: return <PortfolioPanel wallet={wallet} />;
         }
