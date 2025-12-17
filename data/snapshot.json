@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-12-17T23:43:15.942Z",
+  "generatedAt": "2025-12-17T23:56:04.999Z",
   "repo": "Ivan09069/echoforge",
   "issues": [],
   "proposals": [
@@ -139,8 +139,8 @@
       "id": "0x5d516866f2fb27100246efcea8775249fa2b4fa98217a2fce1977e3f1635f89d",
       "title": "Proposal 179: Buy-out Deefins and Prospector’s stake in ReidarDAO",
       "end": 1766085646,
-      "votes": 2,
-      "scores_total": 15,
+      "votes": 4,
+      "scores_total": 208,
       "space": {
         "id": "reidar.eth",
         "name": "Reidar",
@@ -152,7 +152,7 @@
         "Abstain"
       ],
       "scores": [
-        15,
+        208,
         0,
         0
       ]
@@ -181,8 +181,8 @@
       "id": "0x14defdb68b0e20bbb11edc79a05aacde74ac7cb9d11215703cd547d757697955",
       "title": "# UIP-13: STAR COMPENSATION",
       "end": 1766433600,
-      "votes": 20,
-      "scores_total": 8935304.46811533,
+      "votes": 23,
+      "scores_total": 15101151.142285362,
       "space": {
         "id": "usualmoney.eth",
         "name": "Usual",
@@ -194,7 +194,7 @@
         "Abstain"
       ],
       "scores": [
-        8935304.46811533,
+        15101151.142285362,
         0,
         0
       ]
@@ -643165,16 +643165,16 @@
   ],
   "prices": {
     "bitcoin": {
-      "usd": 86044,
-      "usd_24h_change": -1.996604492563767
+      "usd": 86066,
+      "usd_24h_change": -1.916503792322544
     },
     "ethereum": {
-      "usd": 2827.6,
-      "usd_24h_change": -4.356833735954696
+      "usd": 2827.64,
+      "usd_24h_change": -4.609000991392388
     },
     "solana": {
-      "usd": 123.13,
-      "usd_24h_change": -4.179139626332205
+      "usd": 123.08,
+      "usd_24h_change": -4.231711210785288
     }
   }
 }
