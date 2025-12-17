@@ -1,8 +1,108 @@
 {
-  "generatedAt": "2025-12-17T04:37:10.215Z",
+  "generatedAt": "2025-12-17T04:59:50.699Z",
   "repo": "Ivan09069/echoforge",
   "issues": [],
   "proposals": [
+    {
+      "id": "0xcc722db3b9a8d235e3368623b34355bfb998eb717bbca3a840b51ecab4f35775",
+      "title": "[sdCRV] Add a gauge for the following pool: ynRWAx/ynUSDx",
+      "end": 1766198603,
+      "votes": 0,
+      "scores_total": 0,
+      "space": {
+        "id": "concentratordao.eth",
+        "name": "Concentrator",
+        "avatar": "ipfs://bafkreiflcmuolchbwzefrbxuhxq2hycsaa3j3474s3xc2643wrlllpnflq"
+      },
+      "choices": [
+        "Yes",
+        "No"
+      ],
+      "scores": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "0x96bba063f49f3fb7d8d19a9e91d39abacfba0b15653cfa0b1ed0957fb11b3d01",
+      "title": "Add a gauge for the following pool: ynRWAx/ynUSDx",
+      "end": 1766205803,
+      "votes": 0,
+      "scores_total": 0,
+      "space": {
+        "id": "sdcrv-gov.eth",
+        "name": "sdCRV-Governance",
+        "avatar": "ipfs://bafybeic5brkwzptij6gkcsgmeg33bde43evbhajtu3iyaycswyy4xync2u"
+      },
+      "choices": [
+        "Yes",
+        "No"
+      ],
+      "scores": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "0x6295cfcc97454c14466bb03b127e88fbf1f012a7227b3e66a30f4e319db8e8e3",
+      "title": "[Curve] Ownership DAO Vote ID: 1292",
+      "end": 1766198634,
+      "votes": 0,
+      "scores_total": 0,
+      "space": {
+        "id": "aladdindao.eth",
+        "name": "AladdinDAO",
+        "avatar": "https://avatars.githubusercontent.com/u/78200839?s=200&v=4"
+      },
+      "choices": [
+        "yes",
+        "no"
+      ],
+      "scores": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "0x8a527be2e81f9682aa8b11b5890dc3f82774f4bbbf2869fd793cd7d594dcf58b",
+      "title": "[Curve] Ownership DAO Vote ID: 1292",
+      "end": 1766202234,
+      "votes": 0,
+      "scores_total": 0,
+      "space": {
+        "id": "veclev.eth",
+        "name": "CLever",
+        "avatar": "ipfs://bafkreidyi6dbbidfrcskangkpzzsdlpu2izqoyyg5wuf2hijlkvuti2qdm"
+      },
+      "choices": [
+        "yes",
+        "no"
+      ],
+      "scores": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "0x7169ab8010e733ef07881ead418ad188f324697bed81edef164cb3a01e6c64f1",
+      "title": "[Curve] Ownership DAO Vote ID: 1292",
+      "end": 1766205834,
+      "votes": 0,
+      "scores_total": 0,
+      "space": {
+        "id": "cvx.eth",
+        "name": "Convex Finance",
+        "avatar": "ipfs://QmXB2Ce726sNzJbrJPsQQz1BZRQvfDntPS18prAi9JmrgG"
+      },
+      "choices": [
+        "yes",
+        "no"
+      ],
+      "scores": [
+        0,
+        0
+      ]
+    },
     {
       "id": "0xa1f6431f6b42cf9b894289355d9f0c693e40ba266b2ea1ab0df8d3ed9373958d",
       "title": "2025-12 GMC Membership Selection (for RPIP-76)",
@@ -181,8 +281,8 @@
       "id": "0xc6b9b1b2135a1f697b416fc77b2e58e12838486126cb4ba82c748a1f45f6d320",
       "title": "Optional Vesting for 50% Bonus Allocation (Amendment to Proposal #a9583)",
       "end": 1766540460,
-      "votes": 70,
-      "scores_total": 34059180,
+      "votes": 78,
+      "scores_total": 34797341,
       "space": {
         "id": "lightchain.ai",
         "name": "LightchainAI",
@@ -193,7 +293,7 @@
         "B: No Vesting"
       ],
       "scores": [
-        30648437,
+        31386598,
         3410743
       ]
     },
@@ -201,8 +301,8 @@
       "id": "0xcbfa3b7a11b292c984dfa28a46d15366222c4df0647ab5e244cedef457d4bce0",
       "title": "Disposition of Unclaimed Bonus Tokens (Amendment to Proposal #a9583)",
       "end": 1766540340,
-      "votes": 70,
-      "scores_total": 33094549,
+      "votes": 79,
+      "scores_total": 34806114,
       "space": {
         "id": "lightchain.ai",
         "name": "LightchainAI",
@@ -214,8 +314,8 @@
         "C: Treasury"
       ],
       "scores": [
-        20040985,
-        12973602,
+        21648693,
+        13077459,
         79962
       ]
     },
@@ -223,8 +323,8 @@
       "id": "0xb3f0534bba308d073cd8020e0b435b04aa384c7fa5d9d437e659fa1e0ca1c410",
       "title": "Bonus Claim Window Amendment to Proposal #a9583",
       "end": 1766540100,
-      "votes": 68,
-      "scores_total": 33425098,
+      "votes": 77,
+      "scores_total": 35749016,
       "space": {
         "id": "lightchain.ai",
         "name": "LightchainAI",
@@ -236,17 +336,17 @@
         "C: No Time Limit"
       ],
       "scores": [
-        29310398,
-        4108048,
-        6652
+        30895340,
+        4183184,
+        670492
       ]
     },
     {
       "id": "0x010f44f8218481c79ebad56d5db49618f61d843bc78cbb89c283906977f3e9ca",
       "title": "Reduce Snapshot Voting Length to 69 Hours",
       "end": 1766280886,
-      "votes": 15,
-      "scores_total": 2217676575.1125493,
+      "votes": 17,
+      "scores_total": 2219204183.1228986,
       "space": {
         "id": "basedpiggy.eth",
         "name": "PiggyDAO",
@@ -258,7 +358,7 @@
         "Abstain"
       ],
       "scores": [
-        2217289099.7381773,
+        2218816707.7485266,
         0,
         387475.374371805
       ]
@@ -320,112 +420,6 @@
       ],
       "scores": [
         110001.02791892902,
-        0
-      ]
-    },
-    {
-      "id": "0x0404aaa1aa52d1e7db0dd314560ebb43446a69f5488528f325276b0a00a9f521",
-      "title": "Proposal: Security & Community Management Update",
-      "end": 1766184876,
-      "votes": 3,
-      "scores_total": 257,
-      "space": {
-        "id": "mnkzvote.eth",
-        "name": "Cryptomonkz",
-        "avatar": "ipfs://bafkreiblw6qtuptnebkbv6oen6ahhrg4tgm6fibr5lijbdgq5ewcjydg24"
-      },
-      "choices": [
-        "For",
-        "Against",
-        "Abstain"
-      ],
-      "scores": [
-        257,
-        0,
-        0
-      ]
-    },
-    {
-      "id": "0x8e027210a25eca5f15156c14e1bbfde56bb6cec1059607076dc563efdc68d4eb",
-      "title": "Update Monkz DAO Multisig Signers",
-      "end": 1766184801,
-      "votes": 2,
-      "scores_total": 240,
-      "space": {
-        "id": "mnkzvote.eth",
-        "name": "Cryptomonkz",
-        "avatar": "ipfs://bafkreiblw6qtuptnebkbv6oen6ahhrg4tgm6fibr5lijbdgq5ewcjydg24"
-      },
-      "choices": [
-        "For",
-        "Against",
-        "Abstain"
-      ],
-      "scores": [
-        240,
-        0,
-        0
-      ]
-    },
-    {
-      "id": "0x7e5aabe879ae119a52478782b54865ee8245cf39d8e367fb42055b0b2c51c3ec",
-      "title": "doing something",
-      "end": 1766182541,
-      "votes": 0,
-      "scores_total": 0,
-      "space": {
-        "id": "ssvgrants.eth",
-        "name": "Spookstesting",
-        "avatar": "ipfs://bafybeid32wydoce27h2tmjlwggsy6iqjxyg4s4nxnpcz74x3mseprj275a"
-      },
-      "choices": [
-        "yes this is something",
-        "Not something"
-      ],
-      "scores": [
-        0,
-        0
-      ]
-    },
-    {
-      "id": "0xae7ad74ed52d60251eac06d42017906a0146977b33776da5013335f8ad476679",
-      "title": "Prop 5: Migrate $SPACE token & liquidity to Clanker",
-      "end": 1766346215,
-      "votes": 4,
-      "scores_total": 4622184.992525041,
-      "space": {
-        "id": "dao.nounspace.eth",
-        "name": "nounspace",
-        "avatar": "ipfs://bafkreidyrzjih4ghrkjixacr4zlwcsgh6zav2npg2wvhhugxyoouqb2nwe"
-      },
-      "choices": [
-        "For - Migrate",
-        "Against - Do not migrate",
-        "Abstain"
-      ],
-      "scores": [
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "id": "0x8d1ba4db777164fbf81642aafb3c6d279b289ff300c45f43da7191bcca5b288b",
-      "title": "YIP-90: yETH Optimistic Recovery Plan",
-      "end": 1766343600,
-      "votes": 0,
-      "scores_total": 0,
-      "space": {
-        "id": "sdyfi.eth",
-        "name": "sdYFI",
-        "avatar": "ipfs://bafybeihg2lillhnx3mwl3itkhl72vycbmndhdgqllia4milg4sqgonh7yy"
-      },
-      "choices": [
-        "For",
-        "Against"
-      ],
-      "scores": [
-        0,
         0
       ]
     }
@@ -644260,16 +644254,16 @@
   ],
   "prices": {
     "bitcoin": {
-      "usd": 86944,
-      "usd_24h_change": 1.5767817550258671
+      "usd": 86783,
+      "usd_24h_change": 1.2351210937891446
     },
     "ethereum": {
-      "usd": 2932.26,
-      "usd_24h_change": 0.6494732823522552
+      "usd": 2932.27,
+      "usd_24h_change": 0.7783898540047027
     },
     "solana": {
-      "usd": 127.64,
-      "usd_24h_change": 1.4599755746356782
+      "usd": 127.8,
+      "usd_24h_change": 1.45926025355636
     }
   }
 }
