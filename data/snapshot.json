@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-12-17T23:25:18.123Z",
+  "generatedAt": "2025-12-17T23:43:15.942Z",
   "repo": "Ivan09069/echoforge",
   "issues": [],
   "proposals": [
@@ -181,8 +181,8 @@
       "id": "0x14defdb68b0e20bbb11edc79a05aacde74ac7cb9d11215703cd547d757697955",
       "title": "# UIP-13: STAR COMPENSATION",
       "end": 1766433600,
-      "votes": 19,
-      "scores_total": 4873379.164814686,
+      "votes": 20,
+      "scores_total": 8935304.46811533,
       "space": {
         "id": "usualmoney.eth",
         "name": "Usual",
@@ -194,7 +194,7 @@
         "Abstain"
       ],
       "scores": [
-        4873379.164814686,
+        8935304.46811533,
         0,
         0
       ]
@@ -257,8 +257,8 @@
       "id": "0x1d954d7c509a48189a8b45fbe73c08839031c43768a0e3f8009b722c856cfe3c",
       "title": "Skynet Trading <> Aavegotchi Market Maker SigProp",
       "end": 1766845680,
-      "votes": 37,
-      "scores_total": 1458316.9460310189,
+      "votes": 39,
+      "scores_total": 1473417.807951492,
       "space": {
         "id": "aavegotchi.eth",
         "name": "Aavegotchi",
@@ -269,7 +269,7 @@
         "No, do not engage."
       ],
       "scores": [
-        1364620.890707996,
+        1379721.7526284691,
         93696.0553230228
       ]
     },
@@ -643165,16 +643165,16 @@
   ],
   "prices": {
     "bitcoin": {
-      "usd": 86029,
-      "usd_24h_change": -1.9647537738940124
+      "usd": 86044,
+      "usd_24h_change": -1.996604492563767
     },
     "ethereum": {
-      "usd": 2823.67,
-      "usd_24h_change": -4.437534120107336
+      "usd": 2827.6,
+      "usd_24h_change": -4.356833735954696
     },
     "solana": {
-      "usd": 122.88,
-      "usd_24h_change": -4.470943292888331
+      "usd": 123.13,
+      "usd_24h_change": -4.179139626332205
     }
   }
 }
