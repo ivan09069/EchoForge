@@ -1,14 +1,36 @@
 {
-  "generatedAt": "2025-12-17T20:31:16.223Z",
+  "generatedAt": "2025-12-17T20:55:50.854Z",
   "repo": "Ivan09069/echoforge",
   "issues": [],
   "proposals": [
     {
+      "id": "0xdfe487cb9fd101a68508c4ad31c7e6020be61f245a49e7ae0a578e71af7441be",
+      "title": "Adjust Timing of $NOON Token Transferability",
+      "end": 1766609160,
+      "votes": 0,
+      "scores_total": 0,
+      "space": {
+        "id": "nooncapital.eth",
+        "name": "Noon",
+        "avatar": "ipfs://bafkreifk5d2xmro7bxhmv5bs3yrgtqww2ti7c7bcortp2xwksocqawcp3u"
+      },
+      "choices": [
+        "For",
+        "Against",
+        "Abstain"
+      ],
+      "scores": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
       "id": "0x5d516866f2fb27100246efcea8775249fa2b4fa98217a2fce1977e3f1635f89d",
       "title": "Proposal 179: Buy-out Deefins and Prospector’s stake in ReidarDAO",
       "end": 1766085646,
-      "votes": 1,
-      "scores_total": 9,
+      "votes": 2,
+      "scores_total": 15,
       "space": {
         "id": "reidar.eth",
         "name": "Reidar",
@@ -20,7 +42,7 @@
         "Abstain"
       ],
       "scores": [
-        9,
+        15,
         0,
         0
       ]
@@ -49,8 +71,8 @@
       "id": "0x14defdb68b0e20bbb11edc79a05aacde74ac7cb9d11215703cd547d757697955",
       "title": "# UIP-13: STAR COMPENSATION",
       "end": 1766433600,
-      "votes": 8,
-      "scores_total": 3936712.032970421,
+      "votes": 13,
+      "scores_total": 4419827.222521455,
       "space": {
         "id": "usualmoney.eth",
         "name": "Usual",
@@ -62,7 +84,7 @@
         "Abstain"
       ],
       "scores": [
-        3936712.032970421,
+        4419827.222521455,
         0,
         0
       ]
@@ -71,8 +93,8 @@
       "id": "0x716f665dc13c582b8ba67dc6a8ab706ae439188f0d277bb5dbd9421bc03d44f5",
       "title": "Gnarly Skate Of the Year",
       "end": 1766631660,
-      "votes": 8,
-      "scores_total": 947.2623242398577,
+      "votes": 9,
+      "scores_total": 957.2623242398577,
       "space": {
         "id": "zimardrp.eth",
         "name": "Gnars Contest ",
@@ -90,13 +112,13 @@
       ],
       "scores": [
         21.75061816666667,
-        127.71528139347905,
-        96.83997231014573,
+        127.71528139347902,
+        96.8399723101457,
         204.52476908507052,
         19.294147613022307,
         353.67661528016026,
-        100.83499314131323,
-        22.625927249999997
+        110.83499314131323,
+        22.62592725
       ]
     },
     {
@@ -413,26 +435,6 @@
       ],
       "scores": [
         0,
-        0
-      ]
-    },
-    {
-      "id": "0x26fda01ddecc92a7ead7eefa396d3862d55104d9009a36b686af278e20ecd9c9",
-      "title": "Add a gauge for the following pool: ETH/fxUSD",
-      "end": 1766221607,
-      "votes": 1,
-      "scores_total": 14681540.079423137,
-      "space": {
-        "id": "sdcrv-gov.eth",
-        "name": "sdCRV-Governance",
-        "avatar": "ipfs://bafybeic5brkwzptij6gkcsgmeg33bde43evbhajtu3iyaycswyy4xync2u"
-      },
-      "choices": [
-        "Yes",
-        "No"
-      ],
-      "scores": [
-        14681540.079423135,
         0
       ]
     }
@@ -643763,16 +643765,16 @@
   ],
   "prices": {
     "bitcoin": {
-      "usd": 86131,
-      "usd_24h_change": -1.650782074953328
+      "usd": 86071,
+      "usd_24h_change": -1.8423106562686955
     },
     "ethereum": {
-      "usd": 2830.42,
-      "usd_24h_change": -4.088550435653902
+      "usd": 2823.51,
+      "usd_24h_change": -4.393455218957995
     },
     "solana": {
-      "usd": 123.41,
-      "usd_24h_change": -3.4632498024168514
+      "usd": 123.09,
+      "usd_24h_change": -3.8830394463808573
     }
   }
 }
