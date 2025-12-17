@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-12-17T07:35:10.795Z",
+  "generatedAt": "2025-12-17T07:53:24.453Z",
   "repo": "Ivan09069/echoforge",
   "issues": [],
   "proposals": [
@@ -369,8 +369,8 @@
       "id": "0xc6b9b1b2135a1f697b416fc77b2e58e12838486126cb4ba82c748a1f45f6d320",
       "title": "Optional Vesting for 50% Bonus Allocation (Amendment to Proposal #a9583)",
       "end": 1766540460,
-      "votes": 119,
-      "scores_total": 55397538,
+      "votes": 123,
+      "scores_total": 55628451,
       "space": {
         "id": "lightchain.ai",
         "name": "LightchainAI",
@@ -381,16 +381,16 @@
         "B: No Vesting"
       ],
       "scores": [
-        51837464,
-        3560074
+        52047402,
+        3581049
       ]
     },
     {
       "id": "0xcbfa3b7a11b292c984dfa28a46d15366222c4df0647ab5e244cedef457d4bce0",
       "title": "Disposition of Unclaimed Bonus Tokens (Amendment to Proposal #a9583)",
       "end": 1766540340,
-      "votes": 116,
-      "scores_total": 55641796,
+      "votes": 121,
+      "scores_total": 56329060,
       "space": {
         "id": "lightchain.ai",
         "name": "LightchainAI",
@@ -402,8 +402,8 @@
         "C: Treasury"
       ],
       "scores": [
-        41061556,
-        14500278,
+        41565582,
+        14683516,
         79962
       ]
     },
@@ -411,8 +411,8 @@
       "id": "0xb3f0534bba308d073cd8020e0b435b04aa384c7fa5d9d437e659fa1e0ca1c410",
       "title": "Bonus Claim Window Amendment to Proposal #a9583",
       "end": 1766540100,
-      "votes": 115,
-      "scores_total": 55730226,
+      "votes": 118,
+      "scores_total": 55961138,
       "space": {
         "id": "lightchain.ai",
         "name": "LightchainAI",
@@ -424,8 +424,8 @@
         "C: No Time Limit"
       ],
       "scores": [
-        48908204,
-        5885920,
+        48955878,
+        6069158,
         936102
       ]
     }
@@ -644130,16 +644130,16 @@
   ],
   "prices": {
     "bitcoin": {
-      "usd": 86833,
-      "usd_24h_change": 0.7313479128297633
+      "usd": 86938,
+      "usd_24h_change": 1.0889651279602626
     },
     "ethereum": {
-      "usd": 2942.19,
-      "usd_24h_change": 0.31571450656120925
+      "usd": 2946.7,
+      "usd_24h_change": 0.7587750327916306
     },
     "solana": {
-      "usd": 128,
-      "usd_24h_change": 1.0711616305827587
+      "usd": 128.17,
+      "usd_24h_change": 1.936474603828274
     }
   }
 }
