@@ -1,8 +1,30 @@
 {
-  "generatedAt": "2025-12-17T21:28:05.918Z",
+  "generatedAt": "2025-12-17T21:45:32.260Z",
   "repo": "Ivan09069/echoforge",
   "issues": [],
   "proposals": [
+    {
+      "id": "0x895aa1934a20040fbf1fa9ec8c6131907ca311784d42c61054ccf0c950284780",
+      "title": "TEST Proposal Beta",
+      "end": 1766266700,
+      "votes": 0,
+      "scores_total": 0,
+      "space": {
+        "id": "tolena.eth",
+        "name": "Tolena Digital Exchange",
+        "avatar": "ipfs://bafkreicl3wzn6ltil4jk2xfvvmonlitvtd6ep5znezy2qlblzgrosul5u4"
+      },
+      "choices": [
+        "For",
+        "Against",
+        "Abstain"
+      ],
+      "scores": [
+        0,
+        0,
+        0
+      ]
+    },
     {
       "id": "0x1780b0132c4e9fd33b1901328d5bfb1aab6a450270266c055ccd1cb1aa5b73e8",
       "title": "SGR-121: sBOLD-06JUN2026 Gauge Request",
@@ -159,8 +181,8 @@
       "id": "0x14defdb68b0e20bbb11edc79a05aacde74ac7cb9d11215703cd547d757697955",
       "title": "# UIP-13: STAR COMPENSATION",
       "end": 1766433600,
-      "votes": 14,
-      "scores_total": 4433485.124725571,
+      "votes": 15,
+      "scores_total": 4443000.4600275075,
       "space": {
         "id": "usualmoney.eth",
         "name": "Usual",
@@ -172,7 +194,7 @@
         "Abstain"
       ],
       "scores": [
-        4433485.124725571,
+        4443000.4600275075,
         0,
         0
       ]
@@ -275,8 +297,8 @@
       "id": "0xbc8eceb6ea8512364963fdf2a1a37cdf3b18505a1d4d6f55fdecceb83af1201d",
       "title": "[FXN] [FIP-29] Add a FXN Gauge to ETH/fxUSD",
       "end": 1766404800,
-      "votes": 3,
-      "scores_total": 23548.951803317064,
+      "votes": 4,
+      "scores_total": 26119.741994033116,
       "space": {
         "id": "veclev.eth",
         "name": "CLever",
@@ -287,7 +309,7 @@
         "Against"
       ],
       "scores": [
-        23548.951803317064,
+        26119.741994033113,
         0
       ]
     },
@@ -419,26 +441,6 @@
         "Against"
       ],
       "scores": []
-    },
-    {
-      "id": "0x927cf35f44496375a8b1c3068faeeafa5bd493062f472aa91a2a2713587a7634",
-      "title": "[FXN] [FIP-29] Add a FXN Gauge to ETH/fxUSD",
-      "end": 1766494800,
-      "votes": 0,
-      "scores_total": 0,
-      "space": {
-        "id": "aladdindao.eth",
-        "name": "AladdinDAO",
-        "avatar": "https://avatars.githubusercontent.com/u/78200839?s=200&v=4"
-      },
-      "choices": [
-        "For",
-        "Against"
-      ],
-      "scores": [
-        0,
-        0
-      ]
     }
   ],
   "yields": [
@@ -643625,16 +643627,16 @@
   ],
   "prices": {
     "bitcoin": {
-      "usd": 85790,
-      "usd_24h_change": -2.1468066015495517
+      "usd": 85821,
+      "usd_24h_change": -2.2852303622547776
     },
     "ethereum": {
-      "usd": 2818.72,
-      "usd_24h_change": -4.308565261498474
+      "usd": 2815.74,
+      "usd_24h_change": -4.724354704771764
     },
     "solana": {
-      "usd": 122.36,
-      "usd_24h_change": -4.554972999820568
+      "usd": 122.31,
+      "usd_24h_change": -4.882184916118922
     }
   }
 }
