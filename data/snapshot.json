@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-12-17T19:31:30.343Z",
+  "generatedAt": "2025-12-17T19:53:03.418Z",
   "repo": "Ivan09069/echoforge",
   "issues": [],
   "proposals": [
@@ -103,8 +103,8 @@
       "id": "0x1d954d7c509a48189a8b45fbe73c08839031c43768a0e3f8009b722c856cfe3c",
       "title": "Skynet Trading <> Aavegotchi Market Maker SigProp",
       "end": 1766845680,
-      "votes": 30,
-      "scores_total": 1255787.2248129009,
+      "votes": 32,
+      "scores_total": 1275312.1718170932,
       "space": {
         "id": "aavegotchi.eth",
         "name": "Aavegotchi",
@@ -115,7 +115,7 @@
         "No, do not engage."
       ],
       "scores": [
-        1168786.0245798577,
+        1188310.9715840498,
         87001.20023304348
       ]
     },
@@ -644020,16 +644020,16 @@
   ],
   "prices": {
     "bitcoin": {
-      "usd": 85723,
-      "usd_24h_change": -1.8659428085201313
+      "usd": 85945,
+      "usd_24h_change": -1.920579329247538
     },
     "ethereum": {
-      "usd": 2806.71,
-      "usd_24h_change": -4.262086825070743
+      "usd": 2816.82,
+      "usd_24h_change": -4.496575441701422
     },
     "solana": {
-      "usd": 122.13,
-      "usd_24h_change": -3.8418664348928724
+      "usd": 121.98,
+      "usd_24h_change": -4.500041173323909
     }
   }
 }
