@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2025-12-17T15:34:41.872Z",
+  "generatedAt": "2025-12-17T15:58:32.591Z",
   "repo": "Ivan09069/echoforge",
   "issues": [],
   "proposals": [
     {
-      "id": "0xab44fc9430124fc34f549650fd6bf2754f679134e0684beb0e63c369f71d3f59",
-      "title": "Gnarly Skate of the Year",
+      "id": "0x716f665dc13c582b8ba67dc6a8ab706ae439188f0d277bb5dbd9421bc03d44f5",
+      "title": "Gnarly Skate Of the Year",
       "end": 1766631660,
-      "votes": 1,
-      "scores_total": 21.007418,
+      "votes": 2,
+      "scores_total": 52.007418,
       "space": {
         "id": "zimardrp.eth",
         "name": "Gnars Contest ",
@@ -25,14 +25,14 @@
         "JahKay"
       ],
       "scores": [
-        0,
-        21.007418,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
+        1.7506181666666667,
+        4.376545416666668,
+        3.5012363333333334,
+        1.7506181666666667,
+        0.8753090833333333,
+        2.6259272500000006,
+        34.50123633333334,
+        2.6259272500000006
       ]
     },
     {
@@ -61,8 +61,8 @@
       "id": "0x1d954d7c509a48189a8b45fbe73c08839031c43768a0e3f8009b722c856cfe3c",
       "title": "Skynet Trading <> Aavegotchi Market Maker SigProp",
       "end": 1766845680,
-      "votes": 9,
-      "scores_total": 529019.1094692779,
+      "votes": 11,
+      "scores_total": 572773.1094692779,
       "space": {
         "id": "aavegotchi.eth",
         "name": "Aavegotchi",
@@ -73,8 +73,8 @@
         "No, do not engage."
       ],
       "scores": [
-        478828.3263651304,
-        50190.78310414756
+        522582.3263651303,
+        50190.78310414755
       ]
     },
     {
@@ -121,8 +121,8 @@
       "id": "0x23512b2cd66933d372704b04981be8abc424cd2d248a615b0332d1bd5f244820",
       "title": "[FXN] [FIP-29] Add a FXN Gauge to ETH/fxUSD",
       "end": 1766408400,
-      "votes": 1,
-      "scores_total": 5751042.534093652,
+      "votes": 2,
+      "scores_total": 5756442.554685326,
       "space": {
         "id": "cvx.eth",
         "name": "Convex Finance",
@@ -133,7 +133,7 @@
         "Against"
       ],
       "scores": [
-        5751042.534093652,
+        5756442.554685326,
         0
       ]
     },
@@ -416,8 +416,8 @@
       "id": "0x8d81a7107fa6fd55a03fb02ea6531289e8b094ea1650aa6569f87c3317c20c8a",
       "title": "[Curve] Ownership DAO Vote ID: 1293",
       "end": 1766221639,
-      "votes": 2,
-      "scores_total": 5781798.093577276,
+      "votes": 3,
+      "scores_total": 5787198.11416895,
       "space": {
         "id": "cvx.eth",
         "name": "Convex Finance",
@@ -428,7 +428,7 @@
         "no"
       ],
       "scores": [
-        5781798.093577276,
+        5787198.11416895,
         0
       ]
     }
@@ -643415,16 +643415,16 @@
   ],
   "prices": {
     "bitcoin": {
-      "usd": 89913,
-      "usd_24h_change": 3.0224999545234876
+      "usd": 87549,
+      "usd_24h_change": -0.2812888129352162
     },
     "ethereum": {
-      "usd": 3009.92,
-      "usd_24h_change": 2.545885133121748
+      "usd": 2911.66,
+      "usd_24h_change": -1.44585237338399
     },
     "solana": {
-      "usd": 131.55,
-      "usd_24h_change": 2.7785150989054124
+      "usd": 127.37,
+      "usd_24h_change": -1.4912145391572065
     }
   }
 }
