@@ -1,8 +1,36 @@
 {
-  "generatedAt": "2025-12-17T08:37:41.492Z",
+  "generatedAt": "2025-12-17T09:01:45.274Z",
   "repo": "Ivan09069/echoforge",
   "issues": [],
   "proposals": [
+    {
+      "id": "0xc7ac78a1d64db286e3dacfaf7919926dced132b0bba8984bd641f0b26b9a0f82",
+      "title": "Security Council Election #1: Nominee Selection",
+      "end": 1766566775,
+      "votes": 0,
+      "scores_total": 0,
+      "space": {
+        "id": "superfluid.eth",
+        "name": "Superfluid",
+        "avatar": "ipfs://bafkreia5iatnmusfxdcz4ivqx5kbwu625oimbjh4hab43fe2xj6mly6po4"
+      },
+      "choices": [
+        "hellwolf",
+        "pilou",
+        "didi",
+        "0xsimao",
+        "blockful",
+        "WinVerse_DAOplomats"
+      ],
+      "scores": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
     {
       "id": "0x387a3da95a63b568e23fda324c63a4717b5b7ee63841da717338009992ca177b",
       "title": "Governance Establishment",
@@ -369,8 +397,8 @@
       "id": "0xc6b9b1b2135a1f697b416fc77b2e58e12838486126cb4ba82c748a1f45f6d320",
       "title": "Optional Vesting for 50% Bonus Allocation (Amendment to Proposal #a9583)",
       "end": 1766540460,
-      "votes": 130,
-      "scores_total": 55805138,
+      "votes": 138,
+      "scores_total": 56518769,
       "space": {
         "id": "lightchain.ai",
         "name": "LightchainAI",
@@ -381,16 +409,16 @@
         "B: No Vesting"
       ],
       "scores": [
-        52215113,
-        3590025
+        52744777,
+        3773992
       ]
     },
     {
       "id": "0xcbfa3b7a11b292c984dfa28a46d15366222c4df0647ab5e244cedef457d4bce0",
       "title": "Disposition of Unclaimed Bonus Tokens (Amendment to Proposal #a9583)",
       "end": 1766540340,
-      "votes": 128,
-      "scores_total": 56629678,
+      "votes": 135,
+      "scores_total": 57044386,
       "space": {
         "id": "lightchain.ai",
         "name": "LightchainAI",
@@ -402,31 +430,9 @@
         "C: Treasury"
       ],
       "scores": [
-        41866200,
-        14683516,
+        42129715,
+        14834709,
         79962
-      ]
-    },
-    {
-      "id": "0xb3f0534bba308d073cd8020e0b435b04aa384c7fa5d9d437e659fa1e0ca1c410",
-      "title": "Bonus Claim Window Amendment to Proposal #a9583",
-      "end": 1766540100,
-      "votes": 125,
-      "scores_total": 56270031,
-      "space": {
-        "id": "lightchain.ai",
-        "name": "LightchainAI",
-        "avatar": "ipfs://bafkreiaiioc7oclvp4uya43pkll7hbnqb25xrqp44ywzkmoudqjhu54lrm"
-      },
-      "choices": [
-        "A: 30 Days",
-        "B: 60 Days",
-        "C: No Time Limit"
-      ],
-      "scores": [
-        49080804,
-        6069158,
-        1120069
       ]
     }
   ],
@@ -643885,16 +643891,16 @@
   ],
   "prices": {
     "bitcoin": {
-      "usd": 86454,
-      "usd_24h_change": 0.2703237587538203
+      "usd": 86383,
+      "usd_24h_change": 0.16181159795114175
     },
     "ethereum": {
-      "usd": 2927.12,
-      "usd_24h_change": -0.06395779871356208
+      "usd": 2925.01,
+      "usd_24h_change": -0.12515905265581734
     },
     "solana": {
-      "usd": 127.17,
-      "usd_24h_change": 0.8413235418903292
+      "usd": 126.89,
+      "usd_24h_change": 0.712244341632172
     }
   }
 }
