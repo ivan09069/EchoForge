@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-12-17T11:28:24.424Z",
+  "generatedAt": "2025-12-17T11:45:52.758Z",
   "repo": "Ivan09069/echoforge",
   "issues": [],
   "proposals": [
@@ -643871,16 +643871,16 @@
   ],
   "prices": {
     "bitcoin": {
-      "usd": 86777,
-      "usd_24h_change": -0.42231136962568183
+      "usd": 86866,
+      "usd_24h_change": -0.27093983748207295
     },
     "ethereum": {
-      "usd": 2926.88,
-      "usd_24h_change": -0.997571816430891
+      "usd": 2930.49,
+      "usd_24h_change": -0.7430257118811684
     },
     "solana": {
-      "usd": 127.31,
-      "usd_24h_change": -0.880448600957464
+      "usd": 127.63,
+      "usd_24h_change": -0.46522340236793147
     }
   }
 }
