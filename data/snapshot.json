@@ -1,14 +1,36 @@
 {
-  "generatedAt": "2025-12-17T14:33:00.234Z",
+  "generatedAt": "2025-12-17T14:58:53.511Z",
   "repo": "Ivan09069/echoforge",
   "issues": [],
   "proposals": [
     {
+      "id": "0x4a27152733f3845e0a5b9f4611020a2ec78a891ce6183e76294e4c4ed7de135b",
+      "title": "execute",
+      "end": 1766242009,
+      "votes": 0,
+      "scores_total": 0,
+      "space": {
+        "id": "testte.eth",
+        "name": "myName",
+        "avatar": ""
+      },
+      "choices": [
+        "For",
+        "Against",
+        "Abstain"
+      ],
+      "scores": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
       "id": "0x1d954d7c509a48189a8b45fbe73c08839031c43768a0e3f8009b722c856cfe3c",
       "title": "Skynet Trading <> Aavegotchi Market Maker SigProp",
       "end": 1766845680,
-      "votes": 0,
-      "scores_total": 0,
+      "votes": 1,
+      "scores_total": 402061.79161637434,
       "space": {
         "id": "aavegotchi.eth",
         "name": "Aavegotchi",
@@ -19,7 +41,7 @@
         "No, do not engage."
       ],
       "scores": [
-        0,
+        402061.79161637434,
         0
       ]
     },
@@ -47,8 +69,8 @@
       "id": "0xbc8eceb6ea8512364963fdf2a1a37cdf3b18505a1d4d6f55fdecceb83af1201d",
       "title": "[FXN] [FIP-29] Add a FXN Gauge to ETH/fxUSD",
       "end": 1766404800,
-      "votes": 0,
-      "scores_total": 0,
+      "votes": 1,
+      "scores_total": 22678.226564039527,
       "space": {
         "id": "veclev.eth",
         "name": "CLever",
@@ -59,7 +81,7 @@
         "Against"
       ],
       "scores": [
-        0,
+        22678.226564039527,
         0
       ]
     },
@@ -342,8 +364,8 @@
       "id": "0xbefb2310b914884cf92f31b99e24cc14618ac44486825e775cb08deae7e13ad9",
       "title": "[Curve] Ownership DAO Vote ID: 1293",
       "end": 1766218039,
-      "votes": 1,
-      "scores_total": 4412.733197173064,
+      "votes": 2,
+      "scores_total": 27521.064445926044,
       "space": {
         "id": "veclev.eth",
         "name": "CLever",
@@ -354,7 +376,7 @@
         "no"
       ],
       "scores": [
-        4412.733197173064,
+        27521.064445926044,
         0
       ]
     },
@@ -404,34 +426,6 @@
         86554.89857465759,
         0,
         0
-      ]
-    },
-    {
-      "id": "0x4f9cf64785291c8b4f35ae937adc1cdf70311f3ebd6e582b45f65c7d9134a908",
-      "title": "[Proposal #4] Community Vote to Delist",
-      "end": 1766397600,
-      "votes": 4,
-      "scores_total": 2594038.1278260136,
-      "space": {
-        "id": "orderlygov.eth",
-        "name": "Orderly",
-        "avatar": "ipfs://bafybeibcxn5wjtygt5bc6kge2lpdhkc3lzkaoqjqhcgnpwleg2oya2d2cq"
-      },
-      "choices": [
-        "SPK",
-        "PLUME",
-        "ENS",
-        "SAROS",
-        "MELANIA",
-        "EIGEN"
-      ],
-      "scores": [
-        0,
-        16501.157678853488,
-        0,
-        0,
-        2577536.97014716,
-        2577536.97014716
       ]
     }
   ],
@@ -643269,16 +643263,16 @@
   ],
   "prices": {
     "bitcoin": {
-      "usd": 87786,
-      "usd_24h_change": 0.831988955486034
+      "usd": 89366,
+      "usd_24h_change": 2.4217949016450655
     },
     "ethereum": {
-      "usd": 2944.57,
-      "usd_24h_change": 0.3884620365410066
+      "usd": 2974.3,
+      "usd_24h_change": 1.158862902497169
     },
     "solana": {
-      "usd": 129.21,
-      "usd_24h_change": 0.4752221529253147
+      "usd": 130.61,
+      "usd_24h_change": 1.4751996640102938
     }
   }
 }
