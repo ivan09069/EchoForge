@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-12-17T10:34:44.320Z",
+  "generatedAt": "2025-12-17T10:57:12.473Z",
   "repo": "Ivan09069/echoforge",
   "issues": [],
   "proposals": [
@@ -145,8 +145,8 @@
       "id": "0x26fda01ddecc92a7ead7eefa396d3862d55104d9009a36b686af278e20ecd9c9",
       "title": "Add a gauge for the following pool: ETH/fxUSD",
       "end": 1766221607,
-      "votes": 0,
-      "scores_total": 0,
+      "votes": 1,
+      "scores_total": 14681540.079423137,
       "space": {
         "id": "sdcrv-gov.eth",
         "name": "sdCRV-Governance",
@@ -157,7 +157,7 @@
         "No"
       ],
       "scores": [
-        0,
+        14681540.079423135,
         0
       ]
     },
@@ -205,8 +205,8 @@
       "id": "0x8d81a7107fa6fd55a03fb02ea6531289e8b094ea1650aa6569f87c3317c20c8a",
       "title": "[Curve] Ownership DAO Vote ID: 1293",
       "end": 1766221639,
-      "votes": 1,
-      "scores_total": 30755.55948362423,
+      "votes": 2,
+      "scores_total": 5781798.093577276,
       "space": {
         "id": "cvx.eth",
         "name": "Convex Finance",
@@ -217,7 +217,7 @@
         "no"
       ],
       "scores": [
-        30755.55948362423,
+        5781798.093577276,
         0
       ]
     },
@@ -389,8 +389,8 @@
       "id": "0x96bba063f49f3fb7d8d19a9e91d39abacfba0b15653cfa0b1ed0957fb11b3d01",
       "title": "Add a gauge for the following pool: ynRWAx/ynUSDx",
       "end": 1766205803,
-      "votes": 0,
-      "scores_total": 0,
+      "votes": 1,
+      "scores_total": 14550150.303675197,
       "space": {
         "id": "sdcrv-gov.eth",
         "name": "sdCRV-Governance",
@@ -401,7 +401,7 @@
         "No"
       ],
       "scores": [
-        0,
+        14550150.303675195,
         0
       ]
     },
@@ -643932,16 +643932,16 @@
   ],
   "prices": {
     "bitcoin": {
-      "usd": 86622,
-      "usd_24h_change": 0.21930828508645678
+      "usd": 86587,
+      "usd_24h_change": -0.5385390766265612
     },
     "ethereum": {
-      "usd": 2920.84,
-      "usd_24h_change": -0.2816423897020462
+      "usd": 2917.25,
+      "usd_24h_change": -1.0806214724209344
     },
     "solana": {
-      "usd": 126.65,
-      "usd_24h_change": -0.20345114220599786
+      "usd": 126.61,
+      "usd_24h_change": -1.350660351206405
     }
   }
 }
