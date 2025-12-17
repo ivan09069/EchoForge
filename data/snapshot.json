@@ -1,8 +1,25 @@
 {
-  "generatedAt": "2025-12-17T17:40:30.890Z",
+  "generatedAt": "2025-12-17T17:55:41.402Z",
   "repo": "Ivan09069/echoforge",
   "issues": [],
   "proposals": [
+    {
+      "id": "0x80d666440474fd9f61e77349109bfd462949f57f3bdac33dd086a6aa8a29de67",
+      "title": "ZIP-12: Integration of $00 Into Ulys Rewards Ecosystem & Authorization of Foundation Token Usage",
+      "end": 1766253316,
+      "votes": 0,
+      "scores_total": 0,
+      "space": {
+        "id": "zerozero.eth",
+        "name": "zerozero DAO",
+        "avatar": "ipfs://bafkreicstsmjnk7kemwihwqh3kmdztcs6h5dvciljobm7o3pa53vjsctsm"
+      },
+      "choices": [
+        "✅ In Favor",
+        "❌ Against"
+      ],
+      "scores": []
+    },
     {
       "id": "0x716f665dc13c582b8ba67dc6a8ab706ae439188f0d277bb5dbd9421bc03d44f5",
       "title": "Gnarly Skate Of the Year",
@@ -61,8 +78,8 @@
       "id": "0x1d954d7c509a48189a8b45fbe73c08839031c43768a0e3f8009b722c856cfe3c",
       "title": "Skynet Trading <> Aavegotchi Market Maker SigProp",
       "end": 1766845680,
-      "votes": 20,
-      "scores_total": 920325.2151046657,
+      "votes": 23,
+      "scores_total": 972377.0420392917,
       "space": {
         "id": "aavegotchi.eth",
         "name": "Aavegotchi",
@@ -73,8 +90,8 @@
         "No, do not engage."
       ],
       "scores": [
-        839163.5148716222,
-        81161.70023304349
+        891215.3418062482,
+        81161.70023304348
       ]
     },
     {
@@ -409,26 +426,6 @@
       ],
       "scores": [
         28391.896928993072,
-        0
-      ]
-    },
-    {
-      "id": "0x8d81a7107fa6fd55a03fb02ea6531289e8b094ea1650aa6569f87c3317c20c8a",
-      "title": "[Curve] Ownership DAO Vote ID: 1293",
-      "end": 1766221639,
-      "votes": 4,
-      "scores_total": 5806596.457677585,
-      "space": {
-        "id": "cvx.eth",
-        "name": "Convex Finance",
-        "avatar": "ipfs://QmXB2Ce726sNzJbrJPsQQz1BZRQvfDntPS18prAi9JmrgG"
-      },
-      "choices": [
-        "yes",
-        "no"
-      ],
-      "scores": [
-        5806596.457677585,
         0
       ]
     }
@@ -643930,16 +643927,16 @@
   ],
   "prices": {
     "bitcoin": {
-      "usd": 86739,
-      "usd_24h_change": -0.786358193242038
+      "usd": 86408,
+      "usd_24h_change": -0.8795294409190196
     },
     "ethereum": {
-      "usd": 2861.72,
-      "usd_24h_change": -2.3776433298517445
+      "usd": 2850.42,
+      "usd_24h_change": -2.5575912346923633
     },
     "solana": {
-      "usd": 123.85,
-      "usd_24h_change": -2.801242738519915
+      "usd": 123.16,
+      "usd_24h_change": -3.329314484901094
     }
   }
 }
