@@ -1,8 +1,48 @@
 {
-  "generatedAt": "2025-12-17T05:34:29.477Z",
+  "generatedAt": "2025-12-17T05:54:22.121Z",
   "repo": "Ivan09069/echoforge",
   "issues": [],
   "proposals": [
+    {
+      "id": "0x3751f0f02fdefd9e0ead73af08e5dd3e0dcae5a0e0cc9db42739cc03a9f6b2c3",
+      "title": "YIP-90: yETH Optimistic Recovery Plan",
+      "end": 1766343600,
+      "votes": 0,
+      "scores_total": 0,
+      "space": {
+        "id": "1uptokyo.eth",
+        "name": "1UP",
+        "avatar": "ipfs://bafkreig2bybcc57xnl527zchhgfcnmn7kpnnldssi27opjag3hsweth7ju"
+      },
+      "choices": [
+        "For",
+        "Against"
+      ],
+      "scores": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "0x079e4326ca2db14a1f3d3a37ca30550d96e1e84f686be04fa7561221f53c2a11",
+      "title": "YIP-89: Proposal to Rotate Multisig Signers",
+      "end": 1766343600,
+      "votes": 0,
+      "scores_total": 0,
+      "space": {
+        "id": "1uptokyo.eth",
+        "name": "1UP",
+        "avatar": "ipfs://bafkreig2bybcc57xnl527zchhgfcnmn7kpnnldssi27opjag3hsweth7ju"
+      },
+      "choices": [
+        "For",
+        "Against"
+      ],
+      "scores": [
+        0,
+        0
+      ]
+    },
     {
       "id": "0xcc722db3b9a8d235e3368623b34355bfb998eb717bbca3a840b51ecab4f35775",
       "title": "[sdCRV] Add a gauge for the following pool: ynRWAx/ynUSDx",
@@ -281,8 +321,8 @@
       "id": "0xc6b9b1b2135a1f697b416fc77b2e58e12838486126cb4ba82c748a1f45f6d320",
       "title": "Optional Vesting for 50% Bonus Allocation (Amendment to Proposal #a9583)",
       "end": 1766540460,
-      "votes": 88,
-      "scores_total": 48036145,
+      "votes": 94,
+      "scores_total": 48352579,
       "space": {
         "id": "lightchain.ai",
         "name": "LightchainAI",
@@ -293,7 +333,7 @@
         "B: No Vesting"
       ],
       "scores": [
-        44525301,
+        44841735,
         3510844
       ]
     },
@@ -301,8 +341,8 @@
       "id": "0xcbfa3b7a11b292c984dfa28a46d15366222c4df0647ab5e244cedef457d4bce0",
       "title": "Disposition of Unclaimed Bonus Tokens (Amendment to Proposal #a9583)",
       "end": 1766540340,
-      "votes": 88,
-      "scores_total": 47893446,
+      "votes": 92,
+      "scores_total": 48176014,
       "space": {
         "id": "lightchain.ai",
         "name": "LightchainAI",
@@ -314,8 +354,8 @@
         "C: Treasury"
       ],
       "scores": [
-        34625082,
-        13188402,
+        34882585,
+        13213467,
         79962
       ]
     },
@@ -323,8 +363,8 @@
       "id": "0xb3f0534bba308d073cd8020e0b435b04aa384c7fa5d9d437e659fa1e0ca1c410",
       "title": "Bonus Claim Window Amendment to Proposal #a9583",
       "end": 1766540100,
-      "votes": 86,
-      "scores_total": 48223995,
+      "votes": 90,
+      "scores_total": 48506563,
       "space": {
         "id": "lightchain.ai",
         "name": "LightchainAI",
@@ -336,8 +376,8 @@
         "C: No Time Limit"
       ],
       "scores": [
-        43329252,
-        4224251,
+        43586755,
+        4249316,
         670492
       ]
     },
@@ -380,46 +420,6 @@
       ],
       "scores": [
         0,
-        0
-      ]
-    },
-    {
-      "id": "0x46707628ae74aa0ebe90d707f718f950eca0744da02e03c4cd628bdb25a22a54",
-      "title": "[Curve] Ownership DAO Vote ID: 1290",
-      "end": 1766189993,
-      "votes": 0,
-      "scores_total": 0,
-      "space": {
-        "id": "veclev.eth",
-        "name": "CLever",
-        "avatar": "ipfs://bafkreidyi6dbbidfrcskangkpzzsdlpu2izqoyyg5wuf2hijlkvuti2qdm"
-      },
-      "choices": [
-        "yes",
-        "no"
-      ],
-      "scores": [
-        0,
-        0
-      ]
-    },
-    {
-      "id": "0x01090969d05d6bb33432c81f16a9e42a5a448e7a5537cbf948e73849b29ec5ea",
-      "title": "[Curve] Ownership DAO Vote ID: 1290",
-      "end": 1766193593,
-      "votes": 1,
-      "scores_total": 110001.02791892902,
-      "space": {
-        "id": "cvx.eth",
-        "name": "Convex Finance",
-        "avatar": "ipfs://QmXB2Ce726sNzJbrJPsQQz1BZRQvfDntPS18prAi9JmrgG"
-      },
-      "choices": [
-        "yes",
-        "no"
-      ],
-      "scores": [
-        110001.02791892902,
         0
       ]
     }
@@ -644004,16 +644004,16 @@
   ],
   "prices": {
     "bitcoin": {
-      "usd": 86420,
-      "usd_24h_change": 0.5355097699676532
+      "usd": 86593,
+      "usd_24h_change": 0.7013447630403234
     },
     "ethereum": {
-      "usd": 2924.88,
-      "usd_24h_change": 0.3401393326205916
+      "usd": 2930.4,
+      "usd_24h_change": 0.2957024064647719
     },
     "solana": {
-      "usd": 127.33,
-      "usd_24h_change": 0.931831207182625
+      "usd": 127.58,
+      "usd_24h_change": 0.9331394193377368
     }
   }
 }
