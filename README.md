@@ -159,6 +159,15 @@ npm run dev
 3. **Configure Alerts**: Set price thresholds for notifications
 4. **Enable Offline Mode**: Service worker caches everything locally
 
+### Need More Details?
+
+📘 **[Complete Integration Guide](docs/integration-guide.md)** - Step-by-step instructions for:
+- Detailed installation and setup
+- Integration with existing React projects
+- Vanilla JavaScript integration
+- Component usage and configuration
+- Troubleshooting common issues
+
 ### Configuration
 ```javascript
 // config.js (optional)

@@ -26,6 +26,10 @@ Stop feeding your financial data to surveillance platforms. EchoForge uses **zer
 
 ## 📚 Documentation
 
+### Getting Started
+- **[Integration Guide](./integration-guide.md)** - Complete step-by-step integration instructions
+- **[RM²E Integration Guide](./rm2e-integration-guide.md)** - Quick start for crypto momentum tracking
+
 ### For Users
 - [Security Architecture](./security-architecture.md) - Deep dive into encryption and threat model
 - [Competitor Comparison](./competitor-comparison.md) - Feature-by-feature comparison with Mint, Personal Capital, CoinTracker, Delta
