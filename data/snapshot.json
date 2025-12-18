@@ -1,8 +1,30 @@
 {
-  "generatedAt": "2025-12-18T14:28:48.883Z",
+  "generatedAt": "2025-12-18T14:51:54.216Z",
   "repo": "Ivan09069/echoforge",
   "issues": [],
   "proposals": [
+    {
+      "id": "0x56dc67c3484c661fcd2dbfa68394a969288982846a1745f5bb5eeb065b9b34ab",
+      "title": "Buyback Program & Buyback Portal",
+      "end": 1767277860,
+      "votes": 2,
+      "scores_total": 778.3596535485892,
+      "space": {
+        "id": "lab.pro",
+        "name": "LAB",
+        "avatar": "ipfs://bafkreiewzs66pbi3ddpvfnce5njpmbjqp4uikqvjqm22ibrfd3fcgahswe"
+      },
+      "choices": [
+        "For",
+        "Against",
+        "Abstain"
+      ],
+      "scores": [
+        778.3596535485892,
+        0,
+        0
+      ]
+    },
     {
       "id": "0xf2c810181602b21adb789f5da0bb3befbe2ba006b828fd497ba258e1db666b9a",
       "title": "PIP-75 - Fund request from a user claiming losses due to the March 2024 AugustusV6 vulnerability",
@@ -3477,88 +3499,6 @@
         0,
         0,
         249796.5272134024,
-        0,
-        0
-      ]
-    },
-    {
-      "id": "0x5f262853a483b13ee5cd4e2d296f76be33b4e6f3fa63249e7d72f1708a95085a",
-      "title": "FXN Gauge Weight for Week of 18th Dec 2025",
-      "end": 1766448000,
-      "votes": 4,
-      "scores_total": 175049.89976428996,
-      "space": {
-        "id": "cvx.eth",
-        "name": "Convex Finance",
-        "avatar": "ipfs://QmXB2Ce726sNzJbrJPsQQz1BZRQvfDntPS18prAi9JmrgG"
-      },
-      "choices": [
-        "fETH - wstETH Stability Pool",
-        "fxUSD - wstETH Stability Pool",
-        "fxUSD - sfrxETH Stability Pool",
-        "rUSD - weETH Stability Pool",
-        "rUSD - ezETH Stability Pool",
-        "btcUSD - WBTC Stability Pool",
-        "cvxUSD - aCVX Stability Pool",
-        "ETH+FXN",
-        "FXN+cvxFXN",
-        "FXN+sdFXN",
-        "crvUSD+fxUSD",
-        "PYUSD+fxUSD",
-        "DOLA+fxUSD",
-        "FRAX+fxUSD",
-        "GHO+fxUSD",
-        "fxUSD+rUSD",
-        "alUSD+fxUSD",
-        "MIM+fxUSD",
-        "eUSD+fxUSD",
-        "USDC+fxUSD",
-        "fxUSD+rUSD+btcUSD",
-        "fxUSD Stability Pool V2.0",
-        "fxUSD Stability Pool V2.0 (Rewards FXN)",
-        "USDN+fxUSD",
-        "reUSD+fxUSD",
-        "fxSAVE+scrvUSD",
-        "msUSD+fxUSD",
-        "ynUSDx+fxUSD",
-        "ynRWAx+fxUSD",
-        "USDaf+fxUSD+BOLD+USDC",
-        "DOLA+fxSAVE",
-        "fxUSD+frxUSD",
-        "USDnr+fxUSD"
-      ],
-      "scores": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        34076.2143746355,
-        0,
-        140973.68538965448,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
         0,
         0
       ]
@@ -645764,16 +645704,16 @@
   ],
   "prices": {
     "bitcoin": {
-      "usd": 88458,
-      "usd_24h_change": 0.7663717616285943
+      "usd": 87962,
+      "usd_24h_change": 0.6456398000535735
     },
     "ethereum": {
-      "usd": 2958.13,
-      "usd_24h_change": 0.47881888539017864
+      "usd": 2936.29,
+      "usd_24h_change": 1.0316112398047976
     },
     "solana": {
-      "usd": 126.19,
-      "usd_24h_change": -2.5164723482722673
+      "usd": 125.2,
+      "usd_24h_change": -2.364362386308658
     }
   }
 }
