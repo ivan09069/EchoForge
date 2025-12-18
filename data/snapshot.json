@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-12-18T20:45:08.284Z",
+  "generatedAt": "2025-12-18T20:58:10.687Z",
   "repo": "Ivan09069/echoforge",
   "issues": [
     {
@@ -118,6 +118,28 @@
   ],
   "proposals": [
     {
+      "id": "0x4bbeb1429e0c930cecade2f9a41cb41739b06600ceb37c77eb308a11e892f71a",
+      "title": "[Prop 901]Reward the Nounish (EOY Award Show) ❄️",
+      "end": 1766263717,
+      "votes": 0,
+      "scores_total": 0,
+      "space": {
+        "id": "pnounsdao.eth",
+        "name": "pNounsDAO",
+        "avatar": "ipfs://bafkreiaa5anz5dtwp6pknqctxedbiustuet2djgign5xlru4hnl6cm6xa4"
+      },
+      "choices": [
+        "For",
+        "Against",
+        "Abstain"
+      ],
+      "scores": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
       "id": "0xf1afeed54d0878cd2d8979ad710b437f8d451495245cc1127dc602bb743f6dda",
       "title": "[GIP-273] Mellow & P2P update rstETH implementation - Expire accounts with rstETH in emergency mode",
       "end": 1766348053,
@@ -143,8 +165,8 @@
       "id": "0x65f80603d96f3eea5e0dab47d86fda035cbce06a38caa3c7f3a937b78e350fc0",
       "title": "# UIP-14 USTBL USD0 collateral approval",
       "end": 1766262600,
-      "votes": 1,
-      "scores_total": 182384.26203508742,
+      "votes": 2,
+      "scores_total": 405964.18412526196,
       "space": {
         "id": "usualmoney.eth",
         "name": "Usual",
@@ -156,7 +178,7 @@
         "Abstain"
       ],
       "scores": [
-        182384.26203508745,
+        405964.1841252619,
         0,
         0
       ]
@@ -1499,128 +1521,6 @@
         0,
         0,
         0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "id": "0xbe673acfbd5f8e88b53c028d8b005c00a92db2d4d8c65fe9cc0faa4296f5ef74",
-      "title": "Gauge vote SPECTRA - 25/12/2025 - 31/12/2025",
-      "end": 1766502000,
-      "votes": 1,
-      "scores_total": 107122.69688346397,
-      "space": {
-        "id": "sdspectra.eth",
-        "name": "sdSPECTRA",
-        "avatar": "ipfs://bafkreiaho4dwoyexx6fx24qxarz34s72fl43kzegvlhysscyuo6qwg2bvm"
-      },
-      "choices": [
-        "Blank",
-        "base-imxSPECTRA-12/30/2025",
-        "ethereum-sdeUSD-01/01/2026",
-        "sonic-sw-wstkscUSD(scUSD)-01/14/2026",
-        "sonic-sw-wstkscETH(scETH)-01/14/2026",
-        "ethereum-sw-WUSDN(USDN)-01/18/2026",
-        "ethereum-ynETHx(WETH)-02/04/2026",
-        "ethereum-aCRV(cvxCRV)-01/17/2026",
-        "ethereum-asdCRV(sdCRV)-01/18/2026",
-        "ethereum-yvCurve-GHO-USR(GHOUSR)-01/18/2026",
-        "ethereum-aFXN(cvxFXN)-01/18/2026",
-        "ethereum-ipUSDCfusion(USDC)-01/21/2026",
-        "ethereum-slvlUSD(lvlUSD)-01/18/2026",
-        "ethereum-sDOLA(DOLA)-01/21/2026",
-        "ethereum-sUSN(USN)-02/06/2026",
-        "ethereum-fxSAVE(fxSP)-01/21/2026",
-        "base-sPINTO(PINTO)-01/16/2026",
-        "base-fUSDC(USDC)-01/16/2026",
-        "base-fAERO(AERO)-01/16/2026",
-        "base-sjEUR(jEURx)-07/16/2026",
-        "base-yvBal-GHO-USR(Aave GHO-USR)-01/18/2026",
-        "sonic-sw-bUSDC.e-20(USDC)-01/16/2026",
-        "sonic-sw-stS(wS)-01/16/2026",
-        "sonic-wOS(OS)-01/15/2026",
-        "avalanche-esdeUSD-3(sdeUSD)-01/16/2026",
-        "ethereum-WOUSD-12/20/2025",
-        "ethereum-wOETH-12/20/2025",
-        "hype-sw-kHYPE(WHYPE)-01/28/2026",
-        "sonic-wstkEliteRingsScUSD(eliteRingsScUSD)-01/15/2026",
-        "hype-sw-LHYPE(WHYPE)-12/31/2025",
-        "base-smWETH-12/19/2025",
-        "ethereum-lstRZR(RZR)-02/05/2026",
-        "avalanche-sw-esdeUSD-3(deUSD)-02/06/2026",
-        "hype-sw-WHLP(USDHL)-12/31/2025",
-        "hype-sw-wVLP(USD₮0)-02/18/2026",
-        "hype-hbHYPE(WHYPE)-02/22/2026",
-        "hype-sUSDp(USDp)-01/24/2026",
-        "arbitrumone-sUSDX-12/30/2025",
-        "ethereum-sw-stkGHO(GHO)-01/31/2026",
-        "avalanche-sUSDp(USDp)-02/01/2026",
-        "base-wsrarcV2USDC(USDC)-02/12/2026",
-        "ethereum-ynRWAx(USDC)-10/15/2026",
-        "katana-sw-syUSD(vbUSDC)-01/31/2026",
-        "hemi-sw-bfBTC(hemiBTC)-12/27/2025",
-        "katana-yvvbUSDC(vbUSDC)-02/13/2026",
-        "katana-yvvbETH(vbETH)-02/13/2026",
-        "katana-yvvbUSDT(vbUSDT)-02/13/2026",
-        "katana-AUSD(AUSD)-02/13/2026",
-        "avalanche-sw-sYUSD(YUSD)-03/20/2026",
-        "avalanche-sw-avBTCx(avBTC)-05/15/2026",
-        "avalanche-sw-avUSDx(avUSD)-05/15/2026",
-        "flaremainnet-sw-sFLR(WFLR)-05/17/2026",
-        "katana-sw-sYUSD(YUSD)-03/20/2026"
-      ],
-      "scores": [
-        107122.69688346396,
         0,
         0,
         0,
@@ -643016,16 +642916,16 @@
   ],
   "prices": {
     "bitcoin": {
-      "usd": 85001,
-      "usd_24h_change": -1.054481534418817
+      "usd": 84801,
+      "usd_24h_change": -1.2556056776475988
     },
     "ethereum": {
-      "usd": 2792.44,
-      "usd_24h_change": -0.9749026159326978
+      "usd": 2781.27,
+      "usd_24h_change": -1.347013551026372
     },
     "solana": {
-      "usd": 117.79,
-      "usd_24h_change": -4.305304042478142
+      "usd": 117.58,
+      "usd_24h_change": -4.393180109947744
     }
   }
 }
