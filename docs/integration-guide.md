@@ -697,7 +697,7 @@ npm install axios
    ```
 4. Clear node_modules and reinstall:
    ```bash
-   rm -rf node_modules package-lock.json
+   rm -rf node_modules
    npm install
    ```
 
