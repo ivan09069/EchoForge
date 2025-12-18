@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-12-18T03:39:04.435Z",
+  "generatedAt": "2025-12-18T04:20:41.346Z",
   "repo": "Ivan09069/echoforge",
   "issues": [],
   "proposals": [
@@ -1557,8 +1557,8 @@
       "id": "0x26bfaec88062cf0ed7db4a2d356ead432a4ab6d1c05a4e81f2dc5fc91b55d8c6",
       "title": "Gauge Proposal [10 Gauges] 2025-12-18 11:32 - 2025-12-25 08:59",
       "end": 1766620740,
-      "votes": 1,
-      "scores_total": 13223763.538445242,
+      "votes": 2,
+      "scores_total": 14971283.74389272,
       "space": {
         "id": "ynd-gauges.eth",
         "name": "YieldNest Gauges",
@@ -1578,7 +1578,7 @@
       ],
       "scores": [
         0,
-        13223763.538445242,
+        14971283.74389272,
         0,
         0,
         0,
@@ -642131,16 +642131,16 @@
   ],
   "prices": {
     "bitcoin": {
-      "usd": 86351,
-      "usd_24h_change": -1.089149063279277
+      "usd": 86723,
+      "usd_24h_change": -0.42992304043030893
     },
     "ethereum": {
-      "usd": 2823.87,
-      "usd_24h_change": -4.249398242595813
+      "usd": 2833.69,
+      "usd_24h_change": -3.7783303737346605
     },
     "solana": {
-      "usd": 123.18,
-      "usd_24h_change": -4.391097875589511
+      "usd": 123.73,
+      "usd_24h_change": -3.4815808264140142
     }
   }
 }
