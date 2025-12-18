@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-12-18T07:34:56.760Z",
+  "generatedAt": "2025-12-18T07:52:22.042Z",
   "repo": "Ivan09069/echoforge",
   "issues": [],
   "proposals": [
@@ -817,8 +817,8 @@
       "id": "0xbe673acfbd5f8e88b53c028d8b005c00a92db2d4d8c65fe9cc0faa4296f5ef74",
       "title": "Gauge vote SPECTRA - 25/12/2025 - 31/12/2025",
       "end": 1766502000,
-      "votes": 0,
-      "scores_total": 0,
+      "votes": 1,
+      "scores_total": 107122.69688346397,
       "space": {
         "id": "sdspectra.eth",
         "name": "sdSPECTRA",
@@ -880,7 +880,7 @@
         "katana-sw-sYUSD(YUSD)-03/20/2026"
       ],
       "scores": [
-        0,
+        107122.69688346396,
         0,
         0,
         0,
@@ -4435,8 +4435,8 @@
       "id": "0x1780b0132c4e9fd33b1901328d5bfb1aab6a450270266c055ccd1cb1aa5b73e8",
       "title": "SGR-121: sBOLD-06JUN2026 Gauge Request",
       "end": 1766178745,
-      "votes": 0,
-      "scores_total": 0,
+      "votes": 1,
+      "scores_total": 107122.69688346397,
       "space": {
         "id": "sdspectra.eth",
         "name": "sdSPECTRA",
@@ -4448,7 +4448,7 @@
         "Abstain"
       ],
       "scores": [
-        0,
+        107122.69688346396,
         0,
         0
       ]
@@ -4457,8 +4457,8 @@
       "id": "0x7e817e5775bde50d07a591009216f426d3d94a6508880a16f7b39c99adaee656",
       "title": "SGR 120: stXRP-04MAR2026 Gauge Request",
       "end": 1766178606,
-      "votes": 0,
-      "scores_total": 0,
+      "votes": 1,
+      "scores_total": 107122.69688346397,
       "space": {
         "id": "sdspectra.eth",
         "name": "sdSPECTRA",
@@ -4470,7 +4470,7 @@
         "Abstain"
       ],
       "scores": [
-        0,
+        107122.69688346396,
         0,
         0
       ]
@@ -643800,16 +643800,16 @@
   ],
   "prices": {
     "bitcoin": {
-      "usd": 86805,
-      "usd_24h_change": -0.08862181453876776
+      "usd": 86770,
+      "usd_24h_change": -0.22126892740929457
     },
     "ethereum": {
-      "usd": 2837.15,
-      "usd_24h_change": -3.621129274807775
+      "usd": 2835.28,
+      "usd_24h_change": -3.7760048390601013
     },
     "solana": {
-      "usd": 123.17,
-      "usd_24h_change": -3.9278622136298806
+      "usd": 122.69,
+      "usd_24h_change": -4.2665038944419615
     }
   }
 }
