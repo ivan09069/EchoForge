@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-12-18T21:41:36.453Z",
+  "generatedAt": "2025-12-18T21:54:42.105Z",
   "repo": "Ivan09069/echoforge",
   "issues": [
     {
@@ -165,8 +165,8 @@
       "id": "0x65f80603d96f3eea5e0dab47d86fda035cbce06a38caa3c7f3a937b78e350fc0",
       "title": "# UIP-14 USTBL USD0 collateral approval",
       "end": 1766262600,
-      "votes": 7,
-      "scores_total": 2700895.865514209,
+      "votes": 8,
+      "scores_total": 2778589.779551549,
       "space": {
         "id": "usualmoney.eth",
         "name": "Usual",
@@ -178,7 +178,7 @@
         "Abstain"
       ],
       "scores": [
-        2700895.865514209,
+        2778589.779551549,
         0,
         0
       ]
@@ -643120,16 +643120,16 @@
   ],
   "prices": {
     "bitcoin": {
-      "usd": 85374,
-      "usd_24h_change": -0.42695657430856376
+      "usd": 85402,
+      "usd_24h_change": -0.5911575789147422
     },
     "ethereum": {
-      "usd": 2817.1,
-      "usd_24h_change": 0.06719538753614368
+      "usd": 2820.63,
+      "usd_24h_change": 0.14360039460580548
     },
     "solana": {
-      "usd": 118.69,
-      "usd_24h_change": -2.872666981154924
+      "usd": 119.24,
+      "usd_24h_change": -2.5294808993049642
     }
   }
 }
