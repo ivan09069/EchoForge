@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-12-18T18:41:13.471Z",
+  "generatedAt": "2025-12-18T19:01:01.535Z",
   "repo": "Ivan09069/echoforge",
   "issues": [
     {
@@ -225,8 +225,8 @@
       "id": "0xa44bc4441cf7003640edb6fa4203e2163c5da68870602c895321f53ec8161e4d",
       "title": "Wybór biura architektonicznego – projekt resortu DAOResorts",
       "end": 1766085475,
-      "votes": 1,
-      "scores_total": 1,
+      "votes": 5,
+      "scores_total": 5,
       "space": {
         "id": "we3home.com",
         "name": "daoresorts.club",
@@ -239,7 +239,7 @@
         "wstrzymuje się"
       ],
       "scores": [
-        1,
+        5,
         0,
         0,
         0
@@ -643042,16 +643042,16 @@
   ],
   "prices": {
     "bitcoin": {
-      "usd": 86508,
-      "usd_24h_change": 0.2356963126678039
+      "usd": 85940,
+      "usd_24h_change": 0.2508829285488233
     },
     "ethereum": {
-      "usd": 2847.34,
-      "usd_24h_change": 0.2767633726698617
+      "usd": 2826.53,
+      "usd_24h_change": 0.5825381421458777
     },
     "solana": {
-      "usd": 122.89,
-      "usd_24h_change": -0.24829679049179315
+      "usd": 121.51,
+      "usd_24h_change": -0.45327171480543704
     }
   }
 }
