@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-12-19T06:39:33.725Z",
+  "generatedAt": "2025-12-19T06:59:50.090Z",
   "repo": "Ivan09069/echoforge",
   "issues": [
     {
@@ -121,8 +121,8 @@
       "id": "0x08dc7497931af3f9c2cf96ce84f41058afc53ce39244eda5e8faa4018ee5178a",
       "title": "Redbelly Developer Docs - Production Ready Onboarding System",
       "end": 1766556000,
-      "votes": 1,
-      "scores_total": 2039.50943934459,
+      "votes": 2,
+      "scores_total": 392439.0303995119,
       "space": {
         "id": "rbnt.eth",
         "name": "Redbelly Network",
@@ -135,7 +135,7 @@
       ],
       "scores": [
         2039.50943934459,
-        0,
+        390399.52096016734,
         0
       ]
     },
@@ -143,8 +143,8 @@
       "id": "0xda4ab77882105c88eaba4c4fadbf0a80fd24e2e92c8fbe6c372af1a041f13606",
       "title": "[LIP-102] Approval of New Tech SubDAO Members",
       "end": 1766712600,
-      "votes": 6,
-      "scores_total": 2446454.117158,
+      "votes": 7,
+      "scores_total": 2520385.2440790003,
       "space": {
         "id": "likerland.eth",
         "name": "LikeCoin DAO (v3)",
@@ -641961,16 +641961,16 @@
   ],
   "prices": {
     "bitcoin": {
-      "usd": 86971,
-      "usd_24h_change": 0.6380737241627984
+      "usd": 87310,
+      "usd_24h_change": 0.9406231616624556
     },
     "ethereum": {
-      "usd": 2920.38,
-      "usd_24h_change": 3.2953902005212727
+      "usd": 2942.26,
+      "usd_24h_change": 4.083425102942009
     },
     "solana": {
-      "usd": 122.8,
-      "usd_24h_change": 0.09417361783842676
+      "usd": 123.06,
+      "usd_24h_change": 0.33825990338364753
     }
   }
 }
