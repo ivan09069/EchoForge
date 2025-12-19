@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-12-19T03:40:45.862Z",
+  "generatedAt": "2025-12-19T04:21:11.238Z",
   "repo": "Ivan09069/echoforge",
   "issues": [
     {
@@ -121,8 +121,8 @@
       "id": "0xda4ab77882105c88eaba4c4fadbf0a80fd24e2e92c8fbe6c372af1a041f13606",
       "title": "[LIP-102] Approval of New Tech SubDAO Members",
       "end": 1766712600,
-      "votes": 4,
-      "scores_total": 242281.89657799999,
+      "votes": 5,
+      "scores_total": 2438023.496243,
       "space": {
         "id": "likerland.eth",
         "name": "LikeCoin DAO (v3)",
@@ -641728,16 +641728,16 @@
   ],
   "prices": {
     "bitcoin": {
-      "usd": 86915,
-      "usd_24h_change": 0.5793255827719432
+      "usd": 87238,
+      "usd_24h_change": 0.5826946043971726
     },
     "ethereum": {
-      "usd": 2895.66,
-      "usd_24h_change": 2.5066284897233015
+      "usd": 2924.16,
+      "usd_24h_change": 3.229711241182602
     },
     "solana": {
-      "usd": 121.29,
-      "usd_24h_change": -1.5852415693744195
+      "usd": 122.02,
+      "usd_24h_change": -1.3819270857774835
     }
   }
 }
