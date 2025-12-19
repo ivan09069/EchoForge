@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-12-19T09:34:36.273Z",
+  "generatedAt": "2025-12-19T09:56:39.080Z",
   "repo": "Ivan09069/echoforge",
   "issues": [
     {
@@ -121,8 +121,8 @@
       "id": "0x1cf12c97dfac2e1f1b0d2c5016543a61ae19138ef4d4035ab23e4ce869578211",
       "title": "Proposal 10 – Add Liquidity to USP/USDC Pool Using PikuDAO Treasury",
       "end": 1766308396,
-      "votes": 3,
-      "scores_total": 860241.3400000001,
+      "votes": 8,
+      "scores_total": 7359051.38,
       "space": {
         "id": "pikudao.eth",
         "name": "PikuDAO",
@@ -134,7 +134,7 @@
         "Abstain"
       ],
       "scores": [
-        860241.3400000001,
+        7359051.38,
         0,
         0
       ]
@@ -513,8 +513,8 @@
       "id": "0x56dc67c3484c661fcd2dbfa68394a969288982846a1745f5bb5eeb065b9b34ab",
       "title": "Buyback Program & Buyback Portal",
       "end": 1767277860,
-      "votes": 40,
-      "scores_total": 41796.359653548585,
+      "votes": 51,
+      "scores_total": 54207.359653548585,
       "space": {
         "id": "lab.pro",
         "name": "LAB",
@@ -526,7 +526,7 @@
         "Abstain"
       ],
       "scores": [
-        41796.359653548585,
+        54207.359653548585,
         0,
         0
       ]
@@ -641651,16 +641651,16 @@
   ],
   "prices": {
     "bitcoin": {
-      "usd": 88049,
-      "usd_24h_change": 1.0537197133616796
+      "usd": 88016,
+      "usd_24h_change": 0.8776711709370197
     },
     "ethereum": {
-      "usd": 2956.42,
-      "usd_24h_change": 3.7460997019420366
+      "usd": 2952.22,
+      "usd_24h_change": 3.488764866598585
     },
     "solana": {
-      "usd": 124.62,
-      "usd_24h_change": 1.3119888120786527
+      "usd": 124.68,
+      "usd_24h_change": 0.8031243498693599
     }
   }
 }
