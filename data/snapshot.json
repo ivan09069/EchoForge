@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-12-19T23:27:03.548Z",
+  "generatedAt": "2025-12-19T23:43:06.313Z",
   "repo": "Ivan09069/echoforge",
   "issues": [],
   "proposals": [
@@ -77,8 +77,8 @@
       "id": "0xb293f50e4aa0d0457f48612e75969ccb1d9ce9643f3ecdc11933c0abcf9135bd",
       "title": "Launch PIGGY<>WETH Pool on Hydrex",
       "end": 1766414422,
-      "votes": 25,
-      "scores_total": 1778294965.0617852,
+      "votes": 27,
+      "scores_total": 1791714176.0560398,
       "space": {
         "id": "basedpiggy.eth",
         "name": "PiggyDAO",
@@ -90,7 +90,7 @@
         "Abstain"
       ],
       "scores": [
-        1778294965.0617852,
+        1791714176.0560398,
         0,
         0
       ]
@@ -245,8 +245,8 @@
       "id": "0xccc120a75b0ba0a4494ab66a75c4e0b425ed1b11fc8ab06e4c9783c56a379629",
       "title": "[Curve] Ownership DAO Vote ID: 1296",
       "end": 1766398566,
-      "votes": 3,
-      "scores_total": 24030.573839032797,
+      "votes": 4,
+      "scores_total": 24077.749543386544,
       "space": {
         "id": "veclev.eth",
         "name": "CLever",
@@ -257,7 +257,7 @@
         "no"
       ],
       "scores": [
-        24030.573839032797,
+        24077.749543386544,
         0
       ]
     },
@@ -639828,16 +639828,16 @@
   ],
   "prices": {
     "bitcoin": {
-      "usd": 88286,
-      "usd_24h_change": 3.28729886634189
+      "usd": 88134,
+      "usd_24h_change": 3.167757719267026
     },
     "ethereum": {
-      "usd": 2984.73,
-      "usd_24h_change": 5.610811103407578
+      "usd": 2980.73,
+      "usd_24h_change": 5.501672909711133
     },
     "solana": {
-      "usd": 126.44,
-      "usd_24h_change": 5.77142806184397
+      "usd": 126.26,
+      "usd_24h_change": 5.753932303405989
     }
   }
 }
