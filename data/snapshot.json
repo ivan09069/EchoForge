@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-12-19T14:29:56.907Z",
+  "generatedAt": "2025-12-19T14:50:47.151Z",
   "repo": "Ivan09069/echoforge",
   "issues": [
     {
@@ -118,11 +118,31 @@
   ],
   "proposals": [
     {
+      "id": "0x615d982cbb731fefbc9ecac495b5de1467a930b5ebacd4e9585707e1e6ec3983",
+      "title": "FUTURE SOC VALUE 0.30u",
+      "end": 1766414201,
+      "votes": 1,
+      "scores_total": 18449.074074074073,
+      "space": {
+        "id": "socratesdaos.eth",
+        "name": "SocratesDAO Staging",
+        "avatar": "ipfs://bafkreibrfurnnuikeqejdxfh23ubrgq7cet3zalu7abn4cpzy4unouqsja"
+      },
+      "choices": [
+        "For",
+        "Against"
+      ],
+      "scores": [
+        0,
+        18449.074074074073
+      ]
+    },
+    {
       "id": "0xa651e1844e4d754357abba8ee6d9b54ea7890687ff4b93d173a0c07822263379",
       "title": "本产品是否已准备好在圣诞节前上线内测？",
       "end": 1766412909,
-      "votes": 1,
-      "scores_total": 0.09122222222222223,
+      "votes": 2,
+      "scores_total": 19646.387518518517,
       "space": {
         "id": "socratesdaos.eth",
         "name": "SocratesDAO Staging",
@@ -135,7 +155,7 @@
       ],
       "scores": [
         0,
-        0.09122222222222225,
+        19646.387518518517,
         0
       ]
     },
@@ -516,26 +536,6 @@
       ],
       "scores": [
         0,
-        0
-      ]
-    },
-    {
-      "id": "0x7ddc4f29ce02f628e980ca021f99603b83fabb7dadb2340527508cf6bac503d5",
-      "title": "[Curve] Ownership DAO Vote ID: 1295",
-      "end": 1766357173,
-      "votes": 5,
-      "scores_total": 31193.754908366678,
-      "space": {
-        "id": "veclev.eth",
-        "name": "CLever",
-        "avatar": "ipfs://bafkreidyi6dbbidfrcskangkpzzsdlpu2izqoyyg5wuf2hijlkvuti2qdm"
-      },
-      "choices": [
-        "yes",
-        "no"
-      ],
-      "scores": [
-        31193.75490836668,
         0
       ]
     }
@@ -641110,16 +641110,16 @@
   ],
   "prices": {
     "bitcoin": {
-      "usd": 88018,
-      "usd_24h_change": -0.5149750584962998
+      "usd": 88232,
+      "usd_24h_change": 0.3927605526210745
     },
     "ethereum": {
-      "usd": 2961.9,
-      "usd_24h_change": 0.11646220417066257
+      "usd": 2977.04,
+      "usd_24h_change": 1.3895420116552284
     },
     "solana": {
-      "usd": 125.65,
-      "usd_24h_change": -0.5693090332842602
+      "usd": 125.91,
+      "usd_24h_change": 0.43494433555550055
     }
   }
 }
