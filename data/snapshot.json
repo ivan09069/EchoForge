@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-12-19T08:36:27.781Z",
+  "generatedAt": "2025-12-19T09:00:01.391Z",
   "repo": "Ivan09069/echoforge",
   "issues": [
     {
@@ -491,8 +491,8 @@
       "id": "0x56dc67c3484c661fcd2dbfa68394a969288982846a1745f5bb5eeb065b9b34ab",
       "title": "Buyback Program & Buyback Portal",
       "end": 1767277860,
-      "votes": 2,
-      "scores_total": 778.3596535485892,
+      "votes": 7,
+      "scores_total": 6313.359653548589,
       "space": {
         "id": "lab.pro",
         "name": "LAB",
@@ -504,7 +504,7 @@
         "Abstain"
       ],
       "scores": [
-        778.3596535485892,
+        6313.359653548589,
         0,
         0
       ]
@@ -641868,16 +641868,16 @@
   ],
   "prices": {
     "bitcoin": {
-      "usd": 88010,
-      "usd_24h_change": 1.2203700680363154
+      "usd": 88096,
+      "usd_24h_change": 1.3340782486596108
     },
     "ethereum": {
-      "usd": 2947.87,
-      "usd_24h_change": 3.5480594369354828
+      "usd": 2951.46,
+      "usd_24h_change": 3.9201108112257375
     },
     "solana": {
-      "usd": 124.33,
-      "usd_24h_change": 0.9904858553549887
+      "usd": 125.16,
+      "usd_24h_change": 1.8319529855415677
     }
   }
 }
