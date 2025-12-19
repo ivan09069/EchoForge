@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-12-19T10:29:45.571Z",
+  "generatedAt": "2025-12-19T10:50:50.242Z",
   "repo": "Ivan09069/echoforge",
   "issues": [
     {
@@ -167,8 +167,8 @@
       "id": "0x1cf12c97dfac2e1f1b0d2c5016543a61ae19138ef4d4035ab23e4ce869578211",
       "title": "Proposal 10 – Add Liquidity to USP/USDC Pool Using PikuDAO Treasury",
       "end": 1766308396,
-      "votes": 12,
-      "scores_total": 7439051.38,
+      "votes": 13,
+      "scores_total": 8023576.18,
       "space": {
         "id": "pikudao.eth",
         "name": "PikuDAO",
@@ -180,7 +180,7 @@
         "Abstain"
       ],
       "scores": [
-        7419051.38,
+        8003576.18,
         0,
         20000
       ]
@@ -211,8 +211,8 @@
       "id": "0xda4ab77882105c88eaba4c4fadbf0a80fd24e2e92c8fbe6c372af1a041f13606",
       "title": "[LIP-102] Approval of New Tech SubDAO Members",
       "end": 1766712600,
-      "votes": 12,
-      "scores_total": 3343206.202475,
+      "votes": 13,
+      "scores_total": 3353206.202475,
       "space": {
         "id": "likerland.eth",
         "name": "LikeCoin DAO (v3)",
@@ -477,8 +477,8 @@
       "id": "0x65f80603d96f3eea5e0dab47d86fda035cbce06a38caa3c7f3a937b78e350fc0",
       "title": "# UIP-14 USTBL USD0 collateral approval",
       "end": 1766262600,
-      "votes": 38,
-      "scores_total": 13630676.256462496,
+      "votes": 42,
+      "scores_total": 13657494.754591957,
       "space": {
         "id": "usualmoney.eth",
         "name": "Usual",
@@ -490,7 +490,7 @@
         "Abstain"
       ],
       "scores": [
-        13630676.256462496,
+        13657494.754591957,
         0,
         0
       ]
@@ -641793,16 +641793,16 @@
   ],
   "prices": {
     "bitcoin": {
-      "usd": 87977,
-      "usd_24h_change": 0.7303672455438778
+      "usd": 88149,
+      "usd_24h_change": 0.9993548943714905
     },
     "ethereum": {
-      "usd": 2951.97,
-      "usd_24h_change": 3.3355760669200665
+      "usd": 2951.84,
+      "usd_24h_change": 3.3093341687777
     },
     "solana": {
-      "usd": 124.62,
-      "usd_24h_change": 0.7655005690140483
+      "usd": 124.68,
+      "usd_24h_change": 0.6484431218898117
     }
   }
 }
