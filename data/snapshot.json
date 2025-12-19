@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-12-19T18:40:46.157Z",
+  "generatedAt": "2025-12-19T18:59:43.818Z",
   "repo": "Ivan09069/echoforge",
   "issues": [
     {
@@ -143,8 +143,8 @@
       "id": "0xb293f50e4aa0d0457f48612e75969ccb1d9ce9643f3ecdc11933c0abcf9135bd",
       "title": "Launch PIGGY<>WETH Pool on Hydrex",
       "end": 1766414422,
-      "votes": 0,
-      "scores_total": 0,
+      "votes": 2,
+      "scores_total": 49883518.03687574,
       "space": {
         "id": "basedpiggy.eth",
         "name": "PiggyDAO",
@@ -156,7 +156,7 @@
         "Abstain"
       ],
       "scores": [
-        0,
+        49883518.03687574,
         0,
         0
       ]
@@ -640084,16 +640084,16 @@
   ],
   "prices": {
     "bitcoin": {
-      "usd": 87036,
-      "usd_24h_change": 0.6728263784675256
+      "usd": 87172,
+      "usd_24h_change": 1.5926162760132596
     },
     "ethereum": {
-      "usd": 2957.96,
-      "usd_24h_change": 3.994559590684294
+      "usd": 2966.53,
+      "usd_24h_change": 5.057651225943313
     },
     "solana": {
-      "usd": 124.18,
-      "usd_24h_change": 1.1799717613520164
+      "usd": 124.73,
+      "usd_24h_change": 2.545656604997255
     }
   }
 }
