@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-12-19T15:28:53.678Z",
+  "generatedAt": "2025-12-19T15:48:02.647Z",
   "repo": "Ivan09069/echoforge",
   "issues": [
     {
@@ -163,8 +163,8 @@
       "id": "0xa651e1844e4d754357abba8ee6d9b54ea7890687ff4b93d173a0c07822263379",
       "title": "本产品是否已准备好在圣诞节前上线内测？",
       "end": 1766412909,
-      "votes": 2,
-      "scores_total": 19646.387518518517,
+      "votes": 3,
+      "scores_total": 20994.76928935185,
       "space": {
         "id": "socratesdaos.eth",
         "name": "SocratesDAO Staging",
@@ -177,7 +177,7 @@
       ],
       "scores": [
         0,
-        19646.387518518517,
+        20994.76928935185,
         0
       ]
     },
@@ -640286,16 +640286,16 @@
   ],
   "prices": {
     "bitcoin": {
-      "usd": 88228,
-      "usd_24h_change": -0.19345243927470088
+      "usd": 87957,
+      "usd_24h_change": -1.121217268436784
     },
     "ethereum": {
-      "usd": 2963.88,
-      "usd_24h_change": -0.09296362477841053
+      "usd": 2966.87,
+      "usd_24h_change": -0.22772523811596204
     },
     "solana": {
-      "usd": 125.86,
-      "usd_24h_change": -1.419879732591959
+      "usd": 125.45,
+      "usd_24h_change": -2.0460868052455496
     }
   }
 }
