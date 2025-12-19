@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-12-19T11:41:58.729Z",
+  "generatedAt": "2025-12-19T11:54:50.919Z",
   "repo": "Ivan09069/echoforge",
   "issues": [
     {
@@ -117,6 +117,28 @@
     }
   ],
   "proposals": [
+    {
+      "id": "0x4f6d50b4f5db0a73748a18f90281ec8df4698b4ca208807f290e8c377ba0f4c0",
+      "title": "是否要增加 15 分钟市场？",
+      "end": 1766403796,
+      "votes": 1,
+      "scores_total": 1349.963888888889,
+      "space": {
+        "id": "socratesdaos.eth",
+        "name": "SocratesDAO Staging",
+        "avatar": "ipfs://bafkreibrfurnnuikeqejdxfh23ubrgq7cet3zalu7abn4cpzy4unouqsja"
+      },
+      "choices": [
+        "For",
+        "Against",
+        "Abstain"
+      ],
+      "scores": [
+        0,
+        1349.963888888889,
+        0
+      ]
+    },
     {
       "id": "0xfe57f31ff6cc07aa463e3e54e69820611e55f792adbe7425e347f5cd387bd01a",
       "title": "[sdCRV] Add a gauge for the following pool: OETH/ARM-WETH-stETH",
@@ -512,26 +534,6 @@
       ],
       "scores": [
         30070.3313532046,
-        0
-      ]
-    },
-    {
-      "id": "0xa27219843e43ae2370f91f6a42df8824c270dda8f13a37aa866d8b6e7e6cfb2b",
-      "title": "[Curve] Ownership DAO Vote ID: 1295",
-      "end": 1766360773,
-      "votes": 3,
-      "scores_total": 40908.71387383297,
-      "space": {
-        "id": "cvx.eth",
-        "name": "Convex Finance",
-        "avatar": "ipfs://QmXB2Ce726sNzJbrJPsQQz1BZRQvfDntPS18prAi9JmrgG"
-      },
-      "choices": [
-        "yes",
-        "no"
-      ],
-      "scores": [
-        40908.71387383297,
         0
       ]
     }
@@ -641850,16 +641852,16 @@
   ],
   "prices": {
     "bitcoin": {
-      "usd": 88201,
-      "usd_24h_change": 1.2585846025670815
+      "usd": 88198,
+      "usd_24h_change": 1.1815452548062033
     },
     "ethereum": {
-      "usd": 2963.97,
-      "usd_24h_change": 3.910732801874378
+      "usd": 2964.38,
+      "usd_24h_change": 3.7627434839946914
     },
     "solana": {
-      "usd": 125.25,
-      "usd_24h_change": 1.4004576262923312
+      "usd": 125.31,
+      "usd_24h_change": 1.3014134445407708
     }
   }
 }
