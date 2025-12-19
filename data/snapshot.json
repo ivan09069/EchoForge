@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-12-19T17:26:44.072Z",
+  "generatedAt": "2025-12-19T17:41:26.851Z",
   "repo": "Ivan09069/echoforge",
   "issues": [
     {
@@ -117,6 +117,28 @@
     }
   ],
   "proposals": [
+    {
+      "id": "0xb293f50e4aa0d0457f48612e75969ccb1d9ce9643f3ecdc11933c0abcf9135bd",
+      "title": "Launch PIGGY<>WETH Pool on Hydrex",
+      "end": 1766414422,
+      "votes": 0,
+      "scores_total": 0,
+      "space": {
+        "id": "basedpiggy.eth",
+        "name": "PiggyDAO",
+        "avatar": "ipfs://bafkreia6scs7gu6y4gy63u27pdlqfpsnvnmyzv25imgjgqmuxqus6i36jm"
+      },
+      "choices": [
+        "For",
+        "Against",
+        "Abstain"
+      ],
+      "scores": [
+        0,
+        0,
+        0
+      ]
+    },
     {
       "id": "0x90144e81fdb52d780135cb3838e00ec9af6c7554f1f6e453a147702b41adae9a",
       "title": "[GIP-274] Migration Timeline Update",
@@ -401,8 +423,8 @@
       "id": "0x08dc7497931af3f9c2cf96ce84f41058afc53ce39244eda5e8faa4018ee5178a",
       "title": "Redbelly Developer Docs - Production Ready Onboarding System",
       "end": 1766556000,
-      "votes": 3,
-      "scores_total": 816957.1158995782,
+      "votes": 4,
+      "scores_total": 816958.2592482021,
       "space": {
         "id": "rbnt.eth",
         "name": "Redbelly Network",
@@ -415,7 +437,7 @@
       ],
       "scores": [
         2039.50943934459,
-        814917.6064602337,
+        814918.7498088575,
         0
       ]
     },
@@ -515,26 +537,6 @@
       "choices": [
         "Yes",
         "No"
-      ],
-      "scores": [
-        0,
-        0
-      ]
-    },
-    {
-      "id": "0x4f613a80578b66cbaf4428d45eebf0a46b0834b725daa6c0bd9595a4dcb75962",
-      "title": "[Curve] Ownership DAO Vote ID: 1294",
-      "end": 1766353571,
-      "votes": 0,
-      "scores_total": 0,
-      "space": {
-        "id": "aladdindao.eth",
-        "name": "AladdinDAO",
-        "avatar": "https://avatars.githubusercontent.com/u/78200839?s=200&v=4"
-      },
-      "choices": [
-        "yes",
-        "no"
       ],
       "scores": [
         0,
@@ -639974,16 +639976,16 @@
   ],
   "prices": {
     "bitcoin": {
-      "usd": 88031,
-      "usd_24h_change": 2.9348979337394434
+      "usd": 87245,
+      "usd_24h_change": 1.1149707296509968
     },
     "ethereum": {
-      "usd": 2981.66,
-      "usd_24h_change": 6.281406887043316
+      "usd": 2968.56,
+      "usd_24h_change": 4.670810714004078
     },
     "solana": {
-      "usd": 125.78,
-      "usd_24h_change": 2.706887336639837
+      "usd": 124.77,
+      "usd_24h_change": 2.0126301301428025
     }
   }
 }
