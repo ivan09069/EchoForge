@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-12-20T13:53:01.168Z",
+  "generatedAt": "2025-12-20T14:22:56.080Z",
   "repo": "Ivan09069/echoforge",
   "issues": [],
   "proposals": [
@@ -7,8 +7,8 @@
       "id": "0x6e39338b595572b3bf7bb4d947940e2f23c6d94707a918793a99ebb549417768",
       "title": "XIP #28: Q4 & Q1 XBG Buybacks",
       "end": 1766829600,
-      "votes": 0,
-      "scores_total": 0,
+      "votes": 14,
+      "scores_total": 1681183.9366015685,
       "space": {
         "id": "xborg.eth",
         "name": "XBorg",
@@ -20,8 +20,8 @@
         "Abstain"
       ],
       "scores": [
-        0,
-        0,
+        1572000.7346121278,
+        109183.20198944042,
         0
       ]
     },
@@ -161,8 +161,8 @@
       "id": "0xa28a6ce5b7f4d2bf9df07b5862ac08f9c1f6b8d62784c1f9ae1d4f46e0d62ae6",
       "title": "Vote for the New Piggy Wordmark & Logo",
       "end": 1766421854,
-      "votes": 65,
-      "scores_total": 1939079136.9922342,
+      "votes": 68,
+      "scores_total": 1973074890.9772828,
       "space": {
         "id": "basedpiggy.eth",
         "name": "PiggyDAO",
@@ -178,8 +178,8 @@
       ],
       "scores": [
         46432763.29944678,
-        1396827696.0368392,
-        246212049.06744564,
+        1408498724.026711,
+        268536775.06262237,
         138170220.73474944,
         0,
         111436407.85375306
@@ -211,8 +211,8 @@
       "id": "0xb293f50e4aa0d0457f48612e75969ccb1d9ce9643f3ecdc11933c0abcf9135bd",
       "title": "Launch PIGGY<>WETH Pool on Hydrex",
       "end": 1766414422,
-      "votes": 73,
-      "scores_total": 3057327247.796586,
+      "votes": 76,
+      "scores_total": 3091323001.7816343,
       "space": {
         "id": "basedpiggy.eth",
         "name": "PiggyDAO",
@@ -224,7 +224,7 @@
         "Abstain"
       ],
       "scores": [
-        3056939772.4222145,
+        3090935526.407263,
         0,
         387475.374371805
       ]
@@ -233,8 +233,8 @@
       "id": "0x90144e81fdb52d780135cb3838e00ec9af6c7554f1f6e453a147702b41adae9a",
       "title": "[GIP-274] Migration Timeline Update",
       "end": 1766416145,
-      "votes": 12,
-      "scores_total": 121793203.4665626,
+      "votes": 13,
+      "scores_total": 121793215.4665626,
       "space": {
         "id": "gearbox.eth",
         "name": "Gearbox",
@@ -246,7 +246,7 @@
         "Abstain"
       ],
       "scores": [
-        121793203.4665626,
+        121793215.4665626,
         0,
         0
       ]
@@ -419,8 +419,8 @@
       "id": "0x20e3d10b42194771bc32f6eff575af62b4788b5ad0a37b4e8767016877184d23",
       "title": "Update Platform Fee Distribution 75% to Treasury, 25% to Stakers",
       "end": 1766399737,
-      "votes": 5,
-      "scores_total": 788984.6145621159,
+      "votes": 6,
+      "scores_total": 819296.5297789075,
       "space": {
         "id": "yakherd.eth",
         "name": "Yield Yak",
@@ -431,7 +431,7 @@
         "Reject"
       ],
       "scores": [
-        788984.6145621159,
+        819296.5297789075,
         0
       ]
     }
@@ -638171,16 +638171,16 @@
   ],
   "prices": {
     "bitcoin": {
-      "usd": 88202,
-      "usd_24h_change": 0.3358839013341742
+      "usd": 88064,
+      "usd_24h_change": 0.02859566821100448
     },
     "ethereum": {
-      "usd": 2978.81,
-      "usd_24h_change": 0.6328131920348671
+      "usd": 2974.01,
+      "usd_24h_change": 0.4009014474730302
     },
     "solana": {
-      "usd": 125.95,
-      "usd_24h_change": 0.038469101552258654
+      "usd": 125.76,
+      "usd_24h_change": -0.17472069366344112
     }
   }
 }
