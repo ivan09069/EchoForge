@@ -1,8 +1,30 @@
 {
-  "generatedAt": "2025-12-20T13:31:25.742Z",
+  "generatedAt": "2025-12-20T13:53:01.168Z",
   "repo": "Ivan09069/echoforge",
   "issues": [],
   "proposals": [
+    {
+      "id": "0x6e39338b595572b3bf7bb4d947940e2f23c6d94707a918793a99ebb549417768",
+      "title": "XIP #28: Q4 & Q1 XBG Buybacks",
+      "end": 1766829600,
+      "votes": 0,
+      "scores_total": 0,
+      "space": {
+        "id": "xborg.eth",
+        "name": "XBorg",
+        "avatar": "ipfs://bafkreiaee26snzrkzp6njmgjybaeeu33sjmb6yxdjur5gtytyxqd7gku7y"
+      },
+      "choices": [
+        "For",
+        "Against",
+        "Abstain"
+      ],
+      "scores": [
+        0,
+        0,
+        0
+      ]
+    },
     {
       "id": "0x563d73652b4f0d20f437d8d9a1eaeebbb4f400fc4f940fca755fb93a9a31f016",
       "title": "SOCRATES HAHABOL SA PASKO?",
@@ -377,8 +399,8 @@
       "id": "0x910bf466b88a69f7308299b4094e8633c4e25cd36786e56af8b3fdb62e454f47",
       "title": "[Curve] Ownership DAO Vote ID: 1296",
       "end": 1766402166,
-      "votes": 3,
-      "scores_total": 122927.03047233113,
+      "votes": 4,
+      "scores_total": 127296.7676004646,
       "space": {
         "id": "cvx.eth",
         "name": "Convex Finance",
@@ -389,7 +411,7 @@
         "no"
       ],
       "scores": [
-        122927.03047233111,
+        127296.7676004646,
         0
       ]
     },
@@ -411,28 +433,6 @@
       "scores": [
         788984.6145621159,
         0
-      ]
-    },
-    {
-      "id": "0x1cf12c97dfac2e1f1b0d2c5016543a61ae19138ef4d4035ab23e4ce869578211",
-      "title": "Proposal 10 – Add Liquidity to USP/USDC Pool Using PikuDAO Treasury",
-      "end": 1766308396,
-      "votes": 16,
-      "scores_total": 8513576.18,
-      "space": {
-        "id": "pikudao.eth",
-        "name": "PikuDAO",
-        "avatar": "ipfs://bafkreigswhu7an7a6i7uyvwince3hewqaygn72q54wssqwf5dxiffab5my"
-      },
-      "choices": [
-        "For",
-        "Against",
-        "Abstain"
-      ],
-      "scores": [
-        8493576.18,
-        0,
-        20000
       ]
     }
   ],
@@ -638171,16 +638171,16 @@
   ],
   "prices": {
     "bitcoin": {
-      "usd": 87993,
-      "usd_24h_change": 0.018053718414016023
+      "usd": 88202,
+      "usd_24h_change": 0.3358839013341742
     },
     "ethereum": {
-      "usd": 2970.55,
-      "usd_24h_change": 0.19858154161332522
+      "usd": 2978.81,
+      "usd_24h_change": 0.6328131920348671
     },
     "solana": {
-      "usd": 125.71,
-      "usd_24h_change": -0.48143703739435717
+      "usd": 125.95,
+      "usd_24h_change": 0.038469101552258654
     }
   }
 }
