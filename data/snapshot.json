@@ -1,8 +1,52 @@
 {
-  "generatedAt": "2025-12-20T10:56:42.592Z",
+  "generatedAt": "2025-12-20T11:22:23.216Z",
   "repo": "Ivan09069/echoforge",
   "issues": [],
   "proposals": [
+    {
+      "id": "0x563d73652b4f0d20f437d8d9a1eaeebbb4f400fc4f940fca755fb93a9a31f016",
+      "title": "SOCRATES HAHABOL SA PASKO?",
+      "end": 1766487854,
+      "votes": 0,
+      "scores_total": 0,
+      "space": {
+        "id": "socratesdaos.eth",
+        "name": "SocratesDAO Staging",
+        "avatar": "ipfs://bafkreibrfurnnuikeqejdxfh23ubrgq7cet3zalu7abn4cpzy4unouqsja"
+      },
+      "choices": [
+        "For",
+        "Against",
+        "Abstain"
+      ],
+      "scores": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "0x13bf9681ec003e7891940b9352ea54d42aeacae31e68acfde040f64e60051cc2",
+      "title": "Yes or no???",
+      "end": 1766487747,
+      "votes": 0,
+      "scores_total": 0,
+      "space": {
+        "id": "socratesdaos.eth",
+        "name": "SocratesDAO Staging",
+        "avatar": "ipfs://bafkreibrfurnnuikeqejdxfh23ubrgq7cet3zalu7abn4cpzy4unouqsja"
+      },
+      "choices": [
+        "For",
+        "Against",
+        "Abstain"
+      ],
+      "scores": [
+        0,
+        0,
+        0
+      ]
+    },
     {
       "id": "0x40539d490a8719a9f22265b426cadde3baf709b69434df20e42107010af9679e",
       "title": "Which apple is best, all around?",
@@ -95,8 +139,8 @@
       "id": "0xa28a6ce5b7f4d2bf9df07b5862ac08f9c1f6b8d62784c1f9ae1d4f46e0d62ae6",
       "title": "Vote for the New Piggy Wordmark & Logo",
       "end": 1766421854,
-      "votes": 58,
-      "scores_total": 1767612796.5622985,
+      "votes": 60,
+      "scores_total": 1820718621.8535213,
       "space": {
         "id": "basedpiggy.eth",
         "name": "PiggyDAO",
@@ -112,7 +156,7 @@
       ],
       "scores": [
         27438969.317903705,
-        1244355149.5884466,
+        1297460974.8796694,
         246212049.06744564,
         138170220.73474944,
         0,
@@ -145,8 +189,8 @@
       "id": "0xb293f50e4aa0d0457f48612e75969ccb1d9ce9643f3ecdc11933c0abcf9135bd",
       "title": "Launch PIGGY<>WETH Pool on Hydrex",
       "end": 1766414422,
-      "votes": 66,
-      "scores_total": 2885860907.3666506,
+      "votes": 68,
+      "scores_total": 2938966732.657873,
       "space": {
         "id": "basedpiggy.eth",
         "name": "PiggyDAO",
@@ -158,7 +202,7 @@
         "Abstain"
       ],
       "scores": [
-        2885473431.992279,
+        2938579257.2835016,
         0,
         387475.374371805
       ]
@@ -333,8 +377,8 @@
       "id": "0x910bf466b88a69f7308299b4094e8633c4e25cd36786e56af8b3fdb62e454f47",
       "title": "[Curve] Ownership DAO Vote ID: 1296",
       "end": 1766402166,
-      "votes": 2,
-      "scores_total": 10071.68710724757,
+      "votes": 3,
+      "scores_total": 122927.03047233113,
       "space": {
         "id": "cvx.eth",
         "name": "Convex Finance",
@@ -345,7 +389,7 @@
         "no"
       ],
       "scores": [
-        10071.68710724757,
+        122927.03047233111,
         0
       ]
     },
@@ -389,54 +433,6 @@
         8493576.18,
         0,
         20000
-      ]
-    },
-    {
-      "id": "0x83dd68a6a3ed23c82c78d0eacdb00cfa830ad718832e975dc39013fb68dcc30c",
-      "title": "Beets Budget 2026 Q1",
-      "end": 1766487600,
-      "votes": 8,
-      "scores_total": 8276183.464125448,
-      "space": {
-        "id": "beets.eth",
-        "name": "Beets",
-        "avatar": "ipfs://bafkreig2w5k4swl6dmbhhx3uprx5sosdooclkmy2ekkeh5gn3cyabpqhhi"
-      },
-      "choices": [
-        "Yes (Option A)",
-        "Yes (Option B)",
-        "Yes (Option C)",
-        "No, needs revising",
-        "Abstain"
-      ],
-      "scores": [
-        0,
-        8167863.840239919,
-        108319.62388552944,
-        0,
-        0
-      ]
-    },
-    {
-      "id": "0xbb392ac5e810c3737a5e87568b292bd8f723c6ce3697ae8721c1333a113ed5c0",
-      "title": "Launch of a Liquidity Incentive Program for Core Ecosystem Assets",
-      "end": 1766815248,
-      "votes": 2,
-      "scores_total": 90303.84578228144,
-      "space": {
-        "id": "umerge.eth",
-        "name": "uMerge DAO on Units Network",
-        "avatar": "ipfs://bafkreihgic4pv7qym5zxkswqpq7iwxrgv3xcpabi2av7263glpju6rvpnu"
-      },
-      "choices": [
-        "For",
-        "Against",
-        "Abstain"
-      ],
-      "scores": [
-        90303.84578228144,
-        0,
-        0
       ]
     }
   ],
@@ -638429,16 +638425,16 @@
   ],
   "prices": {
     "bitcoin": {
-      "usd": 88119,
-      "usd_24h_change": -0.10672144979891757
+      "usd": 88105,
+      "usd_24h_change": -0.16589780561336626
     },
     "ethereum": {
-      "usd": 2977.43,
-      "usd_24h_change": 0.8247228167687548
+      "usd": 2977.98,
+      "usd_24h_change": 0.7325489108272163
     },
     "solana": {
-      "usd": 126.04,
-      "usd_24h_change": 1.0696053956471774
+      "usd": 125.91,
+      "usd_24h_change": 0.7392513810024505
     }
   }
 }
