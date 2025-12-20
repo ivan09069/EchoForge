@@ -1,14 +1,60 @@
 {
-  "generatedAt": "2025-12-20T10:26:00.309Z",
+  "generatedAt": "2025-12-20T10:44:26.479Z",
   "repo": "Ivan09069/echoforge",
   "issues": [],
   "proposals": [
     {
+      "id": "0x40539d490a8719a9f22265b426cadde3baf709b69434df20e42107010af9679e",
+      "title": "Which apple is best, all around?",
+      "end": 1766313246,
+      "votes": 0,
+      "scores_total": 0,
+      "space": {
+        "id": "sequence-demos.eth",
+        "name": "0xsequence-demos",
+        "avatar": ""
+      },
+      "choices": [
+        "Golden Delicious",
+        "Honey Crisp",
+        "Cosmic Crisp",
+        "Red Prince"
+      ],
+      "scores": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "0xc67ab2b72716f8c9cb8c8fb4f4eecf0e66d83034a3938751dd5041204b5a1164",
+      "title": "Is this example useful and helpful to you?",
+      "end": 1766313246,
+      "votes": 0,
+      "scores_total": 0,
+      "space": {
+        "id": "sequence-demos.eth",
+        "name": "0xsequence-demos",
+        "avatar": ""
+      },
+      "choices": [
+        "Yes",
+        "No",
+        "Undecided"
+      ],
+      "scores": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
       "id": "0x11332d17b22043bc9cc4a8a11dbd16445b50e57dc545df1efbf97714e73ebb55",
       "title": "QIP #11 : Temporary Fee Redistribution Adjustment (Community Request)",
       "end": 1766469249,
-      "votes": 3,
-      "scores_total": 6475561160.2263775,
+      "votes": 4,
+      "scores_total": 8549767547.198044,
       "space": {
         "id": "quollfi.eth",
         "name": "Quoll Finance",
@@ -20,7 +66,7 @@
         "Abstain"
       ],
       "scores": [
-        6475561160.2263775,
+        8549767547.198044,
         0,
         0
       ]
@@ -304,6 +350,26 @@
       ]
     },
     {
+      "id": "0x20e3d10b42194771bc32f6eff575af62b4788b5ad0a37b4e8767016877184d23",
+      "title": "Update Platform Fee Distribution 75% to Treasury, 25% to Stakers",
+      "end": 1766399737,
+      "votes": 0,
+      "scores_total": 0,
+      "space": {
+        "id": "yakherd.eth",
+        "name": "Yield Yak",
+        "avatar": "ipfs://bafkreihgt7natz7kvmyx223hjcsqzu3345yerd7m7tjr74kaicfdikinpi"
+      },
+      "choices": [
+        "Confirm",
+        "Reject"
+      ],
+      "scores": [
+        0,
+        0
+      ]
+    },
+    {
       "id": "0x1cf12c97dfac2e1f1b0d2c5016543a61ae19138ef4d4035ab23e4ce869578211",
       "title": "Proposal 10 – Add Liquidity to USP/USDC Pool Using PikuDAO Treasury",
       "end": 1766308396,
@@ -369,72 +435,6 @@
       ],
       "scores": [
         90303.84578228144,
-        0,
-        0
-      ]
-    },
-    {
-      "id": "0x08dc7497931af3f9c2cf96ce84f41058afc53ce39244eda5e8faa4018ee5178a",
-      "title": "Redbelly Developer Docs - Production Ready Onboarding System",
-      "end": 1766556000,
-      "votes": 7,
-      "scores_total": 2999749.494823265,
-      "space": {
-        "id": "rbnt.eth",
-        "name": "Redbelly Network",
-        "avatar": "ipfs://bafkreid4hjm5wr7eg3f47zmptxnxlga3sf4gabvrj5hakwfrj7i2xkrxtu"
-      },
-      "choices": [
-        "For",
-        "Against",
-        "Abstain"
-      ],
-      "scores": [
-        2737.2325524237863,
-        2997012.262270841,
-        0
-      ]
-    },
-    {
-      "id": "0x1ccf552f7d4e30fca3c7e57604955edc598e64a9d22c8dca3462d1472d311182",
-      "title": "[BIP-896] Rocket Pool Balancer Alliance Addendum",
-      "end": 1766430000,
-      "votes": 0,
-      "scores_total": 0,
-      "space": {
-        "id": "sdbal.eth",
-        "name": "Stake DAO BAL",
-        "avatar": "ipfs://bafkreidlhbbqqq65kaf44aahfkdtpp4s2aa4opttwnpn5gpnqrubvc3bti"
-      },
-      "choices": [
-        "Yes, let's do it",
-        "No, this is not the way",
-        "Abstain"
-      ],
-      "scores": [
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "id": "0x43d6de61aff537417070a31a387797761b1662d25ed8ecd9848bcef2d10bb771",
-      "title": "[BIP-897] Gauge proposal for iUSD-msUSD with 5% cap",
-      "end": 1766430000,
-      "votes": 0,
-      "scores_total": 0,
-      "space": {
-        "id": "sdbal.eth",
-        "name": "Stake DAO BAL",
-        "avatar": "ipfs://bafkreidlhbbqqq65kaf44aahfkdtpp4s2aa4opttwnpn5gpnqrubvc3bti"
-      },
-      "choices": [
-        "Yes, let's do it",
-        "No, this is not the way",
-        "Abstain"
-      ],
-      "scores": [
-        0,
         0,
         0
       ]
@@ -638429,16 +638429,16 @@
   ],
   "prices": {
     "bitcoin": {
-      "usd": 88127,
-      "usd_24h_change": 0.07824767933018373
+      "usd": 88131,
+      "usd_24h_change": 0.10650431711013364
     },
     "ethereum": {
-      "usd": 2977.88,
-      "usd_24h_change": 0.8104355242913861
+      "usd": 2975.41,
+      "usd_24h_change": 0.8492481016508124
     },
     "solana": {
-      "usd": 126.11,
-      "usd_24h_change": 1.1289983542795923
+      "usd": 126.05,
+      "usd_24h_change": 1.214616447151345
     }
   }
 }
