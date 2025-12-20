@@ -1,30 +1,8 @@
 {
-  "generatedAt": "2025-12-20T16:53:23.308Z",
+  "generatedAt": "2025-12-20T17:20:53.799Z",
   "repo": "Ivan09069/echoforge",
   "issues": [],
   "proposals": [
-    {
-      "id": "0xd5958bcf41db9083eb6cd68dcd12147841623be12e4bc92feb0ac24418f3a986",
-      "title": "Camera lens update",
-      "end": 1766681400,
-      "votes": 0,
-      "scores_total": 0,
-      "space": {
-        "id": "snapshot.dcl.eth",
-        "name": "Decentraland",
-        "avatar": "ipfs://QmZAWXeepWnWpsdEXnkym5nvipxGCj87sS6SABBV8x6pPh"
-      },
-      "choices": [
-        "yea",
-        "no",
-        "Invalid question/options"
-      ],
-      "scores": [
-        0,
-        0,
-        0
-      ]
-    },
     {
       "id": "0x54aae36d867d8650129437f68cfecd96fd146c613b51a730306fa83079540ae9",
       "title": "S4-14艺术共创营结项报告",
@@ -89,8 +67,8 @@
       "id": "0x6e39338b595572b3bf7bb4d947940e2f23c6d94707a918793a99ebb549417768",
       "title": "XIP #28: Q4 & Q1 XBG Buybacks",
       "end": 1766829600,
-      "votes": 42,
-      "scores_total": 6539057.347196346,
+      "votes": 43,
+      "scores_total": 7416486.376471939,
       "space": {
         "id": "xborg.eth",
         "name": "XBorg",
@@ -102,7 +80,7 @@
         "Abstain"
       ],
       "scores": [
-        5829902.649340207,
+        6707331.678615799,
         703808.3719401618,
         5346.325915978172
       ]
@@ -434,6 +412,26 @@
       ],
       "scores": [
         14713508.046554118,
+        0
+      ]
+    },
+    {
+      "id": "0x6400676de13caf9531615006be93602b3b84d65b25968a3df668106d57ea5d3c",
+      "title": "[Curve] Ownership DAO Vote ID: 1296",
+      "end": 1766394966,
+      "votes": 0,
+      "scores_total": 0,
+      "space": {
+        "id": "aladdindao.eth",
+        "name": "AladdinDAO",
+        "avatar": "https://avatars.githubusercontent.com/u/78200839?s=200&v=4"
+      },
+      "choices": [
+        "yes",
+        "no"
+      ],
+      "scores": [
+        0,
         0
       ]
     }
@@ -638202,16 +638200,16 @@
   ],
   "prices": {
     "bitcoin": {
-      "usd": 88109,
-      "usd_24h_change": 0.0591412236233065
+      "usd": 88167,
+      "usd_24h_change": -0.0015181590142367427
     },
     "ethereum": {
-      "usd": 2976.86,
-      "usd_24h_change": 0.18898953434085763
+      "usd": 2978.45,
+      "usd_24h_change": -0.15892830729738427
     },
     "solana": {
-      "usd": 126.17,
-      "usd_24h_change": 0.16495516027201976
+      "usd": 126.16,
+      "usd_24h_change": 0.2161709055853437
     }
   }
 }
