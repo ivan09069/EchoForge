@@ -1,8 +1,30 @@
 {
-  "generatedAt": "2025-12-20T05:28:47.657Z",
+  "generatedAt": "2025-12-20T05:48:32.403Z",
   "repo": "Ivan09069/echoforge",
   "issues": [],
   "proposals": [
+    {
+      "id": "0x85856df01334955aefd93374a8a34d0d9def87a4fe073f3238dd485ca18a2f0d",
+      "title": "[Prop 901] Reward the Nounish (EOY Award Show)",
+      "end": 1766213203,
+      "votes": 0,
+      "scores_total": 0,
+      "space": {
+        "id": "earl-grey.eth",
+        "name": "Earlgrey DAO",
+        "avatar": "ipfs://bafkreiaa5anz5dtwp6pknqctxedbiustuet2djgign5xlru4hnl6cm6xa4"
+      },
+      "choices": [
+        "For",
+        "Against",
+        "Abstain"
+      ],
+      "scores": [
+        0,
+        0,
+        0
+      ]
+    },
     {
       "id": "0xaaa77f6f94afffcbfe9bee99c7a29af7c6be14e2d2a95784900a25be083eb060",
       "title": "Proposal to add “illuminatedMovement.Spatial” as an Alpha BSKT",
@@ -27,8 +49,8 @@
       "id": "0xa28a6ce5b7f4d2bf9df07b5862ac08f9c1f6b8d62784c1f9ae1d4f46e0d62ae6",
       "title": "Vote for the New Piggy Wordmark & Logo",
       "end": 1766421854,
-      "votes": 28,
-      "scores_total": 1006630491.5862608,
+      "votes": 29,
+      "scores_total": 1017738354.6388798,
       "space": {
         "id": "basedpiggy.eth",
         "name": "PiggyDAO",
@@ -44,7 +66,7 @@
       ],
       "scores": [
         1243673.99741511,
-        632156662.3988521,
+        643264525.4514713,
         147775523.76881987,
         114031767.96272552,
         0,
@@ -77,8 +99,8 @@
       "id": "0xb293f50e4aa0d0457f48612e75969ccb1d9ce9643f3ecdc11933c0abcf9135bd",
       "title": "Launch PIGGY<>WETH Pool on Hydrex",
       "end": 1766414422,
-      "votes": 36,
-      "scores_total": 1906271331.3685918,
+      "votes": 37,
+      "scores_total": 1917379194.4212112,
       "space": {
         "id": "basedpiggy.eth",
         "name": "PiggyDAO",
@@ -90,7 +112,7 @@
         "Abstain"
       ],
       "scores": [
-        1905883855.9942205,
+        1916991719.0468392,
         0,
         387475.374371805
       ]
@@ -400,28 +422,6 @@
     {
       "id": "0x1ccf552f7d4e30fca3c7e57604955edc598e64a9d22c8dca3462d1472d311182",
       "title": "[BIP-896] Rocket Pool Balancer Alliance Addendum",
-      "end": 1766430000,
-      "votes": 0,
-      "scores_total": 0,
-      "space": {
-        "id": "sdbal.eth",
-        "name": "Stake DAO BAL",
-        "avatar": "ipfs://bafkreidlhbbqqq65kaf44aahfkdtpp4s2aa4opttwnpn5gpnqrubvc3bti"
-      },
-      "choices": [
-        "Yes, let's do it",
-        "No, this is not the way",
-        "Abstain"
-      ],
-      "scores": [
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "id": "0x43d6de61aff537417070a31a387797761b1662d25ed8ecd9848bcef2d10bb771",
-      "title": "[BIP-897] Gauge proposal for iUSD-msUSD with 5% cap",
       "end": 1766430000,
       "votes": 0,
       "scores_total": 0,
@@ -638678,16 +638678,16 @@
   ],
   "prices": {
     "bitcoin": {
-      "usd": 88350,
-      "usd_24h_change": 1.7879276773038884
+      "usd": 88356,
+      "usd_24h_change": 1.5506563943230232
     },
     "ethereum": {
-      "usd": 2986.33,
-      "usd_24h_change": 2.403259330704524
+      "usd": 2982.61,
+      "usd_24h_change": 2.1319065347985613
     },
     "solana": {
-      "usd": 126.32,
-      "usd_24h_change": 3.0116033575601637
+      "usd": 126.39,
+      "usd_24h_change": 3.1204628391196643
     }
   }
 }
