@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-12-20T09:26:29.940Z",
+  "generatedAt": "2025-12-20T09:42:40.620Z",
   "repo": "Ivan09069/echoforge",
   "issues": [],
   "proposals": [
@@ -121,8 +121,8 @@
       "id": "0x90144e81fdb52d780135cb3838e00ec9af6c7554f1f6e453a147702b41adae9a",
       "title": "[GIP-274] Migration Timeline Update",
       "end": 1766416145,
-      "votes": 11,
-      "scores_total": 121792203.4665626,
+      "votes": 12,
+      "scores_total": 121793203.4665626,
       "space": {
         "id": "gearbox.eth",
         "name": "Gearbox",
@@ -134,7 +134,7 @@
         "Abstain"
       ],
       "scores": [
-        121792203.4665626,
+        121793203.4665626,
         0,
         0
       ]
@@ -401,8 +401,8 @@
       "id": "0xbb392ac5e810c3737a5e87568b292bd8f723c6ce3697ae8721c1333a113ed5c0",
       "title": "Launch of a Liquidity Incentive Program for Core Ecosystem Assets",
       "end": 1766815248,
-      "votes": 1,
-      "scores_total": 1.517672877183675,
+      "votes": 2,
+      "scores_total": 90303.84578228144,
       "space": {
         "id": "umerge.eth",
         "name": "uMerge DAO on Units Network",
@@ -414,7 +414,7 @@
         "Abstain"
       ],
       "scores": [
-        1.517672877183675,
+        90303.84578228144,
         0,
         0
       ]
@@ -638404,16 +638404,16 @@
   ],
   "prices": {
     "bitcoin": {
-      "usd": 88289,
-      "usd_24h_change": 0.36818495230131393
+      "usd": 88229,
+      "usd_24h_change": 0.28742703875127185
     },
     "ethereum": {
-      "usd": 2984.42,
-      "usd_24h_change": 1.1696665448588255
+      "usd": 2984.6,
+      "usd_24h_change": 1.2023300146464209
     },
     "solana": {
-      "usd": 126.53,
-      "usd_24h_change": 1.5510891953829649
+      "usd": 126.59,
+      "usd_24h_change": 1.7422819417514077
     }
   }
 }
