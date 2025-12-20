@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-12-20T07:25:57.206Z",
+  "generatedAt": "2025-12-20T07:41:07.945Z",
   "repo": "Ivan09069/echoforge",
   "issues": [],
   "proposals": [
@@ -7,8 +7,8 @@
       "id": "0x11332d17b22043bc9cc4a8a11dbd16445b50e57dc545df1efbf97714e73ebb55",
       "title": "QIP #11 : Temporary Fee Redistribution Adjustment (Community Request)",
       "end": 1766469249,
-      "votes": 1,
-      "scores_total": 1970395394.1811054,
+      "votes": 2,
+      "scores_total": 5469715335.104438,
       "space": {
         "id": "quollfi.eth",
         "name": "Quoll Finance",
@@ -20,7 +20,7 @@
         "Abstain"
       ],
       "scores": [
-        1970395394.1811056,
+        5469715335.104438,
         0,
         0
       ]
@@ -638366,16 +638366,16 @@
   ],
   "prices": {
     "bitcoin": {
-      "usd": 88178,
-      "usd_24h_change": 0.38116748686223895
+      "usd": 88161,
+      "usd_24h_change": 0.417789846184131
     },
     "ethereum": {
-      "usd": 2976.48,
-      "usd_24h_change": 0.7185325204493415
+      "usd": 2979,
+      "usd_24h_change": 1.026742604873096
     },
     "solana": {
-      "usd": 125.97,
-      "usd_24h_change": 1.4449410998663228
+      "usd": 126.04,
+      "usd_24h_change": 1.5310451473809656
     }
   }
 }
