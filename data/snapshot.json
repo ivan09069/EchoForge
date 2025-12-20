@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-12-20T07:41:07.945Z",
+  "generatedAt": "2025-12-20T07:53:54.993Z",
   "repo": "Ivan09069/echoforge",
   "issues": [],
   "proposals": [
@@ -7,8 +7,8 @@
       "id": "0x11332d17b22043bc9cc4a8a11dbd16445b50e57dc545df1efbf97714e73ebb55",
       "title": "QIP #11 : Temporary Fee Redistribution Adjustment (Community Request)",
       "end": 1766469249,
-      "votes": 2,
-      "scores_total": 5469715335.104438,
+      "votes": 3,
+      "scores_total": 6475561160.2263775,
       "space": {
         "id": "quollfi.eth",
         "name": "Quoll Finance",
@@ -20,7 +20,7 @@
         "Abstain"
       ],
       "scores": [
-        5469715335.104438,
+        6475561160.2263775,
         0,
         0
       ]
@@ -49,8 +49,8 @@
       "id": "0xa28a6ce5b7f4d2bf9df07b5862ac08f9c1f6b8d62784c1f9ae1d4f46e0d62ae6",
       "title": "Vote for the New Piggy Wordmark & Logo",
       "end": 1766421854,
-      "votes": 34,
-      "scores_total": 1120666528.7062955,
+      "votes": 35,
+      "scores_total": 1133413819.3166277,
       "space": {
         "id": "basedpiggy.eth",
         "name": "PiggyDAO",
@@ -68,7 +68,7 @@
         16931525.531570073,
         705283769.2010274,
         172996602.55252436,
-        114031767.96272552,
+        126779058.5730578,
         0,
         111422863.45844808
       ]
@@ -99,8 +99,8 @@
       "id": "0xb293f50e4aa0d0457f48612e75969ccb1d9ce9643f3ecdc11933c0abcf9135bd",
       "title": "Launch PIGGY<>WETH Pool on Hydrex",
       "end": 1766414422,
-      "votes": 41,
-      "scores_total": 1970430255.9117198,
+      "votes": 42,
+      "scores_total": 1983177546.5220523,
       "space": {
         "id": "basedpiggy.eth",
         "name": "PiggyDAO",
@@ -112,7 +112,7 @@
         "Abstain"
       ],
       "scores": [
-        1970042780.5373485,
+        1982790071.1476803,
         0,
         387475.374371805
       ]
@@ -638366,16 +638366,16 @@
   ],
   "prices": {
     "bitcoin": {
-      "usd": 88161,
-      "usd_24h_change": 0.417789846184131
+      "usd": 88190,
+      "usd_24h_change": 0.4632983450434248
     },
     "ethereum": {
-      "usd": 2979,
-      "usd_24h_change": 1.026742604873096
+      "usd": 2981.72,
+      "usd_24h_change": 1.1105837563012542
     },
     "solana": {
-      "usd": 126.04,
-      "usd_24h_change": 1.5310451473809656
+      "usd": 126.18,
+      "usd_24h_change": 1.5320168029441719
     }
   }
 }
