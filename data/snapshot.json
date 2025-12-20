@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-12-20T10:44:26.479Z",
+  "generatedAt": "2025-12-20T10:56:42.592Z",
   "repo": "Ivan09069/echoforge",
   "issues": [],
   "proposals": [
@@ -145,8 +145,8 @@
       "id": "0xb293f50e4aa0d0457f48612e75969ccb1d9ce9643f3ecdc11933c0abcf9135bd",
       "title": "Launch PIGGY<>WETH Pool on Hydrex",
       "end": 1766414422,
-      "votes": 65,
-      "scores_total": 2875937345.9060965,
+      "votes": 66,
+      "scores_total": 2885860907.3666506,
       "space": {
         "id": "basedpiggy.eth",
         "name": "PiggyDAO",
@@ -158,7 +158,7 @@
         "Abstain"
       ],
       "scores": [
-        2875549870.531725,
+        2885473431.992279,
         0,
         387475.374371805
       ]
@@ -395,8 +395,8 @@
       "id": "0x83dd68a6a3ed23c82c78d0eacdb00cfa830ad718832e975dc39013fb68dcc30c",
       "title": "Beets Budget 2026 Q1",
       "end": 1766487600,
-      "votes": 7,
-      "scores_total": 223592.8339217436,
+      "votes": 8,
+      "scores_total": 8276183.464125448,
       "space": {
         "id": "beets.eth",
         "name": "Beets",
@@ -411,7 +411,7 @@
       ],
       "scores": [
         0,
-        115273.21003621414,
+        8167863.840239919,
         108319.62388552944,
         0,
         0
@@ -638429,16 +638429,16 @@
   ],
   "prices": {
     "bitcoin": {
-      "usd": 88131,
-      "usd_24h_change": 0.10650431711013364
+      "usd": 88119,
+      "usd_24h_change": -0.10672144979891757
     },
     "ethereum": {
-      "usd": 2975.41,
-      "usd_24h_change": 0.8492481016508124
+      "usd": 2977.43,
+      "usd_24h_change": 0.8247228167687548
     },
     "solana": {
-      "usd": 126.05,
-      "usd_24h_change": 1.214616447151345
+      "usd": 126.04,
+      "usd_24h_change": 1.0696053956471774
     }
   }
 }
