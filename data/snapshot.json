@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-12-20T08:32:03.065Z",
+  "generatedAt": "2025-12-20T08:55:42.499Z",
   "repo": "Ivan09069/echoforge",
   "issues": [],
   "proposals": [
@@ -49,8 +49,8 @@
       "id": "0xa28a6ce5b7f4d2bf9df07b5862ac08f9c1f6b8d62784c1f9ae1d4f46e0d62ae6",
       "title": "Vote for the New Piggy Wordmark & Logo",
       "end": 1766421854,
-      "votes": 42,
-      "scores_total": 1195773370.5500448,
+      "votes": 49,
+      "scores_total": 1252062331.2325783,
       "space": {
         "id": "basedpiggy.eth",
         "name": "PiggyDAO",
@@ -65,10 +65,10 @@
         "F"
       ],
       "scores": [
-        16944581.907996073,
-        727043099.2597504,
-        213583767.3507924,
-        126779058.5730578,
+        27438969.317903705,
+        749957569.9909809,
+        225072707.73049617,
+        138170220.73474944,
         0,
         111422863.45844808
       ]
@@ -99,8 +99,8 @@
       "id": "0xb293f50e4aa0d0457f48612e75969ccb1d9ce9643f3ecdc11933c0abcf9135bd",
       "title": "Launch PIGGY<>WETH Pool on Hydrex",
       "end": 1766414422,
-      "votes": 49,
-      "scores_total": 2045537097.7554693,
+      "votes": 56,
+      "scores_total": 2360386880.5763764,
       "space": {
         "id": "basedpiggy.eth",
         "name": "PiggyDAO",
@@ -112,7 +112,7 @@
         "Abstain"
       ],
       "scores": [
-        2045149622.3810976,
+        2359999405.2020044,
         0,
         387475.374371805
       ]
@@ -638402,16 +638402,16 @@
   ],
   "prices": {
     "bitcoin": {
-      "usd": 88311,
-      "usd_24h_change": 0.6727800167633553
+      "usd": 88278,
+      "usd_24h_change": 0.1937241276573378
     },
     "ethereum": {
-      "usd": 2986.92,
-      "usd_24h_change": 1.6173739740279538
+      "usd": 2981.96,
+      "usd_24h_change": 1.0562279484964823
     },
     "solana": {
-      "usd": 126.69,
-      "usd_24h_change": 2.06953268325965
+      "usd": 126.52,
+      "usd_24h_change": 1.1546184915675197
     }
   }
 }
