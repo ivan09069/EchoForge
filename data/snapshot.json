@@ -1,8 +1,48 @@
 {
-  "generatedAt": "2025-12-20T14:42:40.666Z",
+  "generatedAt": "2025-12-20T14:55:39.339Z",
   "repo": "Ivan09069/echoforge",
   "issues": [],
   "proposals": [
+    {
+      "id": "0x54aae36d867d8650129437f68cfecd96fd146c613b51a730306fa83079540ae9",
+      "title": "S4-14艺术共创营结项报告",
+      "end": 1766501047,
+      "votes": 0,
+      "scores_total": 0,
+      "space": {
+        "id": "ntdao.eth",
+        "name": "南塘DAO",
+        "avatar": "ipfs://bafkreiet4l7vjtvzm2t335b7y23zpmq4sa3oktszfiuh3im7bqwlaqwpim"
+      },
+      "choices": [
+        "For",
+        "Against"
+      ],
+      "scores": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "0xa2f6ce2c62102f2bb8f4e3a4deb1056ff527a1782823b366a1b1859c42a361fc",
+      "title": "S4-13 项目制度补充条款",
+      "end": 1766500992,
+      "votes": 0,
+      "scores_total": 0,
+      "space": {
+        "id": "ntdao.eth",
+        "name": "南塘DAO",
+        "avatar": "ipfs://bafkreiet4l7vjtvzm2t335b7y23zpmq4sa3oktszfiuh3im7bqwlaqwpim"
+      },
+      "choices": [
+        "For",
+        "Against"
+      ],
+      "scores": [
+        0,
+        0
+      ]
+    },
     {
       "id": "0xc751baba4514e6d9594f7ee7bba88d3e4e6ab8691c2bbc00dede7925124fbfc6",
       "title": "S4-12 南塘DAO金库动账制度修订",
@@ -18,14 +58,17 @@
         "For",
         "Against"
       ],
-      "scores": []
+      "scores": [
+        0,
+        0
+      ]
     },
     {
       "id": "0x6e39338b595572b3bf7bb4d947940e2f23c6d94707a918793a99ebb549417768",
       "title": "XIP #28: Q4 & Q1 XBG Buybacks",
       "end": 1766829600,
-      "votes": 20,
-      "scores_total": 2986919.764155894,
+      "votes": 23,
+      "scores_total": 4184267.270864283,
       "space": {
         "id": "xborg.eth",
         "name": "XBorg",
@@ -37,8 +80,8 @@
         "Abstain"
       ],
       "scores": [
-        2727658.6432636767,
-        259261.1208922174,
+        3789862.235522115,
+        394405.03534216754,
         0
       ]
     },
@@ -178,8 +221,8 @@
       "id": "0xa28a6ce5b7f4d2bf9df07b5862ac08f9c1f6b8d62784c1f9ae1d4f46e0d62ae6",
       "title": "Vote for the New Piggy Wordmark & Logo",
       "end": 1766421854,
-      "votes": 68,
-      "scores_total": 1973074890.9772828,
+      "votes": 71,
+      "scores_total": 2007926960.7629395,
       "space": {
         "id": "basedpiggy.eth",
         "name": "PiggyDAO",
@@ -195,7 +238,7 @@
       ],
       "scores": [
         46432763.29944678,
-        1408498724.026711,
+        1443350793.8123677,
         268536775.06262237,
         138170220.73474944,
         0,
@@ -228,8 +271,8 @@
       "id": "0xb293f50e4aa0d0457f48612e75969ccb1d9ce9643f3ecdc11933c0abcf9135bd",
       "title": "Launch PIGGY<>WETH Pool on Hydrex",
       "end": 1766414422,
-      "votes": 76,
-      "scores_total": 3091323001.7816343,
+      "votes": 79,
+      "scores_total": 3126175071.5672913,
       "space": {
         "id": "basedpiggy.eth",
         "name": "PiggyDAO",
@@ -241,7 +284,7 @@
         "Abstain"
       ],
       "scores": [
-        3090935526.407263,
+        3125787596.192919,
         0,
         387475.374371805
       ]
@@ -389,46 +432,6 @@
       ],
       "scores": [
         0,
-        0
-      ]
-    },
-    {
-      "id": "0xccc120a75b0ba0a4494ab66a75c4e0b425ed1b11fc8ab06e4c9783c56a379629",
-      "title": "[Curve] Ownership DAO Vote ID: 1296",
-      "end": 1766398566,
-      "votes": 5,
-      "scores_total": 26644.81503600657,
-      "space": {
-        "id": "veclev.eth",
-        "name": "CLever",
-        "avatar": "ipfs://bafkreidyi6dbbidfrcskangkpzzsdlpu2izqoyyg5wuf2hijlkvuti2qdm"
-      },
-      "choices": [
-        "yes",
-        "no"
-      ],
-      "scores": [
-        26644.81503600657,
-        0
-      ]
-    },
-    {
-      "id": "0x910bf466b88a69f7308299b4094e8633c4e25cd36786e56af8b3fdb62e454f47",
-      "title": "[Curve] Ownership DAO Vote ID: 1296",
-      "end": 1766402166,
-      "votes": 5,
-      "scores_total": 127807.51118173849,
-      "space": {
-        "id": "cvx.eth",
-        "name": "Convex Finance",
-        "avatar": "ipfs://QmXB2Ce726sNzJbrJPsQQz1BZRQvfDntPS18prAi9JmrgG"
-      },
-      "choices": [
-        "yes",
-        "no"
-      ],
-      "scores": [
-        127807.51118173847,
         0
       ]
     }
@@ -638069,16 +638072,16 @@
   ],
   "prices": {
     "bitcoin": {
-      "usd": 88096,
-      "usd_24h_change": 0.48476556335836113
+      "usd": 88199,
+      "usd_24h_change": 0.16749261475973734
     },
     "ethereum": {
-      "usd": 2974.24,
-      "usd_24h_change": 0.7648426727756764
+      "usd": 2978.03,
+      "usd_24h_change": 0.3270252973211238
     },
     "solana": {
-      "usd": 125.99,
-      "usd_24h_change": 0.6252120790423676
+      "usd": 126.25,
+      "usd_24h_change": 0.33039687882041613
     }
   }
 }
