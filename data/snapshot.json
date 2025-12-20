@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-12-20T19:39:05.667Z",
+  "generatedAt": "2025-12-20T19:52:24.354Z",
   "repo": "Ivan09069/echoforge",
   "issues": [],
   "proposals": [
@@ -67,8 +67,8 @@
       "id": "0x6e39338b595572b3bf7bb4d947940e2f23c6d94707a918793a99ebb549417768",
       "title": "XIP #28: Q4 & Q1 XBG Buybacks",
       "end": 1766829600,
-      "votes": 55,
-      "scores_total": 9431968.688325731,
+      "votes": 56,
+      "scores_total": 9793666.021786662,
       "space": {
         "id": "xborg.eth",
         "name": "XBorg",
@@ -80,7 +80,7 @@
         "Abstain"
       ],
       "scores": [
-        7510963.63057163,
+        7872660.964032561,
         1915658.7318381215,
         5346.325915978172
       ]
@@ -638555,16 +638555,16 @@
   ],
   "prices": {
     "bitcoin": {
-      "usd": 88208,
-      "usd_24h_change": 0.38266411663970495
+      "usd": 88189,
+      "usd_24h_change": 0.29697244430689484
     },
     "ethereum": {
-      "usd": 2977.7,
-      "usd_24h_change": -0.43064673548746424
+      "usd": 2976.8,
+      "usd_24h_change": -0.3765850986482432
     },
     "solana": {
       "usd": 125.99,
-      "usd_24h_change": -0.23717158882508171
+      "usd_24h_change": -0.2921514355743962
     }
   }
 }
