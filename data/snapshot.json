@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-12-20T06:37:38.108Z",
+  "generatedAt": "2025-12-20T06:57:26.031Z",
   "repo": "Ivan09069/echoforge",
   "issues": [],
   "proposals": [
@@ -13,28 +13,6 @@
         "id": "quollfi.eth",
         "name": "Quoll Finance",
         "avatar": "ipfs://bafkreiepenvjbq7qhzu2yyzdnuawmlflmwofup7jgd5pbl3vkl7gm2drrm"
-      },
-      "choices": [
-        "For",
-        "Against",
-        "Abstain"
-      ],
-      "scores": [
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "id": "0x85856df01334955aefd93374a8a34d0d9def87a4fe073f3238dd485ca18a2f0d",
-      "title": "[Prop 901] Reward the Nounish (EOY Award Show)",
-      "end": 1766213203,
-      "votes": 0,
-      "scores_total": 0,
-      "space": {
-        "id": "earl-grey.eth",
-        "name": "Earlgrey DAO",
-        "avatar": "ipfs://bafkreiaa5anz5dtwp6pknqctxedbiustuet2djgign5xlru4hnl6cm6xa4"
       },
       "choices": [
         "For",
@@ -71,8 +49,8 @@
       "id": "0xa28a6ce5b7f4d2bf9df07b5862ac08f9c1f6b8d62784c1f9ae1d4f46e0d62ae6",
       "title": "Vote for the New Piggy Wordmark & Logo",
       "end": 1766421854,
-      "votes": 30,
-      "scores_total": 1030062275.4465952,
+      "votes": 31,
+      "scores_total": 1045750126.9807503,
       "space": {
         "id": "basedpiggy.eth",
         "name": "PiggyDAO",
@@ -87,7 +65,7 @@
         "F"
       ],
       "scores": [
-        1243673.99741511,
+        16931525.531570073,
         643264525.4514713,
         160099444.57653528,
         114031767.96272552,
@@ -121,8 +99,8 @@
       "id": "0xb293f50e4aa0d0457f48612e75969ccb1d9ce9643f3ecdc11933c0abcf9135bd",
       "title": "Launch PIGGY<>WETH Pool on Hydrex",
       "end": 1766414422,
-      "votes": 38,
-      "scores_total": 1929703115.2289267,
+      "votes": 39,
+      "scores_total": 1945390966.7630816,
       "space": {
         "id": "basedpiggy.eth",
         "name": "PiggyDAO",
@@ -134,7 +112,7 @@
         "Abstain"
       ],
       "scores": [
-        1929315639.854555,
+        1945003491.3887095,
         0,
         387475.374371805
       ]
@@ -438,6 +416,28 @@
       "scores": [
         1.517672877183675,
         0,
+        0
+      ]
+    },
+    {
+      "id": "0x08dc7497931af3f9c2cf96ce84f41058afc53ce39244eda5e8faa4018ee5178a",
+      "title": "Redbelly Developer Docs - Production Ready Onboarding System",
+      "end": 1766556000,
+      "votes": 5,
+      "scores_total": 2923641.4470171183,
+      "space": {
+        "id": "rbnt.eth",
+        "name": "Redbelly Network",
+        "avatar": "ipfs://bafkreid4hjm5wr7eg3f47zmptxnxlga3sf4gabvrj5hakwfrj7i2xkrxtu"
+      },
+      "choices": [
+        "For",
+        "Against",
+        "Abstain"
+      ],
+      "scores": [
+        2039.50943934459,
+        2921601.937577774,
         0
       ]
     }
@@ -638676,16 +638676,16 @@
   ],
   "prices": {
     "bitcoin": {
-      "usd": 88304,
-      "usd_24h_change": 1.4910940540048818
+      "usd": 88264,
+      "usd_24h_change": 1.0405758781881054
     },
     "ethereum": {
-      "usd": 2982.54,
-      "usd_24h_change": 2.061386989304865
+      "usd": 2979.16,
+      "usd_24h_change": 1.0353149265759685
     },
     "solana": {
-      "usd": 126.4,
-      "usd_24h_change": 2.9156372926824563
+      "usd": 126.25,
+      "usd_24h_change": 2.5240324679759665
     }
   }
 }
