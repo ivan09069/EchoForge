@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-12-20T20:42:44.027Z",
+  "generatedAt": "2025-12-20T20:55:33.042Z",
   "repo": "Ivan09069/echoforge",
   "issues": [],
   "proposals": [
@@ -67,8 +67,8 @@
       "id": "0x6e39338b595572b3bf7bb4d947940e2f23c6d94707a918793a99ebb549417768",
       "title": "XIP #28: Q4 & Q1 XBG Buybacks",
       "end": 1766829600,
-      "votes": 60,
-      "scores_total": 10116008.679504273,
+      "votes": 61,
+      "scores_total": 10902727.606164487,
       "space": {
         "id": "xborg.eth",
         "name": "XBorg",
@@ -80,7 +80,7 @@
         "Abstain"
       ],
       "scores": [
-        8195003.621750174,
+        8981722.548410388,
         1915658.7318381215,
         5346.325915978172
       ]
@@ -179,8 +179,8 @@
       "id": "0x11332d17b22043bc9cc4a8a11dbd16445b50e57dc545df1efbf97714e73ebb55",
       "title": "QIP #11 : Temporary Fee Redistribution Adjustment (Community Request)",
       "end": 1766469249,
-      "votes": 5,
-      "scores_total": 12718030142.99612,
+      "votes": 6,
+      "scores_total": 13238370440.721432,
       "space": {
         "id": "quollfi.eth",
         "name": "Quoll Finance",
@@ -193,7 +193,7 @@
       ],
       "scores": [
         12718030142.99612,
-        0,
+        520340297.72531056,
         0
       ]
     },
@@ -221,8 +221,8 @@
       "id": "0xa28a6ce5b7f4d2bf9df07b5862ac08f9c1f6b8d62784c1f9ae1d4f46e0d62ae6",
       "title": "Vote for the New Piggy Wordmark & Logo",
       "end": 1766421854,
-      "votes": 85,
-      "scores_total": 3745232686.252984,
+      "votes": 86,
+      "scores_total": 3756660794.9153852,
       "space": {
         "id": "basedpiggy.eth",
         "name": "PiggyDAO",
@@ -238,7 +238,7 @@
       ],
       "scores": [
         1600031368.993358,
-        1626049666.210317,
+        1637477774.8727174,
         268543180.52259135,
         139172062.67296487,
         0,
@@ -249,8 +249,8 @@
       "id": "0xb293f50e4aa0d0457f48612e75969ccb1d9ce9643f3ecdc11933c0abcf9135bd",
       "title": "Launch PIGGY<>WETH Pool on Hydrex",
       "end": 1766414422,
-      "votes": 92,
-      "scores_total": 4751093007.1195345,
+      "votes": 93,
+      "scores_total": 4762521115.781936,
       "space": {
         "id": "basedpiggy.eth",
         "name": "PiggyDAO",
@@ -262,7 +262,7 @@
         "Abstain"
       ],
       "scores": [
-        4750705531.745163,
+        4762133640.407563,
         0,
         387475.374371805
       ]
@@ -638086,16 +638086,16 @@
   ],
   "prices": {
     "bitcoin": {
-      "usd": 88200,
-      "usd_24h_change": 0.15581800948854752
+      "usd": 88195,
+      "usd_24h_change": -0.06921613081185558
     },
     "ethereum": {
-      "usd": 2981.24,
-      "usd_24h_change": -0.34696489816441417
+      "usd": 2981.22,
+      "usd_24h_change": -0.547167520298514
     },
     "solana": {
-      "usd": 126.17,
-      "usd_24h_change": -0.5515102653175112
+      "usd": 126.25,
+      "usd_24h_change": -0.7235463755345639
     }
   }
 }
