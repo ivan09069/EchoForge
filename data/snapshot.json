@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-12-21T15:42:39.250Z",
+  "generatedAt": "2025-12-21T15:55:34.171Z",
   "repo": "Ivan09069/echoforge",
   "issues": [
     {
@@ -271,8 +271,8 @@
       "id": "0xc751baba4514e6d9594f7ee7bba88d3e4e6ab8691c2bbc00dede7925124fbfc6",
       "title": "S4-12 南塘DAO金库动账制度修订",
       "end": 1766500929,
-      "votes": 1,
-      "scores_total": 2509.58,
+      "votes": 2,
+      "scores_total": 9819.58,
       "space": {
         "id": "ntdao.eth",
         "name": "南塘DAO",
@@ -283,7 +283,7 @@
         "Against"
       ],
       "scores": [
-        2509.58,
+        9819.58,
         0
       ]
     },
@@ -635830,16 +635830,16 @@
   ],
   "prices": {
     "bitcoin": {
-      "usd": 87987,
-      "usd_24h_change": -0.1095571342223293
+      "usd": 88088,
+      "usd_24h_change": -0.06468071141166115
     },
     "ethereum": {
-      "usd": 2969.67,
-      "usd_24h_change": -0.14758524272813595
+      "usd": 2971.84,
+      "usd_24h_change": -0.12001223115775773
     },
     "solana": {
-      "usd": 124.35,
-      "usd_24h_change": -1.4956792867070066
+      "usd": 124.7,
+      "usd_24h_change": -1.4436910128415328
     }
   }
 }
