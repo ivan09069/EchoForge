@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-12-21T15:26:21.256Z",
+  "generatedAt": "2025-12-21T15:42:39.250Z",
   "repo": "Ivan09069/echoforge",
   "issues": [
     {
@@ -133,7 +133,11 @@
         "Against",
         "Abstain"
       ],
-      "scores": []
+      "scores": [
+        0,
+        0,
+        0
+      ]
     },
     {
       "id": "0x7cecfb3e5badd025563eab43495bc1b7254538c2bec535a6968f3267edf62371",
@@ -227,8 +231,8 @@
       "id": "0x54aae36d867d8650129437f68cfecd96fd146c613b51a730306fa83079540ae9",
       "title": "S4-14艺术共创营结项报告",
       "end": 1766501047,
-      "votes": 1,
-      "scores_total": 2509.58,
+      "votes": 2,
+      "scores_total": 9819.58,
       "space": {
         "id": "ntdao.eth",
         "name": "南塘DAO",
@@ -239,7 +243,7 @@
         "Against"
       ],
       "scores": [
-        2509.58,
+        9819.58,
         0
       ]
     },
@@ -247,8 +251,8 @@
       "id": "0xa2f6ce2c62102f2bb8f4e3a4deb1056ff527a1782823b366a1b1859c42a361fc",
       "title": "S4-13 项目制度补充条款",
       "end": 1766500992,
-      "votes": 1,
-      "scores_total": 2509.58,
+      "votes": 2,
+      "scores_total": 9819.58,
       "space": {
         "id": "ntdao.eth",
         "name": "南塘DAO",
@@ -259,7 +263,7 @@
         "Against"
       ],
       "scores": [
-        2509.58,
+        9819.58,
         0
       ]
     },
@@ -635826,16 +635830,16 @@
   ],
   "prices": {
     "bitcoin": {
-      "usd": 87866,
-      "usd_24h_change": -0.1744684165033206
+      "usd": 87987,
+      "usd_24h_change": -0.1095571342223293
     },
     "ethereum": {
-      "usd": 2964.84,
-      "usd_24h_change": -0.20801827038462828
+      "usd": 2969.67,
+      "usd_24h_change": -0.14758524272813595
     },
     "solana": {
-      "usd": 124.18,
-      "usd_24h_change": -1.544261248349254
+      "usd": 124.35,
+      "usd_24h_change": -1.4956792867070066
     }
   }
 }
