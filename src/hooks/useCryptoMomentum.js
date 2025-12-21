@@ -34,6 +34,7 @@ export const useCryptoMomentum = () => {
         setCoins(data);
         setError(null);
       } catch (err) {
+        clearTimeout(timeout);
         console.error('API error:', err);
         setError(err.message);
         setCoins(FALLBACK_DATA); // Use fallback on error
