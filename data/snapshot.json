@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-12-21T11:40:14.827Z",
+  "generatedAt": "2025-12-21T11:52:26.159Z",
   "repo": "Ivan09069/echoforge",
   "issues": [],
   "proposals": [
@@ -135,8 +135,8 @@
       "id": "0xc751baba4514e6d9594f7ee7bba88d3e4e6ab8691c2bbc00dede7925124fbfc6",
       "title": "S4-12 南塘DAO金库动账制度修订",
       "end": 1766500929,
-      "votes": 0,
-      "scores_total": 0,
+      "votes": 1,
+      "scores_total": 2509.58,
       "space": {
         "id": "ntdao.eth",
         "name": "南塘DAO",
@@ -147,7 +147,7 @@
         "Against"
       ],
       "scores": [
-        0,
+        2509.58,
         0
       ]
     },
@@ -155,8 +155,8 @@
       "id": "0x6e39338b595572b3bf7bb4d947940e2f23c6d94707a918793a99ebb549417768",
       "title": "XIP #28: Q4 & Q1 XBG Buybacks",
       "end": 1766829600,
-      "votes": 87,
-      "scores_total": 17047858.913472764,
+      "votes": 88,
+      "scores_total": 17065350.6323348,
       "space": {
         "id": "xborg.eth",
         "name": "XBorg",
@@ -168,7 +168,7 @@
         "Abstain"
       ],
       "scores": [
-        13551243.17609695,
+        13568734.894958984,
         3466735.1809939337,
         29880.556381877155
       ]
@@ -636620,16 +636620,16 @@
   ],
   "prices": {
     "bitcoin": {
-      "usd": 88605,
-      "usd_24h_change": 0.4133895597169283
+      "usd": 88575,
+      "usd_24h_change": 0.38385618356117124
     },
     "ethereum": {
-      "usd": 2996.26,
-      "usd_24h_change": 0.38920659063107077
+      "usd": 2995.25,
+      "usd_24h_change": 0.34591192674314863
     },
     "solana": {
-      "usd": 125.42,
-      "usd_24h_change": -0.6035857966894533
+      "usd": 125.39,
+      "usd_24h_change": -0.7038150600054629
     }
   }
 }
