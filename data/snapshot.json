@@ -1,7 +1,121 @@
 {
-  "generatedAt": "2025-12-21T14:43:17.534Z",
+  "generatedAt": "2025-12-21T14:55:57.898Z",
   "repo": "Ivan09069/echoforge",
-  "issues": [],
+  "issues": [
+    {
+      "url": "https://api.github.com/repos/ivan09069/EchoForge/issues/19",
+      "repository_url": "https://api.github.com/repos/ivan09069/EchoForge",
+      "labels_url": "https://api.github.com/repos/ivan09069/EchoForge/issues/19/labels{/name}",
+      "comments_url": "https://api.github.com/repos/ivan09069/EchoForge/issues/19/comments",
+      "events_url": "https://api.github.com/repos/ivan09069/EchoForge/issues/19/events",
+      "html_url": "https://github.com/ivan09069/EchoForge/pull/19",
+      "id": 3751220436,
+      "node_id": "PR_kwDOQTOlC866Al0k",
+      "number": 19,
+      "title": "[WIP] Add vercel.json configuration for Vite framework",
+      "user": {
+        "login": "Copilot",
+        "id": 198982749,
+        "node_id": "BOT_kgDOC9w8XQ",
+        "avatar_url": "https://avatars.githubusercontent.com/in/1143301?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Copilot",
+        "html_url": "https://github.com/apps/copilot-swe-agent",
+        "followers_url": "https://api.github.com/users/Copilot/followers",
+        "following_url": "https://api.github.com/users/Copilot/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Copilot/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Copilot/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Copilot/subscriptions",
+        "organizations_url": "https://api.github.com/users/Copilot/orgs",
+        "repos_url": "https://api.github.com/users/Copilot/repos",
+        "events_url": "https://api.github.com/users/Copilot/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Copilot/received_events",
+        "type": "Bot",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "labels": [],
+      "state": "open",
+      "locked": false,
+      "assignee": null,
+      "assignees": [
+        {
+          "login": "Copilot",
+          "id": 198982749,
+          "node_id": "BOT_kgDOC9w8XQ",
+          "avatar_url": "https://avatars.githubusercontent.com/in/1143301?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/Copilot",
+          "html_url": "https://github.com/apps/copilot-swe-agent",
+          "followers_url": "https://api.github.com/users/Copilot/followers",
+          "following_url": "https://api.github.com/users/Copilot/following{/other_user}",
+          "gists_url": "https://api.github.com/users/Copilot/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/Copilot/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/Copilot/subscriptions",
+          "organizations_url": "https://api.github.com/users/Copilot/orgs",
+          "repos_url": "https://api.github.com/users/Copilot/repos",
+          "events_url": "https://api.github.com/users/Copilot/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/Copilot/received_events",
+          "type": "Bot",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        {
+          "login": "ivan09069",
+          "id": 202161141,
+          "node_id": "U_kgDODAy79Q",
+          "avatar_url": "https://avatars.githubusercontent.com/u/202161141?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ivan09069",
+          "html_url": "https://github.com/ivan09069",
+          "followers_url": "https://api.github.com/users/ivan09069/followers",
+          "following_url": "https://api.github.com/users/ivan09069/following{/other_user}",
+          "gists_url": "https://api.github.com/users/ivan09069/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/ivan09069/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/ivan09069/subscriptions",
+          "organizations_url": "https://api.github.com/users/ivan09069/orgs",
+          "repos_url": "https://api.github.com/users/ivan09069/repos",
+          "events_url": "https://api.github.com/users/ivan09069/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/ivan09069/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        }
+      ],
+      "milestone": null,
+      "comments": 1,
+      "created_at": "2025-12-21T14:54:29Z",
+      "updated_at": "2025-12-21T14:55:44Z",
+      "closed_at": null,
+      "author_association": "CONTRIBUTOR",
+      "active_lock_reason": null,
+      "draft": true,
+      "pull_request": {
+        "url": "https://api.github.com/repos/ivan09069/EchoForge/pulls/19",
+        "html_url": "https://github.com/ivan09069/EchoForge/pull/19",
+        "diff_url": "https://github.com/ivan09069/EchoForge/pull/19.diff",
+        "patch_url": "https://github.com/ivan09069/EchoForge/pull/19.patch",
+        "merged_at": null
+      },
+      "body": "## Vercel Configuration Setup\n\n- [ ] Update vercel.json to add rewrites configuration for SPA routing\n- [ ] Add .vercelignore file for cleaner deployments\n- [ ] Verify package.json scripts (already correct)\n- [ ] Test and validate changes\n\n<!-- START COPILOT CODING AGENT SUFFIX -->\n\n\n\n<!-- START COPILOT ORIGINAL PROMPT -->\n\n\n\n<details>\n\n<summary>Original prompt</summary>\n\n> GitHub Tasks to Fix Your echo-forge Project\n> 1. Add/Update vercel.json in your repo root\n> Create or modify vercel.json with:\n> {\n>   \"buildCommand\": \"npm run build\",\n>   \"outputDirectory\": \"dist\",\n>   \"devCommand\": \"npm run dev\",\n>   \"installCommand\": \"npm install\",\n>   \"framework\": \"vite\",\n>   \"rewrites\": [\n>     {\n>       \"source\": \"/(.*)\",\n>       \"destination\": \"/index.html\"\n>     }\n>   ]\n> }\n> 2. Verify your package.json has correct scripts\n> Make sure you have:\n> {\n>   \"scripts\": {\n>     \"dev\": \"vite\",\n>     \"build\": \"vite build\",\n>     \"preview\": \"vite preview\"\n>   }\n> }\n> 3. (Optional) Add .vercelignore\n> To keep deployments clean:\n> node_modules\n> .git\n> *.log\n> .DS_Store\n> .env.local\n> 4. Commit and Push\n> git add vercel.json\n> git commit -m \"fix: configure Vercel for Vite framework\"\n> git push origin main\n> Vercel will automatically:\n> Detect the new configuration\n> Redeploy with correct framework settings\n> Enable proper analytics\n> 5. Enable Analytics (After Deploy)\n> Go to Vercel dashboard → Your project → Analytics tab → Enable Web Analytics\n\n\n</details>\n\n\n\n<!-- START COPILOT CODING AGENT TIPS -->\n---\n\n💬 We'd love your input! Share your thoughts on Copilot coding agent in our [2 minute survey](https://gh.io/copilot-coding-agent-survey).\n",
+      "closed_by": null,
+      "reactions": {
+        "url": "https://api.github.com/repos/ivan09069/EchoForge/issues/19/reactions",
+        "total_count": 0,
+        "+1": 0,
+        "-1": 0,
+        "laugh": 0,
+        "hooray": 0,
+        "confused": 0,
+        "heart": 0,
+        "rocket": 0,
+        "eyes": 0
+      },
+      "timeline_url": "https://api.github.com/repos/ivan09069/EchoForge/issues/19/timeline",
+      "performed_via_github_app": null,
+      "state_reason": null
+    }
+  ],
   "proposals": [
     {
       "id": "0x7cecfb3e5badd025563eab43495bc1b7254538c2bec535a6968f3267edf62371",
@@ -291,8 +405,8 @@
       "id": "0xb293f50e4aa0d0457f48612e75969ccb1d9ce9643f3ecdc11933c0abcf9135bd",
       "title": "Launch PIGGY<>WETH Pool on Hydrex",
       "end": 1766414422,
-      "votes": 123,
-      "scores_total": 5493880358.373033,
+      "votes": 124,
+      "scores_total": 5494963041.036078,
       "space": {
         "id": "basedpiggy.eth",
         "name": "PiggyDAO",
@@ -304,7 +418,7 @@
         "Abstain"
       ],
       "scores": [
-        5493492882.998661,
+        5494575565.661707,
         0,
         387475.374371805
       ]
@@ -635783,16 +635897,16 @@
   ],
   "prices": {
     "bitcoin": {
-      "usd": 87951,
-      "usd_24h_change": -0.20901629195817112
+      "usd": 88016,
+      "usd_24h_change": -0.21761732866074518
     },
     "ethereum": {
-      "usd": 2961.69,
-      "usd_24h_change": -0.4595448836106666
+      "usd": 2969.67,
+      "usd_24h_change": -0.292306510438858
     },
     "solana": {
-      "usd": 124.15,
-      "usd_24h_change": -1.5043420231096865
+      "usd": 124.29,
+      "usd_24h_change": -1.5582927658298122
     }
   }
 }
