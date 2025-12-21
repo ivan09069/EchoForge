@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-12-21T09:28:15.291Z",
+  "generatedAt": "2025-12-21T09:44:52.290Z",
   "repo": "Ivan09069/echoforge",
   "issues": [],
   "proposals": [
@@ -89,8 +89,8 @@
       "id": "0x6e39338b595572b3bf7bb4d947940e2f23c6d94707a918793a99ebb549417768",
       "title": "XIP #28: Q4 & Q1 XBG Buybacks",
       "end": 1766829600,
-      "votes": 80,
-      "scores_total": 16337623.268108364,
+      "votes": 81,
+      "scores_total": 16349470.655614901,
       "space": {
         "id": "xborg.eth",
         "name": "XBorg",
@@ -102,7 +102,7 @@
         "Abstain"
       ],
       "scores": [
-        12841007.53073255,
+        12852854.918239089,
         3466735.1809939337,
         29880.556381877155
       ]
@@ -243,8 +243,8 @@
       "id": "0xa28a6ce5b7f4d2bf9df07b5862ac08f9c1f6b8d62784c1f9ae1d4f46e0d62ae6",
       "title": "Vote for the New Piggy Wordmark & Logo",
       "end": 1766421854,
-      "votes": 104,
-      "scores_total": 4448465308.629378,
+      "votes": 105,
+      "scores_total": 4448723720.519285,
       "space": {
         "id": "basedpiggy.eth",
         "name": "PiggyDAO",
@@ -260,7 +260,7 @@
       ],
       "scores": [
         1601069702.4390182,
-        2318219002.238746,
+        2318477414.128653,
         278568133.4248954,
         139172062.67296487,
         0,
@@ -637010,16 +637010,16 @@
   ],
   "prices": {
     "bitcoin": {
-      "usd": 88661,
-      "usd_24h_change": 0.43413754101162044
+      "usd": 88785,
+      "usd_24h_change": 0.6352772324706871
     },
     "ethereum": {
-      "usd": 2992.94,
-      "usd_24h_change": 0.31889240100547667
+      "usd": 2996.92,
+      "usd_24h_change": 0.41238523434534347
     },
     "solana": {
-      "usd": 125.86,
-      "usd_24h_change": -0.5450380435073388
+      "usd": 126.11,
+      "usd_24h_change": -0.38476689990046464
     }
   }
 }
