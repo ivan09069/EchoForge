@@ -1,8 +1,54 @@
 {
-  "generatedAt": "2025-12-21T10:30:02.770Z",
+  "generatedAt": "2025-12-21T10:47:13.924Z",
   "repo": "Ivan09069/echoforge",
   "issues": [],
   "proposals": [
+    {
+      "id": "0x5b095fe157186c2c6a5d35d2fe1509cb9f2899c2a81e893c08fde1569c52170d",
+      "title": "Which apple is best, all around?",
+      "end": 1766399730,
+      "votes": 0,
+      "scores_total": 0,
+      "space": {
+        "id": "sequence-demos.eth",
+        "name": "0xsequence-demos",
+        "avatar": ""
+      },
+      "choices": [
+        "Golden Delicious",
+        "Honey Crisp",
+        "Cosmic Crisp",
+        "Red Prince"
+      ],
+      "scores": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "0xd9d868cc1cb6c95956f468980c6bbadbb332cb31612a52b203f3afc082324aae",
+      "title": "Is this example useful and helpful to you?",
+      "end": 1766399730,
+      "votes": 0,
+      "scores_total": 0,
+      "space": {
+        "id": "sequence-demos.eth",
+        "name": "0xsequence-demos",
+        "avatar": ""
+      },
+      "choices": [
+        "Yes",
+        "No",
+        "Undecided"
+      ],
+      "scores": [
+        0,
+        0,
+        0
+      ]
+    },
     {
       "id": "0x3c3ae4caa322ddc4a9a1bece194d01c34fef88445f94bb8e7ce75e19486f76f5",
       "title": "TEST Proposal Beta",
@@ -144,52 +190,6 @@
         "For",
         "Against",
         "Abstain"
-      ],
-      "scores": [
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "id": "0x40539d490a8719a9f22265b426cadde3baf709b69434df20e42107010af9679e",
-      "title": "Which apple is best, all around?",
-      "end": 1766313246,
-      "votes": 0,
-      "scores_total": 0,
-      "space": {
-        "id": "sequence-demos.eth",
-        "name": "0xsequence-demos",
-        "avatar": ""
-      },
-      "choices": [
-        "Golden Delicious",
-        "Honey Crisp",
-        "Cosmic Crisp",
-        "Red Prince"
-      ],
-      "scores": [
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "id": "0xc67ab2b72716f8c9cb8c8fb4f4eecf0e66d83034a3938751dd5041204b5a1164",
-      "title": "Is this example useful and helpful to you?",
-      "end": 1766313246,
-      "votes": 0,
-      "scores_total": 0,
-      "space": {
-        "id": "sequence-demos.eth",
-        "name": "0xsequence-demos",
-        "avatar": ""
-      },
-      "choices": [
-        "Yes",
-        "No",
-        "Undecided"
       ],
       "scores": [
         0,
@@ -636991,16 +636991,16 @@
   ],
   "prices": {
     "bitcoin": {
-      "usd": 88724,
-      "usd_24h_change": 0.7004910349393725
+      "usd": 88683,
+      "usd_24h_change": 0.6102129548409696
     },
     "ethereum": {
-      "usd": 3001.44,
-      "usd_24h_change": 0.8161393709589502
+      "usd": 2996.88,
+      "usd_24h_change": 0.6807933993336637
     },
     "solana": {
-      "usd": 126.26,
-      "usd_24h_change": 0.11839782185167388
+      "usd": 125.99,
+      "usd_24h_change": -0.08592311258872454
     }
   }
 }
