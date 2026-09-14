@@ -420,3 +420,9 @@ MIT License - see [LICENSE](LICENSE) for details.
 *"Set it and forget it - your wealth, your rules, your data."*
 
 </div>
+## Authentication implementation status
+
+The biometric component is disabled until a real WebAuthn registration and
+server-verified challenge flow is implemented. It no longer simulates a login
+or redirects as though authentication succeeded. Dashboard pages remain a
+prototype, not a protected financial account interface.
